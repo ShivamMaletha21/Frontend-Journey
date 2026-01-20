@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+
+main {
+    height: 100%;
+    width: 100%;
+    /* Correct path: starts from public root */
+    background-image: url("/navbar-icons/mac-wallpaper.jpg");
+    background-size: cover;
+    /* makes the image cover full area */
+    background-position: center;
+    /* centers the image */
+    background-repeat: no-repeat;
+    /* prevents repeating */
+}
