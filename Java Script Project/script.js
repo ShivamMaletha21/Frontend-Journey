@@ -1,4 +1,5 @@
-// creating an empty array to store the elemtns
+// Step1
+//creating an empty array to store the elemtns
 
 let elements = [];
 
@@ -30,9 +31,51 @@ function createElement(type) {
 
 };
 
-// example usage
-createElement('box');
-createElement('text');
+
+
+
+// Step 2: CREATE renderElement function
+const canvas = document.querySelector('.canvas');
+
+function renderElement(element) {
+
+// render element on canvas
+const el = document.createElement('div');
+
+// styling
+
+el.style.position = 'absolute';
+el.style.left = element.x + 'px';
+el.style.top = element.y + 'px';
+el.style.width = element.width + 'px';
+el.style.height = element.height + 'px';
+el.style.zIndex = element.zindex;
+
+// if element is a box
+if (element.type === 'box') {
+    el.style.backgroundColor = element.color;
+}
+
+// if element is text
+
+if(element.type === 'text') {
+    el.textContent = element.text;
+    el.style.padding = '8px';
+    el.style.background = '#fff';
+    el.style.border = '1px solid #ccc';
+}
+canvas.appendChild(el);
+}
+const box = createElement('box');
+box.x = 50;
+box.y = 50;
+renderElement(box);
+
+const text = createElement('text');
+text.x = 200;
+text.y = 80;
+renderElement(text);
+
 
 
 
