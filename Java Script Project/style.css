@@ -1,51 +1,36 @@
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-html,
-body {
-height: 100%;
-width: 100%;
-  overflow-x: hidden;
-  overflow-y: hidden;
+
+.editor {
+    display: flex;
+    height: 100vh;
 }
-.container{
-    height: 100%;
-    width: 100%;
-}
-.top-bar{
-    height: 10%;
-    width: 100%;
-    background-color: grey;
-}
-.inner-container{
-    height: 90%;
-  display: flex;
-  width: 100%;
-    background-color: bisque;
-    
-}
-.left-panel{
-    height:100%;
+
+.layers-panel, .properties-panel {
     width: 250px;
-    background-color: #f3f3f3;
+    background-color: #2c2c2c;
+    color: white;
+    padding: 10px;
 }
-.right-panel{
-     height:100%;
-     width: 250px;
-    background-color: #f3f3f3;
-}
-.middle-area{
+
+.canvas {
+    position: relative;
     flex: 1;
-    height: 100%;
-    width: 100%;
-    background-color: #fff;
-     border: 2px dashed #555;
-     padding: 12px;
-       position: relative;
+    background-color: #f0f0f0;
+    border: 2px dashed grey;
+
 
 }
-.selected {
-  outline: 2px solid blue;
+
+
+/* Step -2 */
+
+.work-area {
+    width: 600px;
+    height:400px;
+    background-color: white ;
+    border: 1px solid #ccc;
 }

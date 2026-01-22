@@ -1,52 +1,43 @@
-let addRectangleBtn = document.querySelector(".rectangle-btn");
-let workspace = document.querySelector(".middle-area");
-let selectedElement = null;
+// creating an empty array to store the elemtns
 
-const gap = 120;
-let reCount = 0;
+let elements = [];
 
-addRectangleBtn.addEventListener("click", () => {
-  const rectWidth = 100; //intial height width
-  const rectHeight = 100; ////intial height width
-  console.log(rectHeight, rectWidth);
+// function to create a new elements
+function createElement(type) {
+    const id = 'emp_' + Date.now(); // unique id
 
- 
-  //Canvas ka actual size runtime pe pata karna
-  const canvasRect = workspace.getBoundingClientRect();
-  console.log(canvasRect);
+    const newELement = {
+        id: id,
+        type: type, // box or text
+        x:50,       // starting x postion
+        y:50,       // starting y position
+        width:100,  // default width
+        height:100, // default height
+        rotation: 0, // default rotation angle
+        color:'#00aaff',  // box color
+        text: type === 'text' ? 'New Text' : '', // text content if type is text
+        zindex: elements.length + 1 // top layer by default
 
-  const centerX = (canvasRect.width - rectWidth) / 2;
-  const centerY = (canvasRect.height - rectHeight) / 2;
+    };
 
-  let rectangle = document.createElement("div");
+    // Add the new element to the array
+    elements.push(newELement);
 
-  rectangle.style.width = rectWidth + "px";
-  rectangle.style.height = rectHeight + "px";
-  rectangle.style.backgroundColor = "red";
-  rectangle.style.position = "absolute";
+    console.log('Element Created:', newELement);
+    console.log('All elements:', elements);
 
-  rectangle.style.top = centerY + "px";
+    return newELement; // use to display outside
 
-  rectangle.style.left = centerX + reCount * gap + "px";
-  reCount++;
+};
 
-  rectangle.addEventListener("click", (e) => {
-    e.stopPropagation();
+// example usage
+createElement('box');
+createElement('text');
 
-    if (selectedElement) {
-      selectedElement.classList.remove("selected");
-    }
 
-    rectangle.classList.add("selected");
-    selectedElement = rectangle;
-  });
 
-  workspace.appendChild(rectangle);
-});
 
-workspace.addEventListener("click", () => {
-  if (selectedElement) {
-    selectedElement.classList.remove("selected");
-    selectedElement = null;
-  }
-});
+
+
+
+
