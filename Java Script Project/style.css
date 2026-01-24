@@ -47,7 +47,7 @@
 .element {
     position: absolute;
     cursor: pointer;
-    user-select: none;
+    /* user-select: none; */
     /* prevent text selection while dragging */
     transition: all 0.1s ease;
     /* smooth movement/selection */
