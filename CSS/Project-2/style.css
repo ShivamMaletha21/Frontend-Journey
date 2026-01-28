@@ -17,6 +17,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #fff;
 }
 
 section::before {
@@ -38,8 +39,65 @@ section::after{
     transform: translate(150px, 100px);
 }
 .container{
+    position: relative;
+    height: 225px;
+    width: 375px;
+    z-index: 100;
 
 }
 .container .card{
+height: 100%;
+width: 100%;
+padding: 25px;
+border-radius: 25px;
+backdrop-filter: blur(25px);
+background: rgba(225, 225, 225, 0.1);
+box-shadow: 0 25px 45px rgba(0,0,0, 0.25 );
+border: 1px soild rgba(225, 225, 225, 0.1);
+}
+
+.front-face header,
+ .logo {
+    display: flex;
+    align-items: center;
+    
+}
+
+.front-face header{
+    justify-content: space-between;
+}
+
+.front-face .logo img{
+    width: 48px;
+    margin-right: 10px;
+}
+h5 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.front-face .chip {
+    width: 50px;
+}
+
+.front-face .card-details {
+    display: flex;
+    margin-top: 40px;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+h6 {
+    font-size: 10px;
+    font-weight: 400;
+}
+
+h5.number {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+h5.name {
+    margin-top: 20px;
 
 }
