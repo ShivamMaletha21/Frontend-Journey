@@ -1,0 +1,45 @@
+/* Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+section{
+    min-height: 100vh;
+    width: 100%;
+    background: hsl(236, 29%, 10%);
+
+    /* use to center the section */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section::before {
+    content :"";
+    position: absolute;
+    height: 240px;
+    width: 240px;
+    background: linear-gradient(90deg, #9c27b0, #f3f5f5);
+    border-radius: 50%;
+    transform: translate(-150px, -100px);
+}
+section::after{
+    content: "";
+    position: absolute;
+    height: 240px;
+    width: 240px;
+    background: linear-gradient(90deg, #9c27b0, #f3f5f5);
+    border-radius: 50%;
+    transform: translate(150px, 100px);
+}
+.container{
+
+}
+.container .card{
+
+}
