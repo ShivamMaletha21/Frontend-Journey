@@ -1,0 +1,15 @@
+@media only screen and (min-width: 200px) and (max-width:575px) {
+    .bannerSection {
+         flex-direction: column; /* we dont have to use it , if we are using flex-wrap:wrap; .. it is the other way or 2nd method */
+    }
+    .bannerItems {
+        flex-basis: 98%; /* take full width of the parent  ..  before it is 23%*/
+        margin: 10px 0;
+    }
+
+    .bannerItems img {
+        width:100%;
+        height: auto; /* keeps original image ratio*/
+        display: block;
+    }
+}
