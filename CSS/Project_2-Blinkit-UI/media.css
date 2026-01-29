@@ -1,0 +1,22 @@
+/* for mobile */
+@media only screen and (min-width: 200px) and (max-width575px) {
+    header {
+        flex-direction:column;
+    }
+    /* changing padding of logo -> making it according to mobile screen   ... inspect it and adjust it accordingly */  
+    .headerLeft {
+        justify-content: center;
+    }
+    .logo {
+        padding: 10px;
+    }
+    .headerAddress {
+        padding: 10px;
+    }
+     .headerAddress p {
+        font-size: 12px;
+     }
+         .headerAddress h3 {
+            font-size: 15px;
+ }
+}
