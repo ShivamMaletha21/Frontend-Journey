@@ -1,15 +1,20 @@
 /* for mobile */
-@media only screen and (min-width: 200px) and (max-width575px) {
+@media only screen and (min-width: 200px) and (max-width:575px) {
     header {
         flex-direction:column;
         align-items: stretch; /* jitna parent hai utna hojao */
+        gap: 15px;
+        padding: 10px;
     }
     /* changing padding of logo -> making it according to mobile screen   ... inspect it and adjust it accordingly */  
     .headerLeft {
         justify-content: center;
+        align-items: center;
+        text-align: center;
     }
     .logo {
-        padding: 10px;
+        padding: 22px 30px;
+        border-right: 1px solid #ccc;
     }
     .headerAddress {
         padding: 10px;
@@ -20,4 +25,21 @@
          .headerAddress h3 {
             font-size: 15px;
  }
+ .searchBox button {
+    padding: 10px;
+ }
+
+ /* making login button and cart button at last of the screen */
+
+.headerBtn {
+    position: fixed; /* kisi bhi element ko fix krdeta hai and apni space khali kr deta hain ..  search ne apni space khali krdi when we give it position fix  ...  now it'll work with respect to the window*/
+    justify-content: center;
+    bottom:0px;
+    width: 100%; /* take width of like same as our window */
+    margin-right: 0px;
+    
+ }
+
+
+
 }
