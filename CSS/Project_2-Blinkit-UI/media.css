@@ -1,59 +1,73 @@
-/* for mobile */
-@media only screen and (min-width: 200px) and (max-width:575px) {
+@media only screen and (max-width: 575px) {
+
     header {
-        flex-direction:column;
-        align-items: stretch; /* jitna parent hai utna hojao */
+        flex-direction: column;
+        align-items: stretch;
         gap: 15px;
         padding: 10px;
     }
-    /* changing padding of logo -> making it according to mobile screen   ... inspect it and adjust it accordingly */  
+
     .headerLeft {
         justify-content: center;
         align-items: center;
         text-align: center;
     }
-    .logo {
-        padding: 22px 30px;
-        border-right: 1px solid #ccc;
+
+    .headerAddress h3 {
+        font-size: 15px;
     }
-    .headerAddress {
+
+    .headerAddress p {
+        font-size: 12px;
+    }
+
+    .searchBox {
+        width: 100%;
+    }
+
+    .searchBox button {
         padding: 10px;
     }
-     .headerAddress p {
-        font-size: 12px;
-     }
-         .headerAddress h3 {
-            font-size: 15px;
- }
- .searchBox button {
-    padding: 10px;
- }
 
- /* making login button and cart button at last of the screen */
+    /* Fixed bottom buttons */
+    .headerBtn {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        margin-right: 0;
+        justify-content: center;
+        background: white;
+        z-index: 100;
+    }
 
-.headerBtn {
-    position: fixed; /* kisi bhi element ko fix krdeta hai and apni space khali kr deta hain ..  search ne apni space khali krdi when we give it position fix  ...  now it'll work with respect to the window*/
-    justify-content: center;
-    bottom:0px;
-    width: 100%; /* take width of like same as our window */
-    margin-right: 0px;
-    background-color: white;
-    
- }
- /* header finised */
+    body {
+        padding-bottom: 80px;
+    }
 
+    /* Banner */
+    .bannerSection {
+        display: none;
+    }
 
+    .orderBanner {
+        flex-direction: column;
+        padding: 10px;
+    }
 
- /* creating banner section */
- .bannerSection {
-    display : none; /* it'll remove the banner image */
- }
- .orderBanner {
-    flex-direction:column ;
-    padding: 10px;
- }
-.categorySection .categoryItems {
-    flex-basis: 25%;
- }
+    /* Categories */
+    .categorySection .categoryItems {
+        flex-basis: 25%;
+    }
+
+    /* Products */
+    .productItems {
+        flex-basis: 48%;
+        flex: 0 0 140px;
+
+    }
+
+    .productSection {
+        padding: 0 10px;
+    }
+
 }
-
