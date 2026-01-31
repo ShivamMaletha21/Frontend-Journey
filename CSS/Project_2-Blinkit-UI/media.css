@@ -52,4 +52,8 @@
     flex-direction:column ;
     padding: 10px;
  }
+.categorySection .categoryItems {
+    flex-basis: 25%;
+ }
 }
+
