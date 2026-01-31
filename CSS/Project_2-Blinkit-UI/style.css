@@ -81,3 +81,28 @@ header{
     font-weight: bold;
     background-color: rgb(12, 131,31);
 }
+/* header section completed */
+
+
+/* creating banner section */
+
+.bannerSection {
+    max-width: 1280px;
+    margin : auto;
+}
+.bannerSection img {
+    width: 100%; /* take 100% of its parent width i.e 1280 */
+}
+.orderBanner {
+    display: flex;
+    max-width: 1280px;
+    margin:auto;
+}
+.orderBannerItems {
+    flex-basis: 28%; /* it'll divide it 100 % into 28 * 3 = 84 %.. so the images will come in between 84% */
+    margin: 1%;
+
+}
+.orderBannerItems img {
+    width:100%;  /* image will take the width of parent from here it will shown proplery */
+}

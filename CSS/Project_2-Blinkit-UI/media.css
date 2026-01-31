@@ -37,9 +37,19 @@
     bottom:0px;
     width: 100%; /* take width of like same as our window */
     margin-right: 0px;
+    background-color: white;
     
  }
+ /* header finised */
 
 
 
+ /* creating banner section */
+ .bannerSection {
+    display : none; /* it'll remove the banner image */
+ }
+ .orderBanner {
+    flex-direction:column ;
+    padding: 10px;
+ }
 }
