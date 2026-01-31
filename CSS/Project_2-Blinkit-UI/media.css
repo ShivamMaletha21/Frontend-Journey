@@ -2,6 +2,7 @@
 @media only screen and (min-width: 200px) and (max-width575px) {
     header {
         flex-direction:column;
+        align-items: stretch; /* jitna parent hai utna hojao */
     }
     /* changing padding of logo -> making it according to mobile screen   ... inspect it and adjust it accordingly */  
     .headerLeft {

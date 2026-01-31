@@ -10,6 +10,9 @@
 
 header{
     display: flex;
+    align-items: center; /* border which is applied in .searchBox comes in center.. child ko height ke center mein krta hai but flex-direction: row hona chahiye; */
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
 }
 
 .headerLeft {
@@ -18,7 +21,7 @@ header{
    
 }
 .logo {
-    padding: 22px 30px;
+    padding: 22px 30px; /* it gives gap from inside */
     border-right: 1px solid #ccc;
 }
 .headerAddress{
@@ -30,4 +33,30 @@ header{
 }
 .headerAddress p {
     font-size: 14px;
+}
+
+/* creating search box */
+
+.searchBox {
+    flex-grow: 1; /* take rest space of parent */
+    background-color: #f8f8f8;
+    border: 1px solid #f4f4f4;
+    display :flex;
+}
+.searchBox button {
+    padding: 15px; /* if size of button inc.. then the whole box inc.. asd rule of flex says that if one child grows then other child will also grow same */
+    border: none;
+    background-color: transparent;
+    border-radius: 15px;
+}
+.searchBox input {
+    flex-grow: 1; /* search button ko chd kr it'll take rest of the area... 100% of parent container */
+    border: none; /* removing border of input */
+    background-color: transparent;
+}
+
+/* now whenever i am clickin on input box a line will appear .. to remove this we use focus*/
+
+.searchBox input:focus {
+    outline: none;
 }
