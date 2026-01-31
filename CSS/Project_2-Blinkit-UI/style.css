@@ -106,3 +106,17 @@ header{
 .orderBannerItems img {
     width:100%;  /* image will take the width of parent from here it will shown proplery */
 }
+
+/* creating category section */
+.categorySection {
+    max-width: 1280px;
+    margin: auto;
+    display:flex;
+    flex-wrap: wrap;
+}
+.categorySection .categoryItems {
+flex-basis: 10%;
+}
+.categoryItems img {
+    width : 100%;
+}
