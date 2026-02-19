@@ -70,3 +70,4 @@ console.log(count);
 // Q10..Access email dynamically.
 let acc = "email";
 console.log(user[acc]);
+
