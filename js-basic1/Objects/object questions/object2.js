@@ -25,6 +25,9 @@ let student = {
 
     bonus : function addBonusMarks() {
         this.marks = this.marks + 5;
+    },
+    intro: function introduce() {
+        console.log("My name is Shivam");
     }
 
 };
@@ -55,6 +58,18 @@ console.log(student);
 
 delete student.grade;
 console.log(student);
+
+// Loop and print all student properties.
+
+for (let key in student) {
+    console.log(key + " " + student[key]);
+}
+
+//Q..Check if "name" exists.
+console.log("name" in student);
+
+student.intro();
+
 
 
 
