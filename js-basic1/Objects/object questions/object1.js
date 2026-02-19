@@ -1,3 +1,6 @@
+// SECTION 1: CAR SYSTEM
+
+
 // Q1. Create an object car with properties:
 // brand: "BMW"
 // color: "Black"
@@ -64,3 +67,20 @@ car.discount(); // it'll update the price
 car.detail(); // this will tell the updated price
 
 
+// Q8.. Create empty object car2 and add properties.. brand, price,color
+
+let car2 = {
+    brand: "Jaguar",
+    price: 600000,
+    color: "Red",
+    mileage: 12
+};
+console.log(car2);
+
+for (let key in car2) { // let key.. holds property.. key is like temporary storage box
+    console.log(key + " " + car2[key]);
+}
+
+// Q10.. access property dynamically
+let prp = "mileage";
+console.log(car2[prp]);
