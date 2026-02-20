@@ -56,6 +56,21 @@ let number2 = [10,20,30,40,50,60,70,80,90,100];
 let result2 = number2.filter(num => num >40);
 console.log(result2);
 
+//7.. reduce() .. reduces array into single value..  syntax -> array.reduce (function(accumulator,current) {},initialValue)
+
+let number3 = [10,20,30];
+let sum = number3.reduce((total,num) => total + num,0);
+console.log(number3);
+console.log(sum);
+
+// use of initital value is imp here
+let number4 = [1,2,4];
+let result = number4.reduce(function(total,num) {
+    return total + num;
+},"");
+
+console.log(result); // now it will be 124 not 7
+
 
 
 
