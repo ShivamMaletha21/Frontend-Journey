@@ -15,8 +15,48 @@ console.log(car);
 console.log(fruits[1]);
 
 // Change value
-fruits[1] = "Orange";
+fruits[1] = "Grapes";
 console.log(fruits);
+
+
+// Array Methods.. function used to perform operation on arrays
+
+// 1.. push() -> add elements at the end.. arrayName.push(value);
+fruits.push("Banana");
+console.log(fruits);
+
+//2.. pop() -> remove elements from end.. arrayName.pop()
+fruits.pop();
+console.log(fruits);
+
+// 3.. shift() -> remove elements from start
+fruits.shift();
+console.log(fruits);
+
+// 4.. unshift() -> add element at start
+fruits.unshift("Apple");
+console.log(fruits);
+
+// 5.. map() .. creates a new array by applying function to each element..
+//  array.map(function(value1,index,array){
+//code })
+
+let number1 = [30,40,50];
+
+let result1 = number1.map(function(num)  {
+    return num*2;
+});
+
+console.log(result1);
+
+//6.. filter() .. creates new array with only matching condition values
+// .. array.filter(function(value){})
+let number2 = [10,20,30,40,50,60,70,80,90,100];
+
+let result2 = number2.filter(num => num >40);
+console.log(result2);
+
+
 
 
 
