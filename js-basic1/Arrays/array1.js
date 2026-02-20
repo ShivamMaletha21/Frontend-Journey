@@ -102,5 +102,15 @@ number7.forEach(function(value,index,array){
 });
 console.log(number7);
 
+// Array Destructuring.... extracting values from array into variables
+let car2 = ["BMW","Jaguar"];
+console.log(car2);
+
+let [a,b] = car2;
+console.log(a,b);
+
+console.log(car2.length);
+
+
 
 
