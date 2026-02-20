@@ -72,7 +72,35 @@ let result = number4.reduce(function(total,num) {
 console.log(result); // now it will be 124 not 7
 
 
+//8.. forEach().. loops through array but does not return new array
 
+// syntax -> array.forEach(function(value,index,array){});
+
+
+// it'll give error bcz.. we have use return and forEach() doesnt return anythiing
+// let number5 = [10,20,30];
+// number5.array.forEach(function(num){
+//     return num;
+// });
+
+// with the help of index we can apply condition based on position
+
+// only even index
+let number6 = [1,2,3,4,5,6,7,8,9];
+number6.forEach(function(value,index){
+
+    if(index % 2 == 0) {
+        console.log(value);
+    }
+});
+
+// array.. modify original array
+let number7 = [10,20,30];
+
+number7.forEach(function(value,index,array){
+    array[index] = value * 2;
+});
+console.log(number7);
 
 
 
