@@ -72,3 +72,119 @@ let pass = marks.filter(val=>val>40);
 console.log(pass);
 
 
+// Section 3: reduce()
+
+// Q1..Find sum
+let numbers1 = [10,20,30,40];
+let sum1 = numbers1.reduce((acc,curr)=>{
+    return acc + curr;
+},0);
+console.log(numbers1);
+console.log(sum1);
+
+//Find total salary
+let salary2 = [10000,20000,30000,40000,50000];
+let total_sal = salary2.reduce((acc,curr) =>{
+    return acc + curr;
+});
+console.log(total_sal);
+
+//Find max number
+let numbers2 = [1,2,3,4,5];
+let max_num = numbers2.reduce((acc,curr)=> {
+    if(curr > acc) {
+        return curr;
+    }
+    else {
+        return acc;
+    }
+
+},0);
+console.log(max_num);
+
+//Find in number
+let numbers3 = [1,2,3,4,5];
+let min_num = numbers2.reduce((acc,curr)=> {
+    if(curr < acc) {
+        return curr;
+    }
+    else {
+        return acc;
+    }
+
+},0);
+console.log(min_num);
+
+//Section 4: Objects in Array
+//Create users array
+
+let users = [
+    {
+        name:"Shivam",
+        age: 21,
+        email: "shivam@gmail.com"
+    },
+
+    {
+        name: "Rohit",
+        age: 22,
+        email: "rohit@gmail.com"
+    },
+    {
+        name: "Aman",
+        age: 28,
+        email: "aman@gmail.com"
+    }
+];
+console.log(users);
+console.log(users[0]);
+console.log(users[1]);
+
+//Print all ages
+console.log(users[0].age);
+
+//or
+users.forEach(value =>{
+console.log(value.age);
+});
+
+//Add new user
+
+  users.push(
+    {name:"karan",
+        age:23,
+        email: "karan@gmail.com"
+    });
+console.log(users);
+
+//Remove user
+users.pop();
+console.log(users);
+
+//Find user age > 25
+let age_filter = users.filter((val )=> {return val.age>25;
+});
+console.log(age_filter);
+
+//Increase age
+let inc_age = users.map((val)=>{
+    return {
+        name: val.name,
+        age: val.age + 30,
+        email: val.email,
+
+    };
+});
+console.log(inc_age);
+console.log(users);
+
+//Total ages
+let totalAge = users.reduce((acc,curr)=>
+{
+    return acc + curr.age;
+
+},0);
+console.log(totalAge);
+
+//Section 5: Destructuring
+
