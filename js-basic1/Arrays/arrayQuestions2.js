@@ -30,3 +30,45 @@ console.log(upper);
 
 
 // Section 2: filter()
+// Q1..Filter numbers > 50
+
+let number1 = [1,2,3,4,5,6,7,8,9,10,20,40,50,60,70,80,90];
+console.log(number1);
+
+let filter1 = number1.filter((num) => {
+    return num > 50;
+});
+console.log(filter1);
+
+//Filter even numbers
+let filter2 = number1.filter((num) =>
+{
+    if(num % 2 == 0)
+    return num;
+});
+console.log(filter2);
+
+//Filter odd numbers
+let filter3 = number1.filter(num => {
+    if (num % 2 !==0)
+        return num;
+
+});
+console.log(filter3);
+
+//Filter salary > 30000
+let salary1 = [10000,15000,20000,30000,40000,50000,60000,70000];
+
+let filtersal = salary1.filter(num => {
+    if(num > 30000)
+        return num;
+});
+console.log(filtersal);
+
+// Filter passing marks (>40)
+let marks = [10,20,30,40,50,60,70,80,90];
+console.log(marks);
+let pass = marks.filter(val=>val>40);
+console.log(pass);
+
+
