@@ -188,3 +188,28 @@ console.log(totalAge);
 
 //Section 5: Destructuring
 
+let numbers4 = [1,2,3,4,5];
+let [a,b,c,d,e] = numbers4;
+console.log(a,b,c,d,e);
+
+//Skip value
+let[x, , y] = numbers4;
+console.log(x,y);
+
+//Default value
+let [f,g = "6"]= numbers4;
+console.log(f,g);
+
+// swapping 
+let h = 10;
+let i = 20;
+[h,i] = [i,h];
+console.log(h,i);
+
+//old way .. using temp variable
+let j = 30;
+let k = 40;
+let temp = j;
+j = k;
+k = temp;
+console.log(j,k);
