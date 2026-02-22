@@ -213,3 +213,7 @@ let temp = j;
 j = k;
 k = temp;
 console.log(j,k);
+
+let a3 = 5;
+console.log(a3);
+
