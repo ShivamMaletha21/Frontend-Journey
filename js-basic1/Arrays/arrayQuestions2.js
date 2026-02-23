@@ -216,4 +216,6 @@ console.log(j,k);
 
 let a3 = 5;
 console.log(a3);
+let a4 = 54;
+console.log(a4);
 
