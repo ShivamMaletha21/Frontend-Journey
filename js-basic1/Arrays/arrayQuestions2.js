@@ -218,4 +218,5 @@ let a3 = 5;
 console.log(a3);
 let a4 = 54;
 console.log(a4);
-
+let a8 = "hey this is shivam";
+console.log(a8);
