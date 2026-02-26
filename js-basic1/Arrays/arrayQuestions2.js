@@ -222,3 +222,5 @@ let a8 = "hey this is shivam";
 console.log(a8);
 let a9 = 84;
 console.log(a9);
+let b3  = "this is it";
+HTMLFormControlsCollection.log(b3);
