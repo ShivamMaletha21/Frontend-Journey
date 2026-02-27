@@ -223,4 +223,5 @@ console.log(a8);
 let a9 = 84;
 console.log(a9);
 let b3  = "this is it";
-HTMLFormControlsCollection.log(b3);
+let b4 = 54;
+console.log(b4);
