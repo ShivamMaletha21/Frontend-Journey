@@ -225,3 +225,6 @@ console.log(a9);
 let b3  = "this is it";
 let b4 = 54;
 console.log(b4);
+
+let b6 = 45;
+console.log(b6);
