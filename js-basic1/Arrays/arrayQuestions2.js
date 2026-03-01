@@ -228,3 +228,6 @@ console.log(b4);
 
 let b6 = 45;
 console.log(b6);
+let a42= 90;
+console.log(a42);
+
