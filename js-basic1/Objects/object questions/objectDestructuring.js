@@ -8,3 +8,5 @@ let user = {
 
 let {username, email, balance} = user;
 console.log(username, email, balance);
+
+
