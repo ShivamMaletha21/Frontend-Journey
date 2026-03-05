@@ -214,28 +214,3 @@ j = k;
 k = temp;
 console.log(j,k);
 
-let a3 = 5;
-console.log(a3);
-let a4 = 54;
-console.log(a4);
-let a8 = "hey this is shivam";
-console.log(a8);
-let a9 = 84;
-console.log(a9);
-let b3  = "this is it";
-let b4 = 54;
-console.log(b4);
-
-let b6 = 45;
-console.log(b6);
-let a42= 90;
-console.log(a42);
-
-let b6 = 45;
-console.log(b6);
-let a42= 90;
-console.log(a42);
-let b6 = 45;
-console.log(b6);
-let a42= 90;
-console.log(a42);
