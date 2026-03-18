@@ -1,0 +1,163 @@
+<!-- Question 1 -->
+<!--  Create a webpage with:
+A heading: “My Website”
+A paragraph below it
+Wrap everything properly
+Condition:
+Use the correct semantic tag (not <div>) -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>My Website</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+      obcaecati, aliquam ab aperiam odit repellendus autem sequi libero in
+      dolores?
+    </p>
+  </body>
+</html>
+
+<!-- Question 2 (Section vs Div)
+You are building an About Us page:
+Heading: “About Us”
+Paragraph about company
+One image
+Question:
+Should you use <div> or <section>? -->
+<section>
+  <h2>About Us</h2>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae molestiae,
+    debitis dolor aperiam ex ab accusantium accusamus omnis est placeat
+    asperiores veritatis ullam, autem dolore cum consectetur velit commodi aut.
+  </p>
+  <img
+    src="https://images.pexels.com/photos/34636071/pexels-photo-34636071.jpeg"
+    alt="image1"
+    width="200"
+  />
+</section>
+
+<!-- Question 3 (Article Concept)
+Create a blog page with:
+2 blog posts
+Each post has:
+Title
+Paragraph
+Condition:Use <article> correctly -->
+
+<section>
+  <h2>Blog</h2>
+
+  <article>
+    <h3>Post 1</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam labore
+      eum dolorem delectus, provident rerum ea cumque vero, expedita officia
+      assumenda neque corporis obcaecati nobis itaque pariatur eaque magni
+      perspiciatis!
+    </p>
+  </article>
+
+  <article>
+    <h3>Post 2</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsam nisi
+      amet? Hic culpa maiores ut dolore, nulla asperiores dignissimos sit
+      dolorem magni nihil debitis adipisci harum accusantium voluptatum
+      voluptates.
+    </p>
+  </article>
+</section>
+
+<!-- Question 4 (Mixed Use – Important)
+Create a page like:
+“Blog Website”
+Inside it:
+One main blog section
+Inside that → 3 posts
+Condition:
+Use:
+<section>
+<article>
+<div> (only if needed) -->
+
+<section>
+  <h1>Blog Website</h1>
+
+  <article>
+    <h2>Post 3</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo repellat
+      aliquam mollitia voluptate, fugiat doloremque. Voluptatibus quo adipisci
+      vitae similique minima, officiis, magnam iusto dolores, voluptates amet
+      deserunt iste voluptatem?
+    </p>
+  </article>
+
+  <article>
+    <h2>Post 4</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, explicabo
+      repellat quidem repudiandae in a corporis nesciunt provident debitis
+      sapiente, magni sint maiores ex distinctio ipsum quasi eos hic? Adipisci.
+    </p>
+  </article>
+
+  <article>
+    <h2>Post 5</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, quidem
+      nihil temporibus natus ut accusamus dolores libero ab quod vitae obcaecati
+      fuga eaque nobis accusantium voluptas suscipit. Aliquam, quaerat rerum?
+    </p>
+  </article>
+</section>
+
+<!-- Question 6 (Real-World Thinking)
+You are building a homepage:
+Header (logo + nav)
+Services section
+Each service has:
+title
+description
+Task:
+Decide where to use:
+<section>
+<article>
+<div> -->
+
+<header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">ABout</a>
+  </nav>
+</header>
+
+<section>
+  <article>
+    <h2>service1</h2>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic dignissimos
+      nobis quos sed? Modi repellendus omnis dolores dolorum illo harum, dolor
+      quaerat voluptatem, nisi id consequatur adipisci! Quibusdam, expedita
+      harum.
+    </p>
+  </article>
+
+  <article>
+    <h2>service2</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+      mollitia numquam nobis magnam beatae animi sed quos voluptatum, dicta
+      praesentium porro, et odio, veniam officiis error explicabo minus neque
+      sit.
+    </p>
+  </article>
+</section>
