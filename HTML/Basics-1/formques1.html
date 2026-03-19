@@ -26,44 +26,45 @@ required validatio -->
     <form action="#" method="post">
       <!-- Full Name -->
       <label for="name">Full Name</label>
-      <input type="text" name="name" />
+      <input type="text" name="name" required />
       <br />
       <br />
 
       <!-- Email -->
       <label for="email">Email</label>
-      <input type="email" name="email" />
+      <input type="email" name="email" required />
       <br />
       <br />
 
       <!-- Password -->
       <label for="password">Password</label>
-      <input type="password" name="password" />
+      <input type="password" name="password" required />
       <br />
       <br />
 
       <!-- age -->
       <label for="age">Age</label>
-      <input type="number" name="age" />
+      <input type="number" name="age" required />
       <br />
       <br />
 
       <!-- date of birth -->
       <label for="dob">Date of Birth</label>
-      <input type="date" name="dob" />
+      <input type="date" name="dob" required />
       <br />
       <br />
 
       <!-- gender -->
       <label for="gender">Gender</label>
-      <input type="radio" name="gender" />Male
-      <input type="radio" name="gender" />Female <br /><br />
+      <input type="radio" name="gender" value="Male" required />Male
+      <input type="radio" name="gender" value="Female" />Female <br /><br />
 
       <!-- Hobbies -->
       <label for="hobbies">Hobbies</label>
-      <input type="checkbox" name="hobbies" />Running
-      <input type="checkbox" name="hobbies" />Studying
-      <input type="checkbox" name="hobbies" />playing guitar <br /><br />
+      <input type="checkbox" name="hobbies" values="running" />Running
+      <input type="checkbox" name="hobbies" values="studying" />Studying
+      <input type="checkbox" name="hobbies" values="playing guitar" />playing
+      guitar <br /><br />
 
       <!-- Upload Photo -->
       <label for="upload">Upload Photo</label>
@@ -71,8 +72,7 @@ required validatio -->
       <br /><br />
 
       <!-- Submit button -->
-      <label for="Submit button"></label>
-      <button name="Submit button">Submit</button>
+      <button type="submit" required>Submit</button>
     </form>
   </body>
 </html>
