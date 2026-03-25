@@ -1,0 +1,9 @@
+/* different styling for one box */
+
+/* if i add space betwwen .box and .special then it becomes different // .box .special */
+ .box.special {
+    color:red;
+}
+.box {
+    color:blueviolet;
+}

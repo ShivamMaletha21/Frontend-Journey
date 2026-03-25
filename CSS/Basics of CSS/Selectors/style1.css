@@ -1,0 +1,21 @@
+/* element selector 
+class selector 
+id selector */
+
+
+/* element selector */
+/* Direct styles on an element>inherited styles from parent */
+p {
+    color:red;
+}
+
+
+ /*class selector */ 
+ .div1 {
+    color:orange;
+ }
+ 
+ /* id selector */
+ #head1 {
+    font-size: 40px;
+ }
