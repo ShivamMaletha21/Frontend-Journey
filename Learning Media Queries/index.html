@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FLIP UI CARD</title>
+
+    <!-- linking style sheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome (Correct Version) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- creating section -> inside it everything will take place -->
+    <section>
+      <!-- this div section container will contain all div's' -->
+      <div class="container">
+        <div class="card front-face">
+          <header>
+            <span class="logo">
+              <!-- why ise span here when we can also create div -->
+              <img src="assets/logo.png" alt="logo image" />
+              <h5>Master Card</h5>
+            </span>
+            <img src="assets/chip.png" alt="chips" class="chip" />
+          </header>
+
+          <div class="card-details">
+            <div class="name-number">
+              <h6>Card Number</h6>
+              <h5 class="number">8050 2030 5040</h5>
+              <h5 class="name">Shivam Maletha</h5>
+            </div>
+
+            <div class="valid-date">
+              <h6>Valid Thru</h6>
+              <h5>05/28</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
