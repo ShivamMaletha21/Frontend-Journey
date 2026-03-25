@@ -1,0 +1,178 @@
+<!-- Q1.. Student Report Card Table Structure Columns: Name Subject Marks 
+Use colspan for total -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Subject</th>
+          <th>Marks</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>karan</td>
+          <td>science</td>
+          <td>82</td>
+        </tr>
+
+        <tr>
+          <td>rohan</td>
+          <td>maths</td>
+          <td>81</td>
+        </tr>
+
+        <tr>
+          <td>mohit</td>
+          <td>history</td>
+          <td>92</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td colspan="2">Total</td>
+          <td>335</td>
+        </tr>
+      </tfoot>
+    </table>
+    <br />
+
+    <!-- Q2: Employee Data Table Scenario: You are building an HR dashboard Create a
+table with: Employee Name ,ID Department, Salary
+Use <thead>, <tbody>
+Add at least 5 employees
+Add a Total Salary row using colspan -->
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Employee Name</th>
+          <th>ID</th>
+          <th>Department</th>
+          <th>Salary</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <!-- 1st employee -->
+        <tr>
+          <td>Aarav Sharma</td>
+          <td>101</td>
+          <td>HR</td>
+          <td>30,000</td>
+        </tr>
+
+        <!-- 2nd employee -->
+        <tr>
+          <td>Neha Verma</td>
+          <td>102</td>
+          <td>Finance</td>
+          <td>42,000</td>
+        </tr>
+
+        <!-- 3rd employee -->
+        <tr>
+          <td>Rohan Singh</td>
+          <td>103</td>
+          <td>IT</td>
+          <td>38,000</td>
+        </tr>
+
+        <!-- 4th employee -->
+        <tr>
+          <td>Priya Mehta</td>
+          <td>104</td>
+          <td>Marketing</td>
+          <td>40,000</td>
+        </tr>
+
+        <!-- 5th employee -->
+        <tr>
+          <td>Kunal Gupta</td>
+          <td>105</td>
+          <td>Operations</td>
+          <td>45,000</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td colspan="3">Total</td>
+          <td>1,85,000</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <br />
+    <!-- Q3: Product Pricing Table (E-commerce)
+Like Amazon pricing section
+Create:
+| Product | Price | Discount | Final Price |
+Requirements:
+✔ Show old price using <del>
+✔ Show new price using <ins>
+✔ Add total row -->
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Discout</th>
+          <th>Final Price</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <!-- 1st product -->
+          <td>EcoGlow Smart Bulb</td>
+          <td><del>$32.00</del> <ins>$25.00</ins></td>
+          <td>10%</td>
+          <td>$22.50</td>
+        </tr>
+
+        <!-- 2nd product -->
+        <tr>
+          <td>PeakPulse Fitness Tracker</td>
+          <td><del>$22.00</del> <ins>$120.00</ins></td>
+          <td>15%</td>
+          <td>$102.00</td>
+        </tr>
+
+        <!-- 3rd product -->
+        <tr>
+          <td>TerraNova Travel Backpack</td>
+          <td><del>$11.00</del> <ins>$85.00</ins></td>
+          <td>20%</td>
+          <td>$68.00</td>
+        </tr>
+
+        <!-- 4th product -->
+        <tr>
+          <td>AuraStream Headphones</td>
+          <td><del>$90.00</del> <ins>$200.00</ins></td>
+          <td>25%</td>
+          <td>$150.00</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td colspan="3">Total</td>
+          <td>342.50</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
