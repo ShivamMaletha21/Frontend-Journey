@@ -1,0 +1,5 @@
+/* descendant selector ... it selects */ 
+div p {
+    background-color: bisque;
+}
+

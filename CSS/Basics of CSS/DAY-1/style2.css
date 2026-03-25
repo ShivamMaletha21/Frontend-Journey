@@ -1,0 +1,17 @@
+/* Heading (blue)
+Paragraph (gray)
+Background color */
+
+h1 {
+    color:blue;
+}
+
+p {
+    color:grey;
+}
+
+
+ /* Background color */
+ p {
+    background-color: aqua;
+ }

@@ -1,0 +1,4 @@
+/* Adjacent Sibling .. selects next immediate elemet */
+h1 + p {
+    background-color: palegreen;
+}

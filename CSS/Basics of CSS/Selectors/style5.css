@@ -1,0 +1,4 @@
+/* child selector */
+div > p section {
+    background-color:violet;
+}
