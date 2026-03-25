@@ -1,0 +1,82 @@
+<!-- LEVEL 2: Intermediate Real-World Forms
+
+Q3..E-commerce Checkout Form
+Like Amazon order page
+Requirements:
+Name
+Address (textarea)
+City (text)
+Pincode (pattern → only 6 digits)
+Phone Number (pattern → 10 digits)
+Payment Method (radio: COD / Card / UPI)
+Place Order button -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="#" method-="post">
+      <!-- Name -->
+      <label for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        placeholder="Full name"
+        id="name"
+        required
+      />
+      <br /><br />
+
+      <!-- Address -->
+      <label for="address">Address</label>
+      <textarea name="adress" id="101" value="text" required></textarea>
+      <br /><br />
+
+      <!-- City  -->
+      <label for="city">City</label>
+      <input
+        type="text"
+        name="city"
+        placeholder="Enter city"
+        id="city"
+        required
+      />
+      <br />
+      <br />
+
+      <!-- Pincode -->
+      <label for="pincode">Pincode</label>
+      <input
+        type="text"
+        name="pin"
+        placeholder="Enter pincode"
+        id="pincode"
+        pattern="[0-9]{6}"
+      />
+      <br /><br />
+
+      <!-- Phone Number -->
+      <label for="phone">Phone Number</label>
+      <input
+        type="text"
+        name="num"
+        placeholder="Enter number"
+        id="phone"
+        pattern="[0-9]{10}"
+      />
+      <br /><br />
+
+      <!-- Payment Method -->
+      <label for="payment">Payment Method</label>
+      <input type="radio" name="payment" value="COD" id="payment" required />COD
+      <input type="radio" name="payment" value="Card" id="105" />Card
+      <input type="radio" name="payment" value="UPI" id="106" />UPI <br /><br />
+
+      <!-- Place Order button -->
+      <button type="submit">Order Now</button>
+    </form>
+  </body>
+</html>
