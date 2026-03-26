@@ -1,0 +1,15 @@
+/* descendant selector */
+section h1  {
+    background-color: bisque;
+}
+
+
+/* style only specific text differently */
+strong {
+    color: blueviolet;
+}
+
+/* apply hover effect to button */
+button:hover {
+    background-color: blueviolet;
+}

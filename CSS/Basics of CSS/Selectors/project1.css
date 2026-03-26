@@ -1,0 +1,25 @@
+/* class selector
+descendant selector
+adjacent sibling
+hover effect */
+
+
+/* class selector */
+.title {
+    background-color: aquamarine;
+}
+
+/* descendant selector */
+main p {
+    color: blueviolet;
+}
+
+/* adjacent sibling */
+p + p {
+    background-color: bisque;
+}
+
+/* hover effect */
+button:hover {
+    background-color: aquamarine;
+}
