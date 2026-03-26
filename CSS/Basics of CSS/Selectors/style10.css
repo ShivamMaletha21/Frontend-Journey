@@ -1,0 +1,24 @@
+/* style all paragraphs inside container
+style only direct paragraph differently
+style button inside nested section
+style paragraph after heading */
+
+
+/* style all paragraphs inside container */
+main p {
+    color:rosybrown;
+}
+
+/* style only direct paragraph differently */
+main > div > p {
+    background-color: aqua;
+}
+
+main section section > button  {
+    background-color: aquamarine;
+}
+
+/* style paragraph after heading */
+h1 + p {
+    color: blueviolet;
+}

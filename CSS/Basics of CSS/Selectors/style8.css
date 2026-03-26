@@ -1,0 +1,19 @@
+/* class selector for container
+descendant selector for paragraphs
+child selector for button
+sibling selector for paragraph after heading */
+
+section h1 {
+    background-color: aqua;
+}
+
+/* child selector for button */
+div > button {
+ background-color: bisque;
+}
+
+/* sibling selector for paragraph after heading */
+/* general sibling */
+h1 ~ p {
+    background-color: aquamarine;
+}
