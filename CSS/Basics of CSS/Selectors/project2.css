@@ -1,0 +1,20 @@
+/* class selector
+id (for one unique element)
+child selector
+hover effect */
+
+/* class selector */
+.main {
+    color: blueviolet;
+}
+
+
+/* id */
+#profile {
+    background-color: beige;
+}
+
+/* child selector */
+main > div > p {
+    font-size: 20px;
+}
