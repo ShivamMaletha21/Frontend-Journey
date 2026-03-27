@@ -1,0 +1,7 @@
+/* Show different color for links already visited by user Keep new links normal */
+a:visited {
+    color: aqua;
+}
+a:link {
+    color:black;
+}

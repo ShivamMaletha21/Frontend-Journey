@@ -1,0 +1,20 @@
+/* Highlight menu item on hover */
+li:hover {
+    background-color: aquamarine;
+}
+
+
+/* Style only the first menu item differently */
+li:first-child a {
+    color: bisque;
+}
+
+/* Style every even item differently */
+
+li:nth-child(even) a {
+    color: gray;
+}
+
+li:nth-child(odd) a {
+    color: brown;
+}

@@ -1,0 +1,8 @@
+button:hover {
+    color: aquamarine;
+}
+
+/* Make it slightly shrink when clicked */
+button:active {
+ transform: scale(0.95);
+}
