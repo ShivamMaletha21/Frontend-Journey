@@ -1,0 +1,16 @@
+/* Highlight item on hover */
+
+li:hover {
+    background-color: antiquewhite;
+}
+
+
+/* Make first item permanently bold */
+li:first-child {
+    font-weight: bold;
+}
+
+/* Make last item visually different */
+li:last-child {
+    background-color: aquamarine;
+}

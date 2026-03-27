@@ -1,0 +1,4 @@
+/* Highlight only the 3rd item */
+li:nth-child(3) {
+    background-color: beige;
+}

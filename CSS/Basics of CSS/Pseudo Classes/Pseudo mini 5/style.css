@@ -1,0 +1,14 @@
+/* Apply background color to:
+even rows
+odd rows */
+
+/* for even */
+tr:nth-child(even) {
+    background-color: antiquewhite;
+}
+
+
+/* for odd */
+tr:nth-child(odd) {
+    background-color: grey;
+}

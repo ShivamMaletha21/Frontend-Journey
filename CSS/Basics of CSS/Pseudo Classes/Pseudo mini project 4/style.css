@@ -1,0 +1,14 @@
+/* Make first item bold
+Make last item blue */
+
+
+/* first item */
+li:first-child {
+    font-weight: bold;
+}
+
+/* last item */
+li:last-child {
+    color: blue;
+}
+
