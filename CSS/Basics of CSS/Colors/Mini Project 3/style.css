@@ -1,0 +1,6 @@
+/* Add background-image */
+body {
+    background-image: url("pexels-jplenio-1146708.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
