@@ -1,0 +1,11 @@
+/* Different background-color for each section */
+#section1 {
+    background-color: antiquewhite;
+}
+#section2 {
+    background-color: aquamarine;
+}
+#section3 {
+    background-color: blueviolet;
+}
+

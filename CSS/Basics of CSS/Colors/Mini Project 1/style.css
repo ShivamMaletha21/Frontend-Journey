@@ -1,0 +1,15 @@
+/* Use named color for heading */
+h1 {
+    color:red;
+}
+
+/* Use HEX color for paragraph 1 */
+
+#para1 {
+   color: #CD853F;
+}
+
+/* Use RGB for paragraph 2 */
+#para2 {
+    color: rgb(26,115,232)
+}

@@ -1,0 +1,9 @@
+.hero {
+    background-image: url("pexels-jplenio-1146708.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.overlay {
+    background-color: rgba(0,0,0,0.5);
+}
