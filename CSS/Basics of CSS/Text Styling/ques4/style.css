@@ -1,0 +1,15 @@
+/* Remove underline from links */
+#navbar li a {
+    text-decoration: none;
+}
+
+/* Add spacing between letters */
+#navbar li a{
+    letter-spacing: 4px;
+}
+
+/* Make text uppercase */
+#navbar li a {
+    text-transform: uppercase;
+}
+

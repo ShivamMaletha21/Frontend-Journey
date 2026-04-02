@@ -1,0 +1,13 @@
+/* Big heading */
+#head1 {
+    font-size: 40px;
+}
+
+/* Center everything */
+#box {
+    text-align: center;
+}
+
+#tagline {
+    letter-spacing: 3px;
+}

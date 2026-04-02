@@ -1,0 +1,23 @@
+.links {
+    display: inline-block;
+}
+
+
+li {
+    display: inline-block;
+    width:200px;
+    padding: 10px;
+}
+
+/* removing underline */
+a {
+    text-decoration: none;
+}
+
+
+/* removing bullets */
+ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
