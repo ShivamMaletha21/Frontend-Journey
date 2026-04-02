@@ -1,0 +1,41 @@
+<!-- Q. Login Error Message
+Create login form
+When there is no error:
+message hidden
+When wrong password:
+message visible
+Important:
+layout should not move
+Covers:
+visibility: hidden
+Real use:
+error messages -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="#" method="post">
+      <div class="name">
+        <!-- name -->
+        <label for="name">Enter Your Name:</label>
+        <input type="text" id="name" placeholder="enter your name" />
+        <br />
+        <br />
+      </div>
+
+      <div class="pass">
+        <!-- password -->
+        <label for="pass">Enter your Password</label>
+        <input type="password" id="pass" placeholder="enter your password" />
+      </div>
+
+      <p class="error">Wrong password! Please try again.</p>
+      <button type="submit">Login</button>
+    </form>
+  </body>
+</html>

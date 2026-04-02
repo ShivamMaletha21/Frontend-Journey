@@ -1,0 +1,11 @@
+#container {
+    width: 200px;
+    background-color: aquamarine;
+}
+
+#box1 {
+    width:50%;
+    height: 100px;
+    background-color: beige;
+    height: 100px;
+}

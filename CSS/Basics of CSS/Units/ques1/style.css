@@ -1,0 +1,18 @@
+.container {
+    width: 100%;
+    /* parent width */
+}
+
+#box1 {
+    background-color: aqua;
+    height: 200px;
+    width: 300px;
+    /* fixed */
+}
+
+#box2 {
+    background-color: bisque;
+    height: 200px;
+    width: 50%;
+    /* flexible */
+}
