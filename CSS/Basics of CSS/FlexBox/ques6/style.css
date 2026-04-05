@@ -1,0 +1,19 @@
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#card1 {
+    background-color: antiquewhite;
+    width: 200px;
+}
+
+#card2 {
+    background-color: aqua;
+    width: 200px;
+}
+
+#card3 {
+    background-color: aquamarine;
+    width: 200px;
+}
