@@ -1,0 +1,26 @@
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 50px; */
+
+}
+
+#card1 {
+    background-color: antiquewhite;
+    width: 200px;
+    height:230px;
+}
+
+#card2 {
+    background-color: aqua;
+    width: 200px;
+    height: 300px;
+}
+
+#card3 {
+    background-color: aquamarine;
+    width: 200px;
+    height: 400px;
+}

@@ -1,0 +1,24 @@
+
+#links ul {
+    display: flex;
+    justify-content: center;
+    gap:20px;
+
+}
+#links li a {
+    text-decoration: none;
+}
+
+#links ul li {
+    list-style: none;
+}
+
+
+/* To push the footer to the bottom of the page use flexbox on body */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: flex-end;
+
+}
