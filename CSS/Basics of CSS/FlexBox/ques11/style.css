@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin:0;
+    padding:20px;
+}
+
+#heading {
+    font-size: 40px;
+    text-align: center;
+    color: #333;
+    letter-spacing: 1px;
+    border-bottom: 2px solid black;
+    margin-bottom: 30px;
+
+}
+
+.cards {
+    display: flex;
+    gap:20px;
+    justify-content: space-evenly;  
+}
+
+.card {
+    width:320px;
+    padding:20px;
+    background-color: aliceblue;
+    text-align: center;
+    border-radius: 15px;
+    
+}
+
+.card img {
+    width:200px;
+    border-radius: 40px;
+
+}
+
+.card span {
+    font-size: 25px;
+    font-weight: bold;
+    color: #222;
+    
+   
+}
+.card p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin: 5px 0;
+}
+.card {
+   transition: all 0.3s ease; /* Any change—forward OR backward—should animate over 0.3s */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+    }
