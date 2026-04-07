@@ -1,0 +1,80 @@
+* {
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+body {
+    height: 100vh;
+background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/gym.jpg);
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.hero-content{
+    padding: 40px 20px;
+    margin-top: 160px;
+    margin-left: 26px;
+    
+    
+}
+
+.hero-content h1 {
+
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    color: white;
+    margin-bottom: 18px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    
+    
+}
+
+.hero-content p {
+    font-size: 20px;
+        line-height: 1.6;
+        letter-spacing: 0.3px;
+        color: #f1f1f1;
+        margin-bottom: 3px;
+        max-width: 650px;
+
+}
+
+.buttons {
+    padding: 17px;
+    margin-left: 40px;
+    display: flex;
+    gap: 25px;
+    
+}
+.buttons button {
+    padding:19px;
+    margin-right: 30px;
+    font-size: 15px;
+    letter-spacing: 1.2px;
+    color: #333;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+   
+
+}
+
+.buttons button:hover {
+
+    background-color: darkgoldenrod;
+    transform: scale(1.1);
+  
+}
+
