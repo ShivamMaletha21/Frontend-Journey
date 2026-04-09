@@ -1,0 +1,36 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.cta-btn {
+
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+.cta-btn button {
+    padding: 18px 30px;
+    border:none;
+    border-radius: 10px;
+    background-color:rgb(59, 130, 246);
+    color: white;
+    font-weight:500;
+    letter-spacing: 1.5px;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: all
+ 0.3s ease;
+}
+
+.cta-btn button:hover {
+    background-color:rgb(37, 99, 235);
+    cursor: pointer;
+    transform: scale(1.1) translateY(-4px);
+    box-shadow: 0 8px 18px 2px  rgba(0, 0, 0, 0.5);
+ 
+}
+
