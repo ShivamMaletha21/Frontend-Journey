@@ -1,0 +1,26 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+
+
+   
+.movie-section {
+
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: beige;
+   
+}
+
+.cards {
+    width: 450px;
+    height: 550px;
+    background-image: url(images/dark1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
