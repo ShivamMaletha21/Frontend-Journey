@@ -1,38 +1,36 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+    margin:0;
+    padding:0;
 }
 
 .hero {
-    width: 100%;
-    height: 100vh; 
+    width:100%;
+    height:100vh;
     overflow: hidden;
-    /* parent div ie. hero.. size doenst increases here, it is 100%.. but  here child increases to 300% therefre we are using hidden */
 }
 
 .slider-track {
     display: flex;
-    width: 300%; /* number of slides * 100% */
-    height: 100%;
-    animation: slideShow 12s infinite;
+        width: 300%;
+            /* number of slides * 100% */
+            height: 100%;
+     animation:  slideShow 12s infinite;
+   
 }
-
 .slide {
-    width: 100%;
-    min-width: 100%;
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width:100%;
+    min-width: 100%;
+    height: 100vh; 
     padding: 0 80px;
+
 }
 
 .slide-content {
-    flex: 1;
-    max-width: 500px;  
-    /* maximum range 400px to 600 px taken normaly by designers */
+    flex:1;
+    max-width: 500px;
 }
 
 .slide-content h1 {
@@ -47,7 +45,6 @@
     color: gray;
     margin-bottom: 25px;
 }
-
 .primary-btn {
     padding: 15px 28px;
     border: none;
@@ -64,28 +61,26 @@
 .slide-image {
     flex: 1;
 }
-
 .slide-image img {
-    width: 450px;
     max-width: 100%;
-    border-radius: 20px;
-    display: block;  
+    width: 450px;
+        border-radius: 20px;
+        display: block;
 }
 
 @keyframes slideShow {
+   
 
-    0%,
-    30% {
-        transform: translateX(0);
+    0%,30% {
+        transform:translateX(0);
     }
 
-    35%,
-    65% {
+    35%,65% {
         transform: translateX(-100%);
     }
+    
 
-    70%,
-    100% {
-        transform: translateX(-200%);
+    70%,100% {
+        transform:translateX(-200%);
     }
 }
