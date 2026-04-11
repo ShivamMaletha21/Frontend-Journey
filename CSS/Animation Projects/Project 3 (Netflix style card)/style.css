@@ -103,10 +103,7 @@ span {
    transition: all 0.3s ease;
 }
 
-.card-move:hover .primary-btn {
-   opacity: 1;
-   transform: translateY(-10px);
-}
+
 
 .card-move:hover {
    transform: translateY(-10px);
