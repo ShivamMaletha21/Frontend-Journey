@@ -1,0 +1,66 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.nav {
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color:#94C1CE;
+padding: 2px 0px;
+}
+
+img {
+    width:130px;
+
+}
+.nav-bar {
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+.nav-bar ul {
+    display: flex;
+        align-items: left;
+       list-style: none;
+       margin-right: 100px;
+        
+        
+        /* background-color: cadetblue; */
+}
+
+.nav-bar ul  li {
+
+    position:relative;
+    cursor :pointer;
+    padding: 5px 30px;
+    transition: transform 0.3s ease;
+    font-size: 13px;
+    
+    letter-spacing: 2.8px;
+    
+}
+
+/* Add Hover Underline Effect */
+
+.nav-bar ul li::after {
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:0;
+    height:2px;
+    width:0%;
+    background-color:#274B56;
+    transition: width 0.5s ease;
+}
+.nav-bar ul li:hover::after {
+    width:100%;
+    
+}
+
+.nav-bar ul li:hover {
+    transform: scale(1.1);
+color: 
