@@ -44,6 +44,7 @@
     border: none;
     border-radius: 20px;
     transition: all 0.3s ease;
+    background-color: burlywood;
 }
 button:hover {
     background-color: burlywood;
