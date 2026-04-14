@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111;
+}
+
+/* Open button */
+.login-btn-open {
+    text-decoration: none;
+    background: #e50914;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+.login-btn-open:hover {
+    background: #c40812;
+}
+
+/* Full screen overlay */
+.login-content {
+    position: fixed;
+    inset: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.7);
+
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+
+    z-index: 1000;
+}
+
+/* Show overlay when targeted */
+.login-content:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Popup box */
+.login-popup {
+    width: 400px;
+    padding: 35px;
+    background: white;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+
+    transform: scale(0.8);
+    opacity: 0.8;
+    transition: 0.3s ease;
+
+    position: relative;
+}
+
+/* Popup animation */
+.login-content:target .login-popup {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* Close button */
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    text-decoration: none;
+    color: #333;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Heading */
+.login-popup h1 {
+    font-size: 28px;
+    color: #111;
+}
+
+/* Paragraph */
+.login-popup p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Labels */
+.login-popup label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Inputs */
+.login-popup input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+/* Button */
+.login-popup button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #e50914;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.login-popup button:hover {
+    background: #c40812;
+}
+
+/* Bottom text */
+.signup-text {
+    text-align: center;
+    margin-top: 8px;
+}
+
+.signup-text span {
+    color: #e50914;
+    font-weight: 600;
+    cursor: pointer;
+}

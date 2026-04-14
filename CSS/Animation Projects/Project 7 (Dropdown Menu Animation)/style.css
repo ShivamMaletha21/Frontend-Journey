@@ -14,9 +14,7 @@
 
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      list-style: none;
-     
+      justify-content: space-between;     list-style: none;    
 }
 
 /* Parent li for SERVICES */

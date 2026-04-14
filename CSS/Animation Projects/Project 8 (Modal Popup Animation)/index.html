@@ -1,0 +1,44 @@
+<!-- Create login popup / subscribe popup.
+Animation:
+fade in background
+popup scales from 0.8 to 1
+smooth close
+Learn
+scale + opacity combo
+z-index
+overlay transitions -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Login Popup</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Open Popup Button -->
+    <a href="#popup" class="login-btn-open">Login</a>
+
+    <!-- Popup Overlay -->
+    <section class="login-content" id="popup">
+      <div class="login-popup">
+        <!-- Close Button -->
+        <a href="#" class="close-btn">&times;</a>
+
+        <h1>Welcome Back 👋</h1>
+        <p>Login to continue your journey and access your dashboard.</p>
+
+        <label for="email">Enter Your Email</label>
+        <input type="email" id="email" placeholder="Enter email" />
+
+        <label for="password">Enter Your Password</label>
+        <input type="password" id="password" placeholder="Enter password" />
+
+        <button type="submit">Login</button>
+
+        <p class="signup-text">Don’t have an account? <span>Sign Up</span></p>
+      </div>
+    </section>
+  </body>
+</html>
