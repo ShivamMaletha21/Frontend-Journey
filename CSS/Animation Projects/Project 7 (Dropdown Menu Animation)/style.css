@@ -6,7 +6,8 @@
 
 .nav {
 
-   height:100vh;
+   padding: 20px 50px;
+   background-color:#96CDF1;
 }
 
 .nav-bar {
@@ -15,6 +16,53 @@
       align-items: center;
       justify-content: space-between;
       list-style: none;
-      margin-right: 100px;
+     
 }
 
+/* Parent li for SERVICES */
+.nav-bar li {
+   position: relative;
+   cursor: pointer;
+}
+
+
+/* Dropdown menu */
+.services {
+   position: absolute;
+   top: 30px;
+   left: 0;
+  
+
+list-style: none;
+   background: white;
+   padding: 10px 0;
+   width: 220px;
+   border-radius: 8px;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+      opacity: 0;
+         max-height: 0;
+         overflow: hidden;
+         transform: translateY(-10px);
+
+         transition: all 0.3s ease;
+        
+}
+
+/* Dropdown items */
+.services li {
+   padding: 10px 15px;
+   white-space: nowrap;
+   
+}
+
+.services li:hover {
+   background-color: #FA7A27;
+}
+
+/* Show dropdown on hover */
+.nav-bar li:hover .services {
+   opacity: 1;
+   max-height: 300px;
+   transform: translateY(0);
+}
