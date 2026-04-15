@@ -1,66 +1,97 @@
 * {
-   margin:0;
-   padding:0;
-
+   margin: 0;
+   padding: 0;
 }
 
 .nav {
-
-   padding: 20px 50px;
-   background-color:#96CDF1;
+   height: 100vh;
 }
 
+/* to move content on right side */
 .nav-bar {
-
-      display: flex;
-      align-items: center;
-      justify-content: space-between;     list-style: none;    
+   display: flex;
+   justify-content: flex-end;
+   background-color: #FFC8DD;
 }
 
-/* Parent li for SERVICES */
+
+/* apply flex only to direct ul inside .nav-bar */
+.nav-bar>ul {
+   display: flex;
+   align-items: center;
+   gap: 40px;
+   list-style: none;
+   padding: 20px 50px;
+
+}
+
+.nav-bar li a {
+   text-decoration: none;
+   font-size: 16px;
+   font-weight: 300;
+   letter-spacing: 1.4px;
+   color: #003722;
+   position: relative;
+
+}
+
+.nav-bar li a::after {
+
+   position: absolute;
+   content: "";
+   left: 0;
+   bottom: 0;
+   height: 2px;
+   background-color: #FA7A27;
+   width: 0%;
+   transition: all 0.4s ease;
+
+}
+
+.nav-bar li a:hover::after {
+   width: 100%;
+}
+
+
 .nav-bar li {
    position: relative;
-   cursor: pointer;
-}
-
-
-/* Dropdown menu */
-.services {
-   position: absolute;
-   top: 30px;
-   left: 0;
-  
-
-list-style: none;
-   background: white;
-   padding: 10px 0;
-   width: 220px;
-   border-radius: 8px;
-   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-
-      opacity: 0;
-         max-height: 0;
-         overflow: hidden;
-         transform: translateY(-10px);
-
-         transition: all 0.3s ease;
-        
-}
-
-/* Dropdown items */
-.services li {
    padding: 10px 15px;
    white-space: nowrap;
-   
+}
+
+.nav-bar .services {
+   position: absolute;
+   width: 240px;
+   padding: 10px 0;
+   border-radius: 8px;
+   cursor: pointer;
+
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+   top: 50px;
+   left: 0;
+   background-color: white;
+   list-style: none;
+
+   /* to hide */
+   opacity: 0;
+   max-height: 0;
+   overflow: hidden;
+   transform: translateY(-10px);
+   transition: all 0.4s ease;
+
 }
 
 .services li:hover {
    background-color: #FA7A27;
 }
 
-/* Show dropdown on hover */
-.nav-bar li:hover .services {
+
+/* 
+when .service is hovered,
+style .services inside it */
+.service:hover .services {
+   max-height: 350px;
    opacity: 1;
-   max-height: 300px;
-   transform: translateY(0);
+   transform: translateY(0px);
 }
