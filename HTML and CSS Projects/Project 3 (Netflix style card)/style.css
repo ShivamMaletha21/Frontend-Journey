@@ -99,7 +99,7 @@ span {
    background-color: #e50914;
    color: white;
    cursor: pointer;
-   opacity: 0;
+   opacity: 1;
    transition: all 0.3s ease;
 }
 

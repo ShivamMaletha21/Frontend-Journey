@@ -1,0 +1,219 @@
+<!-- Admin Dashboard Layout (HTML Only)
+Scenario:
+Admin panel structure
+Sections:
+
+• Sidebar
+• Topbar
+• Stats
+• Data table -->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard Layout</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <h1>Admin Panel – System Overview</h1>
+
+      <div>
+        <h2>User Info:</h2>
+        <p><strong>Admin Name:</strong>Shivam Maletha</p>
+        <p><strong>Role:</strong>System Administrator</p>
+      </div>
+
+      <!-- Quick Actions: -->
+      <div>
+        <nav>
+          <ul>
+            <li><a href="#">Notifications</a></li>
+            <li><a href="#">Messages</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- navigation menu -->
+      <nav>
+        <!-- Main Navigation -->
+        <h3>Main Navigation</h3>
+        <ul>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#">Analytics</a></li>
+          <li><a href="#">Users</a></li>
+          <li><a href="#">orders</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Reports</a></li>
+        </ul>
+
+        <!-- Management -->
+
+        <h3>Management</h3>
+        <ul>
+          <li><a href="#">Add New Product</a></li>
+          <li><a href="#">Manage Categories</a></li>
+          <li><a href="#">User Permissions</a></li>
+          <li><a href="#">Settings</a></li>
+        </ul>
+
+        <!-- Support -->
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Feedback</a></li>
+          <li><a href="#">System Logs</a></li>
+        </ul>
+      </nav>
+      <hr />
+
+      <!-- STATS SECTION -->
+
+      <section>
+        <!-- Total Users -->
+        <article>
+          <h3>Total Users</h3>
+          <p>12,450 Active Users</p>
+        </article>
+
+        <!-- Total Orders -->
+        <article>
+          <h3>Total Orders</h3>
+          <p>3,280 Orders Processed</p>
+        </article>
+
+        <!-- Revenue -->
+        <article>
+          <h3>Revenue</h3>
+          <p>₹8,75,000 This Month</p>
+        </article>
+
+        <!-- Pending Requests -->
+        <article>
+          <h3>Pending Requests</h3>
+          <p>45 Pending Approvals</p>
+        </article>
+      </section>
+
+      <hr />
+
+      <!-- DATA TABLE CONTENT -->
+      <section>
+        <h3>Data of Users</h3>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>User ID</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Role</th>
+              <th>Status</th>
+              <th>Joined Date</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <!-- table body -->
+
+            <!-- user1 -->
+            <tr>
+              <td>U001</td>
+              <td>Rahul Sharma</td>
+              <td>rahul@email.com</td>
+              <td>User</td>
+              <td>Active</td>
+              <td>12 Mar 2026</td>
+            </tr>
+
+            <!-- user2 -->
+            <tr>
+              <td>U002</td>
+              <td>Sneha Verma</td>
+              <td>sneha@email.com</td>
+              <td>Admin</td>
+              <td>| Active</td>
+              <td>10 Mar 2026</td>
+            </tr>
+
+            <!-- user3 -->
+            <tr>
+              <td>U003</td>
+              <td>Amit Kumar</td>
+              <td>amit@email.com</td>
+              <td>User</td>
+              <td>Inactive</td>
+              <td>08 Mar 2026</td>
+            </tr>
+
+            <!-- user4 -->
+            <tr>
+              <td>U004</td>
+              <td>Priya Singh</td>
+              <td>priya@email.com</td>
+              <td>Moderator</td>
+              <td>Active</td>
+              <td>05 Mar 2026</td>
+            </tr>
+
+            <!-- user5 -->
+            <tr>
+              <td>U005</td>
+              <td>Arjun Mehta</td>
+              <td>arjun@email.com</td>
+              <td>User</td>
+              <td>Suspended</td>
+              <td>02 Mar 2026</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <hr />
+
+      <!-- ADDITIONAL SECTION -->
+
+      <section>
+        <h3>Recent Activities</h3>
+
+        <div>
+          <ul>
+            <li>Rahul Sharma placed a new order</li>
+            <li>Sneha Verma updated product details</li>
+            <li>Amit Kumar account marked inactive</li>
+            <li>New user registered: Arjun Mehta</li>
+          </ul>
+        </div>
+      </section>
+      <hr />
+
+      <!-- REPORTS SUMMARY -->
+      <section>
+        <article>
+          <h3>Weekly Performance</h3>
+          <p>User growth increased by 12 % compared to last week</p>
+        </article>
+
+        <article>
+          <h3>Sales Insights</h3>
+          <p>Top-selling category: Electronics</p>
+        </article>
+
+        <article>
+          <h3>System Health</h3>
+          <p>All System running normally with no critical errors</p>
+        </article>
+      </section>
+    </main>
+    <hr />
+
+    <!-- footer section -->
+    <footer>
+      <p>© 2026 Admin Dashboard System</p>
+      <p>All system data is monitored and secured.</p>
+    </footer>
+  </body>
+</html>

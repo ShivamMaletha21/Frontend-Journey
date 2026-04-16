@@ -1,0 +1,182 @@
+<!-- LEVEL 3: Advanced (Real UX Thinking)
+Goal: Think like a real frontend developer
+
+Project 5: Full Blog Website
+Task:
+Create a complete blog layout:
+Header with logo + nav
+Main area with multiple blog posts
+Sidebar with:
+Recent posts
+Categories
+Footer -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Full Blog Website</title>
+  </head>
+  <body>
+    <header>
+      <!-- nav bar -->
+      <div>
+        <img src="blog.png" alt="blog logo" width="30" />
+        <div>
+          <h1>ShivInsights</h1>
+          <p>Learn. Build. Grow</p>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main area with multiple blog posts -->
+    <main>
+      <!-- Multiple Blog Posts -->
+      <section>
+        <!-- BLOG POST 1 -->
+
+        <article>
+          <h3>Title:How to Start Your Fronted Journey in 2026</h3>
+          <p>Author:Shivam Maletha</p>
+          <p>Date:March 20, 2026</p>
+
+          <p>
+            <strong>Content:</strong><br />Starting a frontend development
+            journey can feel overwhelming, especially with so many tools and
+            technologies available today. However, the key is to begin with
+            strong fundamentals. Focus on learning HTML, CSS, and JavaScript
+            before jumping into frameworks.
+            <br />
+            Understanding how the web works, including the structure of web
+            pages and how browsers render content, will give you a strong
+            advantage. Instead of rushing into complex projects, start with
+            simple layouts and gradually move toward building real-world
+            applications. <br />
+            Consistency is more important than intensity. Even dedicating one
+            hour daily can help you build solid skills over time. Practice
+            regularly, build projects, and analyze real websites to understand
+            how they are structured.
+          </p>
+        </article>
+
+        <!-- BLOG POST 2 -->
+
+        <article>
+          <h3>TItle:Why Semantic HTML is Important for Modern Websites</h2>
+            <p>Author:Shivam Maletha</p>
+            <p>Date:March 18, 2026</p>
+            <p><strong>Content</strong>Semantic HTML is more than just writing tags—it’s about giving meaning to your content. Using proper elements like header, main, article, and footer helps browsers and search engines understand your website better. <br>
+                It improves accessibility, making your site usable for people with disabilities who rely on screen readers. It also enhances SEO, helping your content rank better in search engines. <br> Writing semantic HTML makes your code cleaner, easier to maintain, and more professional. It’s a small habit that makes a big difference in real-world development.
+            </p>
+        </article>
+
+        <!-- BLOG POST 3 -->
+
+        <article>
+            <h3>Title:Top 5 Mistakes Beginners Make in Web Development</h3>
+
+            <p>Author:Shivam Maletha</p>
+
+        <p>Date:March 15, 2026</p>
+        <p><strong>Content</strong>
+        One of the most common mistakes beginners make is focusing too much on tools instead of fundamentals. Learning frameworks without understanding basic concepts leads to confusion later.
+      <br> Another mistake is not building projects. Watching tutorials is helpful, but real learning happens when you apply concepts. Many beginners also ignore code structure and readability, which becomes a problem in larger projects. <br>Lastly, inconsistency is a major issue. Progress in development comes from regular practice and continuous improvement
+    </p>
+        </article>
+      </section>
+
+
+    <!-- Sidebar with Recent posts
+     Categories -->
+
+<aside>
+    <section>
+        <h3>RECENT POSTS</h3>
+
+        <label for="journey">How to Start Your Frontend Journey in 2026</label>
+        <input type="radio" id="journey" name="recent" value="How to Start Your Frontend Journey in 2026">
+        <br>
+                <label for="semantic">Why Semantic HTML is Important</label>
+        <input type="radio" id="semantic" name="recent" value="Why Semantic HTML is Important">
+        <br>
+                <label for="mistakes">Top 5 Mistakes Beginners Make</label>
+        <input type="radio" id="mistakes" name="recent" value="Top 5 Mistakes Beginners Make"><br>
+
+                <label for="flexbox">Understanding CSS Flexbox in Simple Terms</label>
+
+        <input type="radio" id="flexbox" name="recent" value="Understanding CSS Flexbox in Simple Terms"> <br>
+
+                <label for="works">How JavaScript Works Behind the Scenes</label>
+        <input type="radio" id="works" name="recent" value="How JavaScript Works Behind the Scenes">
+    </section>
+
+
+    <!-- CATEGORIES -->
+    <section>
+        <h3>CATEGORIES</h3>
+
+        <label for="front">Frontend Development</label>
+        <input type="checkbox" id="front" name="categories"
+        value="Frontend Development"> <br>
+
+                <label for="html">HTML & CSS</label>
+        <input type="checkbox" id="html" name="categories"
+        value="Frontend Development"> <br>
+
+                <label for="js">JavaScript</label>
+        <input type="checkbox" id="js" name="categories"
+        value="Frontend Development"> <br>
+
+                <label for="carrer">Career Guidance</label>
+        <input type="checkbox" id="carrer" name="categories"
+        value="Frontend Development"> <br>
+
+                <label for="project">Projects & Practice</label>
+        <input type="checkbox" id="project" name="categories"
+        value="Frontend Development">
+    </section>
+</aside>
+    </main>
+
+    <!-- Footer  -->
+
+    <footer>
+  <!-- About -->
+        <section>
+        <h3>About Website:</h3>
+        <p>ShivInsights is a platform dedicated to helping beginners and aspiring developers learn web development through practical projects and real-world examples.</p>
+        </section>
+          <!-- Quick Links -->
+    <section>
+        <h3>Quick Links</h3>
+        <nav>
+    <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+    </ul>
+    </nav>
+    </section>
+
+    <!-- contact -->
+    <section>
+    <h3>Contact Info</h3>
+    <p>Email:shivinsightss@gmail.com</p>
+    <p>Phone:9876543298</p></section>
+
+    <section>
+    <p>Copyright:</p>
+    <p>© 2026 ShivInsights. All rights reserved.</p></section>
+    </footer>
+  </body>
+</html>
