@@ -1,0 +1,266 @@
+<!--Local Business Website  (Restaurant / Gym)
+Scenario:
+Client project
+Pages:
+• Home
+• Services/Menu
+• About
+• Contact
+Must Include:
+• Menu using lists
+• Opening hours using table
+• Google map using <iframe>
+• Booking form
+• Email + phone links -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Business Website (Restaurant / Gym)</title>
+  </head>
+  <body>
+    <!-- header of page -->
+    <header>
+      <div>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services/Menu</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- main section -->
+    <main>
+      <!-- home section -->
+
+      <section>
+        <h2>HOME</h2>
+        <p>
+          Welcome to FitZone Gym — your ultimate destination for strength,
+          fitness, and transformation. We are committed to helping you achieve
+          your health goals through expert guidance, modern equipment, and a
+          motivating environment. <br />Whether you're a beginner or a
+          professional athlete, FitZone Gym provides personalized training
+          programs designed to suit your fitness level. Our space is built to
+          inspire discipline, consistency, and growth.
+        </p>
+
+        <p>
+          <b
+            >Join us today and take the first step toward a stronger, healthier
+            you.</b
+          >
+        </p>
+      </section>
+
+      <!-- SERVICES / MENU section -->
+      <section>
+        <!-- workout section -->
+        <h2>Workout/MENU</h2>
+        <section>
+          <h3>Workout Programs</h3>
+          <ul>
+            <li><a href="#">Weight Training</a></li>
+            <li><a href="#">Cardio Training</a></li>
+            <li><a href="#">Functional Training</a></li>
+            <li><a href="#">Strength & Conditioning</a></li>
+            <li><a href="#">CrossFit Sessions</a></li>
+          </ul>
+        </section>
+
+        <!-- Personal Training -->
+
+        <section>
+          <h3>Personal Training</h3>
+          <ul>
+            <li><a href="#">One-on-One Coaching</a></li>
+            <li><a href="#">Customized Workout Plans</a></li>
+            <li><a href="#">Body Transformation Programs</a></li>
+          </ul>
+        </section>
+
+        <!-- Special Programs section -->
+        <section>
+          <h3>Special Programs</h3>
+
+          <ul>
+            <li><a href="#">Weight Loss Program</a></li>
+            <li><a href="#">Muscle Gain Program</a></li>
+            <li><a href="#">Diet & Nutrition Guidance</a></li>
+          </ul>
+        </section>
+
+        <!-- OPENING HOURS section -->
+        <section>
+          <h3>OPENING HOURS</h3>
+          <table border="1">
+            <thead>
+              <tr>
+                <th>Monday-Friday:</th>
+                <td>6:00 AM - 10:00 PM</td>
+              </tr>
+              <tr>
+                <th>Saturday:</th>
+                <td>7:00 AM – 8:00 PM</td>
+              </tr>
+
+              <tr>
+                <th>Sunday:</th>
+                <td>8:00 AM – 2:00 PM</td>
+              </tr>
+            </thead>
+          </table>
+        </section>
+      </section>
+
+      <!-- about section -->
+      <section>
+        <h2>About</h2>
+
+        <p>
+          FitZone Gym was founded with the vision of creating a fitness space
+          where individuals can push their limits and achieve their goals. Our
+          trainers are experienced, certified, and dedicated to guiding members
+          through every step of their journey.
+          <br />We focus not just on physical fitness but also on mental
+          strength, discipline, and consistency. Our community-driven
+          environment ensures that every member feels motivated and supported.
+          <br />At FitZone, fitness is not just a routine — it’s a lifestyle.
+        </p>
+      </section>
+
+      <!-- contact section -->
+      <section>
+        <p>Get in touch with us and start your fitness journey today.</p>
+        <p>Location: Haridwar, Uttarakhand, India</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Email: contact@fitzonegym.com</p>
+        <p>Find us on Google Maps and visit our gym easily.</p>
+      </section>
+
+      <!-- BOOKING FORM CONTENT -->
+      <section>
+        <form action="#" method="post">
+          <!-- Full Name -->
+          <label for="name">Full Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="enter your name"
+          />
+          <br />
+          <br />
+
+          <!-- Email Address: -->
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="enter your email"
+          />
+          <br />
+          <br />
+
+          <!-- Phone Number: -->
+          <label for="phone">Phone Number:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone number"
+            placeholder="enter your number"
+          />
+          <br />
+          <br />
+          <!-- Preferred Program: -->
+
+          <label for="weight">Weight Loss:</label>
+          <input
+            type="checkbox"
+            id="weight"
+            name="Program"
+            value="weight Loss"
+          />
+          <br />
+
+          <label for="Muscle">Muscle Gain:</label>
+          <input
+            type="checkbox"
+            id="Muscle"
+            name="Program"
+            value="Muscle Gain"
+          />
+          <br />
+
+          <label for="Personal">Personal Training:</label>
+          <input
+            type="checkbox"
+            id="Personal"
+            name="Program"
+            value="Personal Training"
+          />
+          <br />
+
+          <label for="General"> Fitness:</label>
+          <input
+            type="checkbox"
+            id="General"
+            name="Program"
+            value="General Fitness"
+          />
+        </form>
+      </section>
+    </main>
+    <hr />
+
+    <!-- footer section -->
+    <footer>
+      <p>© 2026 FitZone Gym. All rights reserved.</p>
+
+      <div>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services/Menu</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div>
+        <h4>Follow us on:</h4>
+        <nav>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Youtube</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div>
+        <!-- location -->
+        <h3>Our Location</h3>
+        <iframe
+          src="https://www.google.com/maps?q=Haridwar%20Uttarakhand&output=embed"
+          frameborder="0"
+          width="300"
+          height="300"
+          style="border: 0"
+          allowfullscreen
+          loading="lazy"
+        ></iframe>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,228 @@
+<!-- Multi-Step Form System (ADVANCED)
+Scenario:
+Job application / registration system
+Steps:
+Personal info
+Address
+Upload documents
+Submit -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi-Step Form System</title>
+  </head>
+  <body>
+    <!-- header section -->
+    <header>
+      <section>
+        <div>
+          <h1>Job Application / Registration System</h1>
+        </div>
+        <div>
+          <nav>
+            <ul>
+              <li><a href="#">Personal info</a></li>
+              <li><a href="#">Address</a></li>
+              <li><a href="#">Upload documents</a></li>
+              <li><a href="#">Review & Submit</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </header>
+
+    <!-- main section -->
+    <main>
+      <!-- form -->
+      <form action="#" method="post">
+        <!-- Personal Information -->
+        <fieldset>
+          <legend><h2>Personal Information</h2></legend>
+
+          <!-- Content: -->
+
+          <!-- Full Name -->
+          <label for="name">Full Name:</label>
+          <input
+            type="text"
+            name="name"
+            placeholder="full name"
+            id="name"
+            required
+          />
+          <br />
+          <br />
+
+          <!-- Email Address -->
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="email"
+            id="email"
+            required
+          />
+          <br />
+          <br />
+
+          <!-- Phone Number -->
+          <label for="number">Enter your number</label>
+          <input
+            type="tel"
+            name="number"
+            placeholder="your number"
+            id="number"
+            required
+          />
+          <br />
+          <br />
+
+          <!-- Date of Birth -->
+          <label for="dob">Date of Birth</label>
+          <input type="date" placeholder="dob" name="dob" id="dob" required />
+          <br />
+          <br />
+
+          <!-- Gender -->
+          <label for="gender">Gender:</label>
+          <label for="male">Male</label>
+          <input type="radio" name="gender" value="male" id="male" required />
+
+          <label for="female">Female</label>
+          <input
+            type="radio"
+            name="gender"
+            value="female"
+            id="female"
+            required
+          />
+
+          <label for="others">Others</label>
+          <input
+            type="radio"
+            name="gender"
+            value="others"
+            id="others"
+            required
+          />
+        </fieldset>
+
+        <!-- Address Details -->
+        <fieldset>
+          <legend><h2>Address Details</h2></legend>
+
+          <!-- Content: -->
+
+          <!-- Street Address -->
+          <label for="Street Address">Street Address</label>
+          <input
+            type="text"
+            id="Street Address"
+            name="address"
+            placeholder="enter your address"
+          />
+          <br />
+          <br />
+
+          <!-- City -->
+          <label for="city">City</label>
+          <input
+            type="text"
+            name="city"
+            aria-placeholder="enter your city name"
+            id="city"
+            placeholder="enter your city name"
+          />
+          <br />
+          <br />
+
+          <!-- State -->
+          <label for="state">State</label>
+
+          <select name="state" id="state" required>
+            <option value="" disabled selected>--Select State--</option>
+            <option value="uttarakhand">Uttarakhand</option>
+            <option value="delhi">Delhi</option>
+            <option value="maharashtra">Maharashtra</option>
+            <option value="karnataka">Karnataka</option>
+          </select>
+          <br />
+          <br />
+
+          <!-- Country -->
+          <label for="country">Country</label>
+
+          <select name="country" id="country" required>
+            <option value="" disabled selected>--Your Country--</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="China">China</option>
+            <option value="Japan">Japan</option>
+          </select>
+          <br />
+          <br />
+
+          <!-- Pincode -->
+          <label for="pincode">Pincode</label>
+          <input
+            type="text"
+            name="pincode"
+            placeholder="enter your pincode"
+            pattern="[0-9]{6}"
+            required
+          />
+        </fieldset>
+
+        <!-- Upload Documents -->
+        <fieldset>
+          <legend><h2>Upload Documents</h2></legend>
+
+          <!-- Resume -->
+          <label for="resume">Resume</label>
+          <input
+            type="file"
+            name="resume"
+            accept=".pdf"
+            id="resume"
+            value="resume"
+            required
+          />
+          <br />
+          <br />
+
+          <!-- Profile photo -->
+          <label for="photo">Profile Photo</label>
+          <input
+            type="file"
+            name="photo"
+            id="photo"
+            accept="image./*"
+            value="upload your photo"
+          />
+
+          <br />
+          <br />
+          <!-- ID Proof -->
+          <label for="id">ID Proof</label>
+          <input
+            type="file"
+            id="id"
+            name="id"
+            value="upload your id"
+            accept=".pdf,image/*"
+          />
+        </fieldset>
+
+        <!--Submit -->
+        <fieldset>
+          <legend><h2>Submit Your Form</h2></legend>
+
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>

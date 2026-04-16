@@ -1,0 +1,261 @@
+<!-- Project 6: News Portal (Advanced Layout)
+Task:
+Create a news portal homepage:
+Top header
+Navigation (categories)
+Multiple sections:
+Trending news
+Latest news
+Sports
+Each news item = separate block
+Sidebar ads
+
+You MUST use:
+<section> → each category
+<article> → each news
+<aside> → ads -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Portal</title>
+  </head>
+  <body>
+    <!-- header of a website -->
+    <header>
+      <!-- website logo -->
+      <div>
+        <img src="newspaper.png" alt="news logo" width="40" />
+
+        <div>
+          <!-- Website Name: -->
+          <h1>GlobalPulse News</h1>
+
+          <!-- Tagline: -->
+          <p>Stay Informed. Stay Ahead.</p>
+        </div>
+      </div>
+
+      <div>
+        <!-- NAVIGATION -->
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Latest</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Entertainment</a></li>
+            <li><a href="#">Health</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- 
+    news section -->
+    <hr />
+
+    <main>
+      <!-- TRENDING NEWS -->
+      <section>
+        <h2>Trending News</h2>
+
+        <!-- News 1 -->
+        <article>
+          <h3>AI Revolution Transforms Job Market Across Industries</h3>
+
+          <p>
+            Artificial Intelligence is rapidly reshaping the global workforce,
+            automating repetitive tasks while creating demand for new skills.
+            Experts suggest that adaptability and continuous learning will be
+            key for future job security
+          </p>
+
+          <p><strong>Author:</strong>Tech Desk</p>
+
+          <p><strong>Date:</strong>March 21, 2026</p>
+        </article>
+
+        <!-- News 2 -->
+
+        <article>
+          <h3>
+            Global Climate Summit 2026: Nations Commit to Stronger Policies
+          </h3>
+
+          <p>
+            World leaders gathered at the annual climate summit and pledged
+            stricter environmental policies to combat climate change. New
+            agreements focus on reducing carbon emissions and promoting
+            renewable energy.
+          </p>
+          <p><strong>Author:</strong> Environment Desk</p>
+          <p><strong>Date:</strong>March 20, 2026</p>
+        </article>
+
+        <!-- News 3 -->
+
+        <article>
+          <h3>Stock Markets Surge Amid Economic Recovery Signals</h3>
+
+          <p>
+            Major global stock markets witnessed a strong rally as investors
+            responded positively to improving economic indicators and stable
+            inflation rates.
+          </p>
+          <p><strong>Author:</strong>Business Desk</p>
+          <p><strong>Date:</strong>March 20, 2026</p>
+        </article>
+      </section>
+
+      <hr />
+      <!-- Latest News -->
+
+      <section>
+        <h2>Latest News</h2>
+
+        <!-- News 1 -->
+        <article>
+          <h3>New Smartphone Launch Sets Benchmark for Mobile Performance</h3>
+          <p>
+            A leading tech company unveiled its latest smartphone featuring
+            advanced AI capabilities, improved battery life, and a powerful
+            processor.
+          </p>
+          <p><b>Date:</b> March 21, 2026</p>
+        </article>
+
+        <!-- news 2 -->
+
+        <article>
+          <h3>Online Education Platforms See Record Growth in 2026</h3>
+          <p>
+            The demand for online learning continues to rise as more students
+            and professionals turn to digital platforms for skill development.
+          </p>
+          <p><strong>Date:</strong> March 21, 2026</p>
+        </article>
+
+        <!-- News 3 -->
+        <article>
+          <h3>Urban Transportation Gets Smarter with AI Integration</h3>
+          <p>
+            Smart traffic systems powered by AI are improving city
+            transportation, reducing congestion, and enhancing commuter safety.
+          </p>
+          <p><strong>Date:</strong> March 20, 2026</p>
+        </article>
+      </section>
+      <hr />
+
+      <!-- SPORTS NEWS -->
+      <section>
+        <h2>Sports News</h2>
+
+        <!-- news1 -->
+
+        <article>
+          <h3>India Wins T20 Series in Thrilling Final Match</h3>
+          <p>
+            India secured a last-over victory in a nail-biting match, showcasing
+            exceptional performance from both batsmen and bowlers.
+          </p>
+          <p><strong>Author:</strong> Sports Desk</p>
+          <p><strong>Date:</strong>March 20, 2026</p>
+        </article>
+
+        <!-- News 2 -->
+
+        <article>
+          <h3>Football Championship: Underdog Team Reaches Finals</h3>
+          <p>
+            In a surprising turn of events, a relatively unknown team has
+            advanced to the finals, defeating top-ranked opponents.
+          </p>
+          <p><strong>Author:</strong> Sports Desk</p>
+          <p><strong>Date:</strong>March 20, 2026</p>
+        </article>
+
+        <!-- news3 -->
+
+        <article>
+          <h3>Olympic Preparations Intensify as Athletes Gear Up</h3>
+          <p>
+            Athletes across the world are preparing rigorously for the upcoming
+            Olympic Games, focusing on performance and endurance.
+          </p>
+          <p><strong>Author:</strong> Sports Desk</p>
+          <p><strong>Date:</strong>March 18, 2026</p>
+        </article>
+      </section>
+      <hr />
+
+      <!-- Sidebar ads (ADS / PROMOTIONS)-->
+
+      <aside>
+        <h2>ADS / PROMOTIONS</h2>
+        <!-- Ad 1 -->
+        <section>
+          <h3>Learn Web Development in 30 Days</h3>
+          <p>Build real projects and become job-ready.</p>
+          <button>Enroll Now</button>
+        </section>
+
+        <!-- AD 2 -->
+        <section>
+          <h3>Upgrade Your Laptop Today</h3>
+          <p>Get the best deals on high-performance laptops</p>
+          <button>Shop Now</button>
+        </section>
+
+        <!-- AD 3 -->
+        <section>
+          <h3>Start Your Fitness Journey</h3>
+          <p>Join our online fitness program and stay healthy.</p>
+          <button>Join Now</button>
+        </section>
+      </aside>
+    </main>
+    <hr />
+
+    <!-- footer  -->
+    <footer>
+      <!-- about website -->
+      <section>
+        <h3>About Website:</h3>
+        <p>
+          GlobalPulse News is a modern digital news platform delivering
+          accurate, timely, and unbiased news across multiple categories
+          including technology, business, sports, and global affairs. Our
+          mission is to keep readers informed with reliable information and
+          meaningful insights
+        </p>
+      </section>
+
+      <!-- links -->
+
+      <section>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Latest</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Entertainment</a></li>
+            <li><a href="#">Health</a></li>
+          </ul>
+        </nav>
+      </section>
+
+      <!-- contact-->
+      <p><strong>Email:</strong> contact@globalpulsenews.com</p>
+      <p><strong>Phone:</strong>+91 9876543298</p>
+      <p><strong>Address</strong>New Delhi, India</p>
+    </footer>
+  </body>
+</html>

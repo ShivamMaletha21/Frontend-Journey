@@ -1,0 +1,358 @@
+<!-- Blog Platform (Content Website)
+Scenario:
+Like Medium
+Pages:
+• Blog listing
+• Single blog page
+Must Include:
+• <article>, <aside>
+• Author info
+• <time> tag
+• Categories/tags
+• Internal linking -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Platform (Content Website)</title>
+  </head>
+  <body>
+    <!-- header of web -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Content</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- page title home page -->
+      <section>
+        <h1>Insights & Articles on Technology, Development & Growth</h1>
+        <p>
+          Stay updated with the latest insights on web development, programming,
+          productivity, and personal growth. Explore articles written to help
+          you learn, build, and grow in your journey.
+        </p>
+      </section>
+
+      <!-- blog posts -->
+      <section>
+        <h2>Blog Posts</h2>
+
+        <!-- blog post 1 -->
+        <article>
+          <h3>Mastering HTML Semantics for Better Web Structure</h3>
+          <p><strong>Author:</strong>Shivam Maletha</p>
+          <p><strong>Published Date:</strong>March 10, 2026</p>
+          <p><strong>Category:</strong>Web Development</p>
+          <p><strong>Tags:</strong>HTML, Semantic Tags, SEO</p>
+          <p>
+            Learn how semantic HTML improves your website’s structure,
+            accessibility, and SEO. This article explains the importance of
+            using tags like article, section, and aside in real-world projects.
+          </p>
+        </article>
+
+        <!-- blog post 2 -->
+        <article>
+          <h3>Why Consistency Beats Motivation Every Time</h3>
+          <p><strong>Author:</strong>Shivam Maletha</p>
+          <p><strong>Published Date:</strong>March 15, 2026</p>
+          <p><strong>Category:</strong>Productivity</p>
+          <p><strong>Tags:</strong>Discipline, Growth, Mindset</p>
+          <p>
+            Motivation fades, but consistency builds results. Understand how
+            small daily actions can lead to massive long-term success.
+          </p>
+        </article>
+
+        <!-- blog post 3 -->
+        <article>
+          <h3>Beginner to Developer: Real Roadmap That Works</h3>
+          <p><strong>Author:</strong>Shivam Maletha</p>
+          <p><strong>Published Date:</strong>March 20, 2026</p>
+          <p><strong>Category:</strong>Career</p>
+          <p><strong>Tags:</strong>Learning, Coding, Roadmap</p>
+          <p>
+            Confused about where to start? This article gives a practical
+            roadmap to become a developer without wasting time on unnecessary
+            resources
+          </p>
+        </article>
+      </section>
+
+      <!-- sidebar content -->
+
+      <section>
+        <aside>
+          <h3>About the Author</h3>
+          <p>
+            Shivam is a developer passionate about building real-world projects
+            and helping beginners understand complex concepts in simple ways.
+          </p>
+        </aside>
+
+        <!-- Popular Posts -->
+        <aside>
+          <ul>
+            <li>How the internet works</li>
+            <li>Clean Code Principles</li>
+            <li>JavaScript Basics</li>
+          </ul>
+        </aside>
+
+        <!-- Categories -->
+        <aside>
+          <ul>
+            <li>Web Development</li>
+            <li>Productivity</li>
+            <li>Carrer</li>
+            <li>Technology</li>
+          </ul>
+        </aside>
+
+        <!-- tags -->
+        <aside>
+          <h3>Tags</h3>
+          <ul>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">React</a></li>
+            <li><a href="#">Discipline</a></li>
+            <li><a href="#">Growth</a></li>
+          </ul>
+        </aside>
+      </section>
+
+      <!-- SINGLE BLOG PAGE CONTENT -->
+
+      <section>
+        <h2>Mastering HTML Semantics for Better Web Structure</h2>
+
+        <article>
+          <p><strong>Written by:</strong> Shivam Maletha</p>
+          <p><strong>Published :</strong> March 10, 2026</p>
+          <p><strong>Reading TIme:</strong> 5 minutes</p>
+        </article>
+
+        <!-- Category & Tags -->
+        <article>
+          <div>
+            <h4>Category</h4>
+            <p><strong>Web Developmen</strong>t</p>
+          </div>
+
+          <!-- Tags -->
+          <div>
+            <ul>
+              <li><a href="#">HTML</a></li>
+              <li><a href="#">Semantic HTML</a></li>
+              <li><a href="#">SEO</a></li>
+              <li><a href="#">Accessibility</a></li>
+              <li><a href="#">Web Strucuture</a></li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Article Content -->
+        <section>
+          <p>
+            HTML semantics are the foundation of building well-structured and
+            meaningful web pages. Instead of using generic containers for
+            everything, semantic elements clearly describe the purpose of each
+            part of the content. This not only improves readability for
+            developers but also enhances how browsers and search engines
+            interpret the page.
+            <br />When developers use proper semantic tags, it becomes easier to
+            maintain and scale the codebase. For instance, separating content
+            into meaningful sections like headers, navigation, main content, and
+            sidebars ensures that the structure remains organized and
+            understandable even in large projects <br />Another major advantage
+            of semantic HTML is accessibility. Screen readers rely on semantic
+            elements to interpret and present content correctly to users with
+            disabilities. By using appropriate tags, developers ensure that
+            their websites are inclusive and usable for a wider audience.
+            <br />Search engines also benefit from semantic structure. When
+            content is clearly defined, it becomes easier for search engines to
+            crawl, index, and rank pages effectively. This directly impacts SEO
+            performance and visibility in search results. <br />For example,
+            using an article element for blog posts, section for grouping
+            related content, and aside for additional information creates a
+            logical and professional layout. These elements provide context,
+            making it easier for both users and machines to understand the
+            content hierarchy. <br />In modern web development, semantic HTML is
+            not optional — it is a standard practice. A well-structured webpage
+            reflects not only good design but also clarity, maintainability, and
+            a deeper understanding of how the web works.
+          </p>
+        </section>
+        <h4>Internal Links</h4>
+
+        <!-- Internal Links -->
+        <div>
+          <ul>
+            <li>
+              <a href="#"
+                >Read more about Clean Code Principles and how structured code
+                improves long-term project scalability and maintainability.</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >Explore the Beginner Developer Roadmap to understand the
+                step-by-step journey from learning basics to building real-world
+                applications.</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >Learn how SEO works from crawling to ranking and how semantic
+                HTML plays a key role in visibility.</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Sidebar -->
+
+      <aside>
+        <h3>About the Author</h3>
+        <p>
+          Shivam Maletha is a dedicated web developer with a strong focus on
+          building practical, real-world projects. He believes in simplifying
+          complex technical concepts so that beginners can learn efficiently and
+          apply their knowledge with confidence. His work reflects consistency,
+          discipline, and a problem-solving mindset.
+        </p>
+      </aside>
+
+      <aside>
+        <h3>Internal Links</h3>
+        <ul>
+          <li>
+            <a href="#"
+              >Importance of SEO in Web Development – Learn how search engines
+              analyze and rank your website.</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              >Understanding the DOM – A complete guide to how browsers
+              interpret and manipulate web pages.</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              >Clean Code Principles for Beginners – Write code that is
+              readable, maintainable, and scalable.</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              >HTML vs Semantic HTML – Understand the real difference and why it
+              matters in modern development.</a
+            >
+          </li>
+        </ul>
+      </aside>
+
+      <aside>
+        <h3>Categories</h3>
+        <ul>
+          <li>Web Development</li>
+          <li>Programming</li>
+          <li>Productivity</li>
+          <li>Carrer Growth</li>
+        </ul>
+      </aside>
+
+      <!-- Tags -->
+      <section>
+        <h3>Tags</h3>
+        <ul>
+          <li><a href="#">HTML</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">JavaScript</a></li>
+          <li><a href="#">React</a></li>
+          <li><a href="#">SEO</a></li>
+          <li><a href="#">Accessiblity</a></li>
+          <li><a href="#">Clean Code</a></li>
+        </ul>
+      </section>
+      <hr />
+
+      <section>
+        <h2>Comments Section</h2>
+        <article>
+          <h3>User 1 – Rahul</h3>
+          <p>
+            This explanation made semantic HTML very easy to understand. The
+            examples helped a lot in connecting theory with real-world usage.
+          </p>
+        </article>
+
+        <article>
+          <h3>User 2 – Amit</h3>
+          <p>
+            Great content. I was confused about when to use different tags, but
+            now it’s much clearer
+          </p>
+        </article>
+
+        <article>
+          <h3>User 3 – Sneha</h3>
+          <p>
+            Very well explained. The part about accessibility and SEO was
+            especially helpful.
+          </p>
+        </article>
+
+        <article>
+          <h3>User 4 – Priya</h3>
+          <p>
+            Simple and practical explanation. Looking forward to more such
+            articles.
+          </p>
+        </article>
+      </section>
+    </main>
+    <hr />
+
+    <!-- footer -->
+    <footer>
+      <p>© 2026 DevInsights Blog. All rights reserved.</p>
+      <p>
+        Sharing knowledge, ideas, and practical insights for developers and
+        learners.
+      </p>
+
+      <!-- Quick Links -->
+      <div>
+        <ul>
+          <li>Home</li>
+          <li>All Articles</li>
+          <li>Categories</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <p>contact@devinsights.com</p>
+
+      <div>
+        <h4>Follow Us</h4>
+        <ul>
+          <li><a href="#">LinkdIn</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">GitHub</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

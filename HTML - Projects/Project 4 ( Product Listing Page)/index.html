@@ -1,0 +1,136 @@
+<!-- Project 4: Product Listing Page
+Task:
+Create a page showing products:
+Top navigation
+Product grid (5–6 products)
+Sidebar with filters (price, category)
+ You MUST use:
+<main> → product area
+<section> → product list
+<article> → each product
+<aside> → filters -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Listing Page</title>
+  </head>
+  <body>
+    <!-- Top navigation -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Product grid -->
+    <main>
+      <section>
+        <h2>Products</h2>
+
+        <!-- 1st product -->
+        <article>
+          <h3>Wireless Bluetooth Headphones</h3>
+          <p>Price: ₹2,499</p>
+          <p>Category: Electronics</p>
+        </article>
+
+        <!-- 2nd product -->
+        <article>
+          <h3>Men’s Casual Sneakers</h3>
+          <p>Price: ₹1,299</p>
+          <p>Category: Electronics</p>
+        </article>
+
+        <!-- 3rd product -->
+        <article>
+          <h3>Wooden Study Table</h3>
+          <p>Price: ₹4,999</p>
+          <p>Category: Furniture</p>
+        </article>
+
+        <!-- 4th product -->
+        <article>
+          <h3>Smart Fitness Band</h3>
+          <p>Price: ₹1,299</p>
+          <p>Category: Electronics</p>
+        </article>
+
+        <!-- 5th product -->
+        <article>
+          <h3>Women’s Handbag</h3>
+          <p>Price: ₹1,499</p>
+          <p>Category: Fashion</p>
+        </article>
+
+        <!-- 6th product -->
+        <article>
+          <h3>: LED Desk Lamp</h3>
+          <p>Price: ₹899</p>
+          <p>Category: Home Decor</p>
+        </article>
+      </section>
+
+      <!-- Sidebar with filters -->
+      <aside>
+        <h2>Filters</h2>
+
+        <!-- Category Filter Group -->
+        <section>
+          <h3>Category</h3>
+
+          <input
+            type="checkbox"
+            id="electronics"
+            name="category"
+            value="electronics"
+          />
+          <label for="electronics">Electronics</label><br />
+
+          <input type="checkbox" id="fashion" name="category" value="fashion" />
+          <label for="fashion">Fashion</label><br />
+
+          <input
+            type="checkbox"
+            id="furniture"
+            name="category"
+            value="furniture"
+          />
+          <label for="furniture">Furniture</label><br />
+
+          <input
+            type="checkbox"
+            id="home-decor"
+            name="category"
+            value="home-decor"
+          />
+          <label for="home-decor">Home Decor</label><br />
+        </section>
+
+        <!-- Price Filter Group -->
+        <section>
+          <h3>Price</h3>
+
+          <input type="radio" id="under-1000" name="price" value="under-1000" />
+          <label for="under-1000">Under ₹1,000</label><br />
+
+          <input type="radio" id="1000-2000" name="price" value="1000-2000" />
+          <label for="1000-2000">₹1,000 – ₹2,000</label><br />
+
+          <input type="radio" id="2000-5000" name="price" value="2000-5000" />
+          <label for="2000-5000">₹2,000 – ₹5,000</label><br />
+
+          <input type="radio" id="above-5000" name="price" value="above-5000" />
+          <label for="above-5000">Above ₹5,000</label><br />
+        </section>
+      </aside>
+    </main>
+  </body>
+</html>
