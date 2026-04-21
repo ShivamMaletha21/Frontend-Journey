@@ -28,15 +28,15 @@ Responsive navbar (hamburger optional CSS-only) -->
       </div>
 
       <ul class="navbar">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#hero1">Home</a></li>
+        <li><a href="#about1">About</a></li>
+        <li><a href="#project1">Projects</a></li>
+        <li><a href="#contact1">Contact</a></li>
       </ul>
     </header>
 
     <!-- Hero -->
-    <section class="hero">
+    <section id="hero1" class="hero">
       <div class="hero-content">
         <h1>Hi, I'm Shivam</h1>
         <p>Frontend Developer | Learning Full Stack & AI</p>
@@ -57,7 +57,7 @@ Responsive navbar (hamburger optional CSS-only) -->
     </section>
 
     <!-- About Section -->
-    <section class="about-section">
+    <section id="about1" class="about-section">
       <div class="about-container">
         <!-- left image -->
         <div class="about-img">
@@ -87,98 +87,86 @@ Responsive navbar (hamburger optional CSS-only) -->
       </div>
     </section>
 
-    <!doctype html>
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Projects</title>
-        <link rel="stylesheet" href="style.css" />
-      </head>
-      <body>
-        <!-- Projects Section -->
-        <section class="projects-section">
-          <h1>My Projects</h1>
+    <!-- Projects Section -->
+    <section id="project1" class="projects-section">
+      <h1>My Projects</h1>
 
-          <div class="projects">
-            <!-- Project Card -->
-            <article class="project-card">
-              <img src="images/portfolio-website.jpg" alt="Portfolio Website" />
+      <div class="projects">
+        <!-- Project Card -->
+        <article class="project-card">
+          <img src="images/portfolio-website.jpg" alt="Portfolio Website" />
 
-              <div class="project-content">
-                <h2>Portfolio Website</h2>
-                <p>
-                  A responsive personal portfolio website built using HTML and
-                  CSS.
-                </p>
-                <a href="#" class="btn">View Project</a>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <img src="images/landing-page.jpg" alt="Landing Page" />
-
-              <div class="project-content">
-                <h2>Landing Page</h2>
-                <p>A modern landing page designed using Flexbox.</p>
-                <a href="#" class="btn">View Project</a>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <img src="images/grid-website.jpg" alt="Grid Website" />
-
-              <div class="project-content">
-                <h2>Grid Layout Website</h2>
-                <p>A layout built using CSS Grid for real-world structuring.</p>
-                <a href="#" class="btn">View Project</a>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <img src="images/responsive-website.jpg" alt="Responsive Blog" />
-
-              <div class="project-content">
-                <h2>Responsive Blog</h2>
-                <p>Fully responsive blog layout for all screen sizes.</p>
-                <a href="#" class="btn">View Project</a>
-              </div>
-            </article>
+          <div class="project-content">
+            <h2>Portfolio Website</h2>
+            <p>
+              A responsive personal portfolio website built using HTML and CSS.
+            </p>
+            <a href="#" class="btn">View Project</a>
           </div>
-        </section>
-      </body>
-    </html>
+        </article>
 
-    <!-- Contact Section -->
-    <section class="contact">
-      <div class="my-contact">
-        <h2>Contact Me</h2>
-        <p>Feel free to reach out for collaboration or any opportunities.</p>
+        <article class="project-card">
+          <img src="images/landing-page.jpg" alt="Landing Page" />
 
-        <h3>Details:</h3>
-        <p><span>Email:</span>malethashivam43@gmail.com</p>
-        <p><span>Phone:</span>9876543219</p>
-        <p><span>Location:</span>India</p>
+          <div class="project-content">
+            <h2>Landing Page</h2>
+            <p>A modern landing page designed using Flexbox.</p>
+            <a href="#" class="btn">View Project</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="images/grid-website.jpg" alt="Grid Website" />
+
+          <div class="project-content">
+            <h2>Grid Layout Website</h2>
+            <p>A layout built using CSS Grid for real-world structuring.</p>
+            <a href="#" class="btn">View Project</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="images/responsive-website.jpg" alt="Responsive Blog" />
+
+          <div class="project-content">
+            <h2>Responsive Blog</h2>
+            <p>Fully responsive blog layout for all screen sizes.</p>
+            <a href="#" class="btn">View Project</a>
+          </div>
+        </article>
       </div>
+    </section>
 
-      <div class="form">
-        <label for="name">Name</label>
-        <input type="text" id="name" />
+    <!-- contact section -->
+    <section id="contact1" class="contact-section">
+      <div class="contact-container">
+        <!-- Left Side -->
+        <div class="contact-info">
+          <h2>Contact Me</h2>
+          <p>Feel free to reach out for collaboration or any opportunities.</p>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" />
+          <div class="details">
+            <p><strong>Email:</strong> malethashivam43@gmail.com</p>
+            <p><strong>Phone:</strong> 9876543219</p>
+            <p><strong>Location:</strong> India</p>
+          </div>
+        </div>
 
-        <label for="message">Message</label>
-        <textarea
-          name="message"
-          id="message"
-          placeholder="Write your message here..."
-        ></textarea>
+        <!-- Right Side (Form) -->
+        <form class="contact-form">
+          <h2>Send Message</h2>
+
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" rows="5" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
       </div>
     </section>
 
     <!-- Footer -->
-    <section class="footer">
+    <section id="footer1" class="footer">
       <div class="footer-content">
         <p>&copy; 2026 Shivam. All rights reserved.</p>
       </div>

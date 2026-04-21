@@ -15,7 +15,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    background: aquamarine;
+    background: #C1D2DD;
 }
 
 .logo img {
@@ -28,12 +28,21 @@ body {
     list-style: none;
 }
 
-.navbar a {
+.navbar li a {
     text-decoration: none;
-    color: black;
+    color: #0E2D1E;
+    /* pure black */
     position: relative;
-    letter-spacing: 1.2px;
+    letter-spacing: 1.3px;
+    text-shadow: 0px 2px 8px rgba(0,0,0,0.2);
+    font-size: 17px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    
+    
 }
+
+
 
 /* Underline */
 .navbar a::after {
@@ -62,7 +71,8 @@ body {
 }
 
 .hero-content {
-    max-width: 500px;
+    max-width: 600px;
+    padding:20px 90px;
 }
 
 .hero-content h1 {
@@ -84,10 +94,11 @@ body {
     border: none;
     cursor: pointer;
     border-radius: 10%;
-    letter-spacing: 1.2px;
+    letter-spacing: 1.1px;
     color: white;
     transition: all 0.3s ease;
     background-color: #274B56;
+    text-transform: uppercase;
 }
 
 .buttons button:hover {
@@ -101,7 +112,7 @@ body {
 
 .hero-img img {
     width: 100%;
-    max-width: 300px;
+    max-width: 400px;
     border-radius: 10px;
 }
 
@@ -265,7 +276,7 @@ body {
 .btn {
     display: inline-block;
     padding: 10px 16px;
-    background: #007bff;
+    background: #274B56;
     color: white;
     text-decoration: none;
     border-radius: 6px;
@@ -274,12 +285,141 @@ body {
 }
 
 .btn:hover {
-    background: #0056b3;
+    background: #0E2D1E;
 }
 
 
 /* contact section */
-.contact {
+/* Section */
+.contact-section {
+    padding: 60px 10%;
+    background: #f5f5f5;
+}
+
+/* Container */
+.contact-container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Left Side */
+.contact-info {
+    flex: 1;
+    min-width: 280px;
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.details p {
+    margin: 8px 0;
+}
+
+/* Form Box */
+.contact-form {
+    flex: 1;
+    min-width: 280px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form h2 {
+    margin-bottom: 10px;
+}
+
+/* Inputs */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Focus Effect */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #274B56;
+}
+
+/* Button */
+.contact-form button {
+    padding: 12px;
+    background: #274B56;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #0E2D1E;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+/* Footer */
+.footer {
+    background: #111;
+    color: #ccc;
+    padding: 20px 10%;
+
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
+
+/* Text */
+.footer-content p {
+    font-size: 14px;
+}
+
+/* Footer Navbar ONLY */
+.footer .navbar {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* Footer Links ONLY */
+.footer .navbar li a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* Hover */
+.footer .navbar li a:hover {
+    color: #fff;
+}
+
