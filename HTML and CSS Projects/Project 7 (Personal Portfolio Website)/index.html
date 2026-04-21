@@ -1,0 +1,196 @@
+<!-- Project 1: Personal Portfolio Website
+Type: Basic Website (Landing + About + Contact)
+
+Pages:
+Home (hero section)
+About Me
+Projects
+Contact
+Must Use:
+Flexbox for layout
+CSS Grid for project cards
+Navbar + Footer
+Responsive navbar (hamburger optional CSS-only) -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="nav-content">
+      <div class="logo">
+        <img src="images/logo.jpg" alt="logo" />
+      </div>
+
+      <ul class="navbar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Hi, I'm Shivam</h1>
+        <p>Frontend Developer | Learning Full Stack & AI</p>
+        <p>
+          I build responsive and modern websites using HTML, CSS, and
+          JavaScript.
+        </p>
+
+        <div class="buttons">
+          <button>View Projects</button>
+          <button class="secondary">Contact Me</button>
+        </div>
+      </div>
+
+      <div class="hero-img">
+        <img src="images/profile.jpeg" alt="profile" />
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+      <div class="about-container">
+        <!-- left image -->
+        <div class="about-img">
+          <img src="images/about.jpg" alt="about image" />
+        </div>
+
+        <!-- right content -->
+        <div class="about-content">
+          <h1>About Me</h1>
+          <p>
+            I am a 3rd-year BCA student passionate about web development and
+            technology. I enjoy building responsive websites and learning how
+            real-world applications work. Currently, I am focusing on frontend
+            development using HTML, CSS, and JavaScript, and gradually moving
+            towards full-stack development. I am also interested in Data
+            Structures, problem-solving, and AI-based systems.
+          </p>
+
+          <p>Skills</p>
+          <ul class="skills">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Git & GitHub</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Projects</title>
+        <link rel="stylesheet" href="style.css" />
+      </head>
+      <body>
+        <!-- Projects Section -->
+        <section class="projects-section">
+          <h1>My Projects</h1>
+
+          <div class="projects">
+            <!-- Project Card -->
+            <article class="project-card">
+              <img src="images/portfolio-website.jpg" alt="Portfolio Website" />
+
+              <div class="project-content">
+                <h2>Portfolio Website</h2>
+                <p>
+                  A responsive personal portfolio website built using HTML and
+                  CSS.
+                </p>
+                <a href="#" class="btn">View Project</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img src="images/landing-page.jpg" alt="Landing Page" />
+
+              <div class="project-content">
+                <h2>Landing Page</h2>
+                <p>A modern landing page designed using Flexbox.</p>
+                <a href="#" class="btn">View Project</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img src="images/grid-website.jpg" alt="Grid Website" />
+
+              <div class="project-content">
+                <h2>Grid Layout Website</h2>
+                <p>A layout built using CSS Grid for real-world structuring.</p>
+                <a href="#" class="btn">View Project</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img src="images/responsive-website.jpg" alt="Responsive Blog" />
+
+              <div class="project-content">
+                <h2>Responsive Blog</h2>
+                <p>Fully responsive blog layout for all screen sizes.</p>
+                <a href="#" class="btn">View Project</a>
+              </div>
+            </article>
+          </div>
+        </section>
+      </body>
+    </html>
+
+    <!-- Contact Section -->
+    <section class="contact">
+      <div class="my-contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out for collaboration or any opportunities.</p>
+
+        <h3>Details:</h3>
+        <p><span>Email:</span>malethashivam43@gmail.com</p>
+        <p><span>Phone:</span>9876543219</p>
+        <p><span>Location:</span>India</p>
+      </div>
+
+      <div class="form">
+        <label for="name">Name</label>
+        <input type="text" id="name" />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" />
+
+        <label for="message">Message</label>
+        <textarea
+          name="message"
+          id="message"
+          placeholder="Write your message here..."
+        ></textarea>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+      <div class="footer-content">
+        <p>&copy; 2026 Shivam. All rights reserved.</p>
+      </div>
+
+      <div class="nav">
+        <ul class="navbar">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">My Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>
