@@ -45,7 +45,6 @@ img {
 }
 
 /* Add Hover Underline Effect */
-
 .nav-bar ul li::after {
     content:"";
     position:absolute;
