@@ -1,17 +1,3 @@
-<!-- Project 1: Personal Portfolio Website
-Type: Basic Website (Landing + About + Contact)
-
-Pages:
-Home (hero section)
-About Me
-Projects
-Contact
-Must Use:
-Flexbox for layout
-CSS Grid for project cards
-Navbar + Footer
-Responsive navbar (hamburger optional CSS-only) -->
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -20,83 +6,228 @@ Responsive navbar (hamburger optional CSS-only) -->
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- font  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <!-- Navbar -->
-    <header class="nav-content">
-      <div class="logo">
-        <img src="images/logo.jpg" alt="logo" />
-      </div>
+    <!-- hero section -->
 
-      <ul class="navbar">
-        <li><a href="#hero1">Home</a></li>
-        <li><a href="#about1">About</a></li>
-        <li><a href="#project1">Projects</a></li>
-        <li><a href="#contact1">Contact</a></li>
-      </ul>
+    <header>
+      <div class="nav">
+        <div class="logo">
+          <p>code // create // solve</p>
+        </div>
+        <div class="nav-content">
+          <nav>
+            <ul class="navbar">
+              <li><a href="#">Home</a></li>
+              <li><a href="#about101">About Me</a></li>
+              <li><a href="#project101">Projects</a></li>
+              <li><a href="#contact101">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
 
-    <!-- Hero -->
-    <section id="hero1" class="hero">
+    <section class="hero">
       <div class="hero-content">
-        <h1>Hi, <span>I'm </span>Shivam</h1>
-        <p>Frontend Developer | Learning Full Stack & AI</p>
-        <p>
-          I build responsive and modern websites using HTML, CSS, and
-          JavaScript.
-        </p>
+        <div class="content">
+          <h1>Hi, I’m <span> Shivam </span>Maletha</h1>
+          <p>Frontend Developer | Learning Full Stack & AI</p>
+          <p>
+            I build responsive and modern websites using HTML, CSS, and
+            JavaScript.
+          </p>
+        </div>
 
         <div class="buttons">
-          <button>View Projects</button>
-          <button class="secondary">Contact Me</button>
+          <a href="#project1" class="btn primary">View Projects</a>
+          <a href="#contact1" class="btn secondary">Contact Me</a>
+        </div>
+
+        <div class="social-icons">
+          <a
+            href="https://www.linkedin.com/in/shivam-maletha-46983b337/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+
+          <a
+            href="https://www.instagram.com/shiv_maletha/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a
+            href="https://github.com/ShivamMaletha21"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
         </div>
       </div>
 
-      <div class="hero-img">
-        <img src="images/profile.jpeg" alt="profile" />
+      <div class="img">
+        <img src="images2/profile2.jpeg" alt="profile pic" />
       </div>
     </section>
 
     <!-- About Section -->
-    <section id="about1" class="about-section">
+    <section class="about" id="about101">
       <div class="about-container">
-        <!-- left image -->
+        <!-- LEFT IMAGE -->
         <div class="about-img">
-          <img src="images/about.jpg" alt="about image" />
+          <img src="images2/profile4.jpeg" alt="about image" />
         </div>
 
-        <!-- right content -->
+        <!-- RIGHT CONTENT -->
         <div class="about-content">
-          <h1>About Me</h1>
+          <h1>A Few Words About Me</h1>
+
+          <h3>
+            Frontend Developer driven by curiosity and continuous learning –
+          </h3>
+
           <p>
-            I am a 3rd-year BCA student passionate about web development and
-            technology. I enjoy building responsive websites and learning how
-            real-world applications work. Currently, I am focusing on frontend
-            development using HTML, CSS, and JavaScript, and gradually moving
-            towards full-stack development. I am also interested in Data
-            Structures, problem-solving, and AI-based systems.
+            I’m passionate about web development and technology, with a strong
+            interest in building clean, responsive, and user-friendly websites
+            using HTML, CSS, and JavaScript. I enjoy turning ideas into real,
+            functional web experiences and continuously improving my
+            problem-solving skills through hands-on projects. Currently, I’m
+            exploring full-stack development while also learning the
+            fundamentals of AI and modern web technologies to expand my skill
+            set and build more advanced, real-world applications.
           </p>
 
-          <p>Skills</p>
-          <ul class="skills">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Git & GitHub</li>
-          </ul>
+          <!-- SKILLS -->
+          <div class="skills">
+            <span>✔ HTML</span>
+            <span>✔ CSS</span>
+            <span>✔ JavaScript</span>
+            <span>✔ Git</span>
+          </div>
+
+          <p>
+            I specialize in frontend development and love creating beautiful UI
+            experiences for users.
+          </p>
+
+          <!-- BUTTONS -->
+          <div class="about-buttons">
+            <button class="btn1">Portfolio</button>
+            <button class="btn2">Download CV</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- acedemy timeline -->
+    <section class="timeline-section">
+      <h2 class="section-title">Academic & Journey Background</h2>
+
+      <div class="timeline">
+        <!-- 12th CLASS -->
+        <div class="timeline-item">
+          <div class="timeline-content left">
+            <h3>Senior Secondary (12th Class)</h3>
+            <span>2021 – 2022</span>
+            <p>
+              Completed my 12th standard from
+              <span class="highlight">THE HORIZON SCHOOL</span> with a PCM
+              (Physics, Chemistry, Mathematics) background. This phase helped me
+              build analytical thinking and problem-solving skills, which later
+              supported my interest in the tech field.
+            </p>
+          </div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-empty"></div>
+        </div>
+
+        <!-- YOUTUBE + VIDEO EDITING PHASE -->
+        <div class="timeline-item">
+          <div class="timeline-empty"></div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content right">
+            <h3>Creative Journey (YouTube & Video Editing)</h3>
+            <span>2023 – 2025</span>
+            <p>
+              During this phase, I explored content creation on
+              <span class="highlight">YOUTUBE </span> and developed video
+              editing skills. I learned storytelling, editing techniques,
+              consistency, and creativity through hands-on experience.
+            </p>
+          </div>
+        </div>
+
+        <!-- BCA JOURNEY -->
+        <div class="timeline-item">
+          <div class="timeline-content left">
+            <h3>BCA (Hons) Artificial Intelligence & Data Science</h3>
+            <span>2023 – 2027 (Ongoing)</span>
+            <p>
+              Currently pursuing BCA (Hons) in Artificial Intelligence & Data
+              Science from
+              <span class="highlight">GRAPHIC ERA DEEMED TO BE UNIVERSITY</span
+              >. I am learning Data Structures, Python, Web Development, and
+              Machine Learning while working on real-world projects.
+            </p>
+          </div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-empty"></div>
+        </div>
+
+        <!-- WEB DEV FOCUS -->
+        <div class="timeline-item">
+          <div class="timeline-empty"></div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content right">
+            <h3>Focused Web Development Journey</h3>
+            <span>2026 – Present</span>
+            <p>
+              Currently focused on
+              <span class="highlight">Web Development -</span> building
+              responsive and modern user interfaces using HTML, CSS, and
+              JavaScript. Continuously improving frontend and full-stack
+              development skills through real projects.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="project1" class="projects-section">
-      <h1>My Projects</h1>
+    <section id="project101" class="projects-section">
+      <!-- HEADER -->
+      <div class="projects-header">
+        <h1>My Projects</h1>
+        <p>
+          Every project is a step forward in my journey as a developer. Here are
+          some of the projects I’ve worked on.
+        </p>
+      </div>
 
+      <!-- PROJECT GRID -->
       <div class="projects">
         <!-- Project Card -->
         <article class="project-card">
           <img src="images/portfolio-website.jpg" alt="Portfolio Website" />
-
           <div class="project-content">
             <h2>Portfolio Website</h2>
             <p>
@@ -108,7 +239,6 @@ Responsive navbar (hamburger optional CSS-only) -->
 
         <article class="project-card">
           <img src="images/landing-page.jpg" alt="Landing Page" />
-
           <div class="project-content">
             <h2>Landing Page</h2>
             <p>A modern landing page designed using Flexbox.</p>
@@ -118,7 +248,6 @@ Responsive navbar (hamburger optional CSS-only) -->
 
         <article class="project-card">
           <img src="images/grid-website.jpg" alt="Grid Website" />
-
           <div class="project-content">
             <h2>Grid Layout Website</h2>
             <p>A layout built using CSS Grid for real-world structuring.</p>
@@ -128,7 +257,6 @@ Responsive navbar (hamburger optional CSS-only) -->
 
         <article class="project-card">
           <img src="images/responsive-website.jpg" alt="Responsive Blog" />
-
           <div class="project-content">
             <h2>Responsive Blog</h2>
             <p>Fully responsive blog layout for all screen sizes.</p>
@@ -139,7 +267,7 @@ Responsive navbar (hamburger optional CSS-only) -->
     </section>
 
     <!-- contact section -->
-    <section id="contact1" class="contact-section">
+    <section id="contact101" class="contact-section">
       <div class="contact-container">
         <!-- Left Side -->
         <div class="contact-info">
@@ -148,7 +276,7 @@ Responsive navbar (hamburger optional CSS-only) -->
 
           <div class="details">
             <p><strong>Email:</strong> malethashivam43@gmail.com</p>
-            <p><strong>Phone:</strong> 9876543219</p>
+            <p><strong>Phone:</strong> 91+ xxxxxxxxxx</p>
             <p><strong>Location:</strong> India</p>
           </div>
         </div>
@@ -172,12 +300,12 @@ Responsive navbar (hamburger optional CSS-only) -->
         <p>&copy; 2026 Shivam. All rights reserved.</p>
       </div>
 
-      <div class="nav">
-        <ul class="navbar">
+      <div class="footer-nav">
+        <ul class="footer-links">
           <li><a href="#">Home</a></li>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">My Projects</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#about101">About Me</a></li>
+          <li><a href="#project101">My Projects</a></li>
+          <li><a href="#contact101">Contact</a></li>
         </ul>
       </div>
     </section>
