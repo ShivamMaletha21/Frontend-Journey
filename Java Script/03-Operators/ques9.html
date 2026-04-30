@@ -1,0 +1,49 @@
+<!-- Q9: Traffic Signal
+signal = "red"
+Check:
+
+red → Stop
+green → Go
+yellow → Wait -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Traffic Signal</h2>
+
+    <label for="red">Red</label>
+    <input
+      type="radio"
+      id="red"
+      value="red"
+      name="signal"
+      onchange="checkSignal()"
+    />
+
+    <label for="green">Green</label>
+    <input
+      type="radio"
+      id="green"
+      value="green"
+      name="signal"
+      onchange="checkSignal()"
+    />
+
+    <label for="yellow">Yellow</label>
+    <input
+      type="radio"
+      id="yellow"
+      value="yellow"
+      name="signal"
+      onchange="checkSignal()"
+    />
+  </body>
+
+  <h3 id="result"></h3>
+
+  <script src="ques9.js"></script>
+</html>
