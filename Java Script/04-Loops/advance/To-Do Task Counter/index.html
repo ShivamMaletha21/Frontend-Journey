@@ -30,46 +30,70 @@
             <label for="task">Enter task name</label>
             <input type="text" id="task" class="input1" />
 
-            <button class="btn" id="addTaskbtn">Add Task</button>
+            <button class="btn btn1" id="addTaskbtn">Add Task</button>
             <label for="task__list">Task List</label>
-            <input type="text" id="task_list" />
+            <input type="text" id="task_list" class="input1" />
           </div>
 
           <!-- box3 -->
           <div class="count count3">
-            <h3>Mark as Completed</h3>
+            <div class="content3">
+              <h3>Mark as Completed</h3>
+            </div>
 
-            <label>
-              <input type="radio" name="choice" value="yes" /> ✓ Yes,Completed
-            </label>
+            <div class="buttons3">
+              <button class="btn1 yes_btn">✓ Yes,Completed</button>
 
-            <label>
-              <input type="radio" name="choice" value="no" /> ✗ No, Not Yet
-            </label>
+              <button class="btn1 no_btn">✗ No, Not Yet</button>
 
-            <button class="btn" id="btn">Next Task &rarr;</button>
+              <button class="btn btn1 next_btn" id="btn">
+                Next Task &rarr;
+              </button>
+            </div>
           </div>
 
+          <!-- box4 -->
           <!-- box4 -->
           <div class="count count4">
             <h3>Progress</h3>
 
-            <p>Total Tasks</p>
-            <p>Completed Tasks</p>
-            <p>Pending Tasks</p>
+            <div class="row">
+              <p>Total Tasks</p>
+              <span class="badge blue">5</span>
+            </div>
 
-            <!-- create a progress bar and show how much it comeplted -->
-            <p>Progress</p>
+            <div class="row">
+              <p>Completed Tasks</p>
+              <span class="badge green">3</span>
+            </div>
+
+            <div class="row">
+              <p>Pending Tasks</p>
+              <span class="badge orange">2</span>
+            </div>
+
+            <!-- Progress section -->
+            <p class="progress-title">Progress</p>
+
+            <div class="progress-bar">
+              <div class="progress-fill"></div>
+            </div>
+
+            <p class="progress-text">3 / 5 completed</p>
           </div>
         </div>
         <!-- box5 -->
-        <div class="count count5">
-          <h3>All tasks added!</h3>
 
-          <button id="total_task" class="btn">Total Tasks:</button>
-          <button id="completed_task" class="btn">Completed:</button>
-          <button class="btn" id="pending_task">Pending:</button>
-          <button class="btn" id="exit">Exit</button>
+        <div class="count count5">
+          <div class="content">
+            <h3>All tasks added!</h3>
+          </div>
+          <div class="buttons">
+            <button id="total_task" class="btn btn1">Total Tasks:</button>
+            <button id="completed_task" class="btn btn1">Completed:</button>
+            <button class="btn btn1" id="pending_task">Pending:</button>
+            <button class="btn btn1" id="exit">Exit</button>
+          </div>
         </div>
       </div>
     </section>
