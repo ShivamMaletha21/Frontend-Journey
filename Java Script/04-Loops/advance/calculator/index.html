@@ -15,21 +15,21 @@ Keep running until user chooses Exit -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section>
+    <section class="calculate">
       <div id="calculator">
         <h2>Calculator</h2>
 
-        <input type="number" id="input" placeholder="enter value" />
+        <input type="number" id="input" placeholder="enter value:" />
 
         <div class="buttons">
-          <button id="add">Add</button>
-          <button id="sub">Subtract</button>
-          <button id="mult">Multiply</button>
-          <button id="exit">Exit</button>
+          <button id="add">+</button>
+          <button id="sub">-</button>
+          <button id="mult">*</button>
+          <button id="exit">=</button>
         </div>
-      </div>
 
-      <p id="result"></p>
+        <p id="result">0</p>
+      </div>
     </section>
 
     <script src="script.js"></script>
