@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="to-do">
+      <div class="all_count">
+        <h1>TO-DO TASK COUNTER</h1>
+        <div class="to-do-count">
+          <!-- box1 -->
+          <div class="count count1">
+            <h3>1. Enter Number of Tasks</h3>
+
+            <label for="input">How many task do you want to add?</label>
+            <input type="number" id="input" class="input1" />
+
+            <!-- 
+          change its class to btn later -->
+            <button id="startBtn" class="btn1">Start</button>
+          </div>
+
+          <!-- box2 -->
+          <div class="count count2">
+            <h3>Enter Tasks</h3>
+            <p>Task 1 of 5</p>
+            <label for="task">Enter task name</label>
+            <input type="text" id="task" class="input1" />
+
+            <button class="btn" id="addTaskbtn">Add Task</button>
+            <label for="task__list">Task List</label>
+            <input type="text" id="task_list" />
+          </div>
+
+          <!-- box3 -->
+          <div class="count count3">
+            <h3>Mark as Completed</h3>
+
+            <label>
+              <input type="radio" name="choice" value="yes" /> ✓ Yes,Completed
+            </label>
+
+            <label>
+              <input type="radio" name="choice" value="no" /> ✗ No, Not Yet
+            </label>
+
+            <button class="btn" id="btn">Next Task &rarr;</button>
+          </div>
+
+          <!-- box4 -->
+          <div class="count count4">
+            <h3>Progress</h3>
+
+            <p>Total Tasks</p>
+            <p>Completed Tasks</p>
+            <p>Pending Tasks</p>
+
+            <!-- create a progress bar and show how much it comeplted -->
+            <p>Progress</p>
+          </div>
+        </div>
+        <!-- box5 -->
+        <div class="count count5">
+          <h3>All tasks added!</h3>
+
+          <button id="total_task" class="btn">Total Tasks:</button>
+          <button id="completed_task" class="btn">Completed:</button>
+          <button class="btn" id="pending_task">Pending:</button>
+          <button class="btn" id="exit">Exit</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- java script file -->
+    <script src="script.js"></script>
+  </body>
+</html>

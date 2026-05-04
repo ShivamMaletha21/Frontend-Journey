@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+ 
+/* section */
+.to-do {
+    height: 100vh;
+    width: 100vw;  
+}
+
+
+/* contain all divs inside */
+.to-do-count {
+display: flex;
+gap: 28px;
+flex-wrap: wrap;
+}
+
+
+
+
+.count {
+        display: flex;
+            flex-direction: column;
+        
+            gap: 12px;
+            padding: 20px;
+            background-color: aqua;
+            width: 363px;
+            height: 260px;
+}
+
+
+.count5 {
+    width: 97%;
+
+    border-radius: 6px;
+    margin: 150px auto 0 auto;
+    
+}
+
+.all_count {
+    gap:40px;
+}
+/* change it to btn later */
+.btn1 {
+    width: 250px;
+    padding:8px;
+    border: none;
+    border-radius: 8px;
+   
+}
+.input1 {
+    width: 250px;
+    padding:5px;
+    border: none;
+    border-radius: 5px;
+}
