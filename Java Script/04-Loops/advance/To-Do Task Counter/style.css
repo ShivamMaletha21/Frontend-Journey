@@ -57,6 +57,7 @@ margin-left:  15px;
     display: flex;
     flex-direction: column;
     gap:15px;
+   
 }
 .count5 {
 
@@ -78,6 +79,7 @@ margin-left:  15px;
     padding:9px;
     border: none;
     border-radius: 8px;
+    cursor: pointer;
    
 }
 .input1 {
