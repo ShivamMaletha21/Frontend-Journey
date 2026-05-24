@@ -56,5 +56,5 @@ document.getElementById("input").value = "";
 // exit
 function exitApp() {
     sum = 0;
-    document.getElementById("result").innerText = "";
+    document.getElementById("result").innerText = "0";
 }
