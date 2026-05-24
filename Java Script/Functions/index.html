@@ -1,0 +1,1148 @@
+
+
+Skip to content
+Using Gmail with screen readers
+5 of 1,825
+kokoro
+Inbox
+
+Disha Jain <jaindisha155@gmail.com>
+Attachments
+5:59 PM (24 minutes ago)
+to me
+
+
+ 3 Attachments
+  •  Scanned by Gmail
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap');
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: #0a0a0a;
+    color: #e8e4dc;
+    min-height: 100vh;
+    padding: 0;
+  }
+
+  .hero {
+    background: #0a0a0a;
+    border-bottom: 1px solid #1e1e1e;
+    padding: 2.5rem 2rem 2rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 300px; height: 300px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,90,50,0.12) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .brand-tag {
+    font-family: 'Syne', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    color: #ff5a32;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+  }
+
+  .hero h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #fff;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero h1 span { color: #ff5a32; }
+
+  .hero p {
+    font-size: 14px;
+    color: #888;
+    max-width: 560px;
+    line-height: 1.6;
+  }
+
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 1rem 2rem;
+    background: #0e0e0e;
+    border-bottom: 1px solid #1e1e1e;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .nav button {
+    background: transparent;
+    border: 1px solid #2a2a2a;
+    color: #999;
+    font-size: 12px;
+    font-family: 'DM Sans', sans-serif;
+    padding: 6px 14px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+
+  .nav button:hover, .nav button.active {
+    background: #ff5a32;
+    border-color: #ff5a32;
+    color: #fff;
+  }
+
+  .content { padding: 0; }
+
+  .section {
+    display: none;
+    padding: 2rem;
+    animation: fadeIn 0.3s ease;
+  }
+
+  .section.active { display: block; }
+
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+  .section-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0.25rem;
+  }
+
+  .section-sub {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #1a1a1a;
+  }
+
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+  .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+
+  .card {
+    background: #111;
+    border: 1px solid #1e1e1e;
+    border-radius: 12px;
+    padding: 1.25rem;
+  }
+
+  .card.accent { border-color: #ff5a32; background: #140d0a; }
+  .card.info { border-color: #2a4a7a; background: #0a0f18; }
+  .card.success { border-color: #1a4a2a; background: #0a140e; }
+  .card.warn { border-color: #5a4a1a; background: #14110a; }
+
+  .card-label {
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0.5rem;
+  }
+
+  .card p { font-size: 13px; color: #888; line-height: 1.6; }
+
+  .tag {
+    display: inline-block;
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 100px;
+    margin: 3px 2px;
+    font-weight: 500;
+  }
+
+  .tag-orange { background: rgba(255,90,50,0.15); color: #ff7a5a; border: 1px solid rgba(255,90,50,0.25); }
+  .tag-blue { background: rgba(50,120,255,0.12); color: #6aa0ff; border: 1px solid rgba(50,120,255,0.2); }
+  .tag-green { background: rgba(50,180,80,0.12); color: #5fd07a; border: 1px solid rgba(50,180,80,0.2); }
+  .tag-gray { background: rgba(255,255,255,0.06); color: #aaa; border: 1px solid rgba(255,255,255,0.1); }
+  .tag-red { background: rgba(220,50,50,0.12); color: #ff7070; border: 1px solid rgba(220,50,50,0.2); }
+
+  .phase {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+
+  .phase-num {
+    flex-shrink: 0;
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: #ff5a32;
+    color: #fff;
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .phase-body { flex: 1; }
+
+  .phase-header {
+    font-family: 'Syne', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 4px;
+  }
+
+  .phase-time {
+    font-size: 11px;
+    color: #ff5a32;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  .phase-body p { font-size: 13px; color: #888; line-height: 1.6; }
+
+  ul.checklist { list-style: none; }
+  ul.checklist li {
+    font-size: 13px;
+    color: #888;
+    padding: 5px 0;
+    border-bottom: 1px solid #161616;
+    padding-left: 18px;
+    position: relative;
+    line-height: 1.5;
+  }
+  ul.checklist li::before { content: '→'; position: absolute; left: 0; color: #ff5a32; font-size: 11px; top: 6px; }
+  ul.checklist li strong { color: #ccc; }
+  ul.checklist li:last-child { border-bottom: none; }
+
+  .money-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #1a1a1a;
+    font-size: 13px;
+  }
+  .money-row:last-child { border-bottom: none; }
+  .money-row .label { color: #888; }
+  .money-row .amount { font-family: 'Syne', sans-serif; font-weight: 700; color: #fff; }
+  .money-row .amount.orange { color: #ff5a32; }
+  .money-row .amount.green { color: #5fd07a; }
+
+  .big-stat {
+    text-align: center;
+    padding: 1.5rem 1rem;
+  }
+  .big-stat .num {
+    font-family: 'Syne', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #ff5a32;
+  }
+  .big-stat .label { font-size: 12px; color: #666; margin-top: 4px; }
+
+  .verdict {
+    background: linear-gradient(135deg, #140d0a, #1a0f0a);
+    border: 1px solid #ff5a32;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .verdict .v-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: #ff5a32;
+    margin-bottom: 0.5rem;
+  }
+  .verdict p { font-size: 13px; color: #999; line-height: 1.7; max-width: 520px; margin: 0 auto; }
+
+  .row { display: flex; gap: 1rem; margin-bottom: 1rem; }
+  .row .card { flex: 1; }
+
+  .full-card { margin-bottom: 1rem; }
+
+  h3 {
+    font-family: 'Syne', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ccc;
+    margin: 1rem 0 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .scrollable { max-height: 360px; overflow-y: auto; padding-right: 4px; }
+  .scrollable::-webkit-scrollbar { width: 3px; }
+  .scrollable::-webkit-scrollbar-track { background: #111; }
+  .scrollable::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+
+  .insta-week {
+    background: #111;
+    border: 1px solid #1e1e1e;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .insta-week .week-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #ff5a32;
+    margin-bottom: 6px;
+  }
+
+  .insta-week .post-type {
+    font-size: 13px;
+    color: #ccc;
+    font-weight: 500;
+    margin-bottom: 3px;
+  }
+
+  .insta-week .post-desc {
+    font-size: 12px;
+    color: #666;
+    line-height: 1.5;
+  }
+
+  .ask-btn {
+    width: 100%;
+    background: rgba(255,90,50,0.08);
+    border: 1px solid rgba(255,90,50,0.3);
+    color: #ff7a5a;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.2s;
+    margin-bottom: 6px;
+  }
+  .ask-btn:hover { background: rgba(255,90,50,0.15); border-color: #ff5a32; color: #fff; }
+
+  .service-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid #161616;
+  }
+  .service-row:last-child { border-bottom: none; }
+  .service-icon {
+    width: 32px; height: 32px;
+    border-radius: 8px;
+    background: rgba(255,90,50,0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 16px;
+  }
+  .service-name { font-size: 14px; font-weight: 500; color: #ddd; }
+  .service-price { font-size: 12px; color: #ff5a32; margin-top: 2px; }
+  .service-desc { font-size: 12px; color: #666; margin-top: 3px; line-height: 1.5; }
+
+  .tool-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #161616;
+    font-size: 13px;
+  }
+  .tool-row:last-child { border-bottom: none; }
+  .tool-name { color: #ccc; font-weight: 500; }
+  .tool-cost { color: #5fd07a; font-size: 12px; }
+  .tool-use { color: #666; font-size: 12px; max-width: 200px; text-align: right; }
+
+  .client-card {
+    background: #111;
+    border: 1px solid #1e1e1e;
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+  .client-type { font-family: 'Syne', sans-serif; font-size: 14px; font-weight: 700; color: #fff; }
+  .client-where { font-size: 12px; color: #ff5a32; margin: 4px 0 6px; }
+  .client-pitch { font-size: 12px; color: #777; line-height: 1.6; }
+  .client-budget { font-size: 12px; color: #5fd07a; margin-top: 6px; font-weight: 500; }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="brand-tag">Kokoro Studio — Complete Business Blueprint</div>
+  <h1>From <span>₹0</span> to<br>6-Figure Studio</h1>
+  <p>A no-fluff, market-realistic roadmap for building India's most creative brand positioning studio — with 2 people, zero budget, and maximum intention.</p>
+</div>
+
+<div class="nav">
+  <button class="active" onclick="show('reality')">Market Reality</button>
+  <button onclick="show('identity')">Who Kokoro Is</button>
+  <button onclick="show('services')">What to Sell</button>
+  <button onclick="show('clients')">Finding Clients</button>
+  <button onclick="show('roadmap')">Phase Roadmap</button>
+  <button onclick="show('insta')">Instagram Plan</button>
+  <button onclick="show('tools')">AI Without Money</button>
+  <button onclick="show('money')">Money Math</button>
+  <button onclick="show('network')">Freelancer Model</button>
+  <button onclick="show('action')">Start Tomorrow</button>
+</div>
+
+<div class="content">
+
+  <!-- MARKET REALITY -->
+  <div id="reality" class="section active">
+    <div class="section-title">The Honest Market Reality</div>
+    <div class="section-sub">Before strategy, you need truth. Here's what the market actually looks like for what you're building.</div>
+
+    <div class="verdict">
+      <div class="v-title">Is this possible? Yes — but not how you think.</div>
+      <p>A 6-figure (₹10L+) studio in a few months is achievable but it requires 1–2 good clients, not viral growth. The real opportunity is real — but the window is competitive. Here's why Kokoro can still win.</p>
+    </div>
+
+    <div class="grid-2">
+      <div class="card accent">
+        <div class="card-label">The Real Problem in Market</div>
+        <div class="card-title">Agencies are bloated. Brands are bored.</div>
+        <p>D2C brands in India (Mamaearth, Boat, Sugar, 100+ funded brands) spend ₹2–15L/month on branding & content but get generic output from agencies that run 40-person teams for work 2 people could do better. The shift to lean AI-powered studios is happening globally — India is 18 months behind. You're early.</p>
+      </div>
+      <div class="card warn">
+        <div class="card-label">The Real Competition</div>
+        <div class="card-title">Not what you expect</div>
+        <p>You're not competing with Dentsu or Ogilvy. You're competing with: <strong style="color:#ccc">100 freelancers on Instagram</strong> calling themselves studios, in-house brand teams, and Canva-powered "designers." Your actual enemy is perceived legitimacy — not skill. Brand yourself louder than your portfolio.</p>
+      </div>
+    </div>
+
+    <div class="grid-3">
+      <div class="big-stat card">
+        <div class="num">₹800Cr+</div>
+        <div class="label">D2C branding spend in India annually — growing 34% YoY</div>
+      </div>
+      <div class="big-stat card">
+        <div class="num">~2%</div>
+        <div class="label">Of that goes to small/boutique studios. Massive gap to capture.</div>
+      </div>
+      <div class="big-stat card">
+        <div class="num">3–5</div>
+        <div class="label">Good clients = ₹10L+ revenue. You don't need to go viral.</div>
+      </div>
+    </div>
+
+    <div class="card full-card">
+      <div class="card-label">Why "Creative Brand Positioning Studio" Actually Works</div>
+      <div class="card-title">The name gap is real — and you spotted it</div>
+      <ul class="checklist">
+        <li><strong>Branding is commoditized</strong> — every freelancer says "I do branding." Positioning is a strategy word — it signals you think, not just design. This alone separates you.</li>
+        <li><strong>D2C brands are positioning-obsessed</strong> — they know their product isn't unique. They need to FEEL unique. That's your exact service.</li>
+        <li><strong>India has zero globally known brand studios</strong> — there's no Indian Pentagram or Wolff Olins. The space is wide open for a studio that builds a brand around its own brand.</li>
+        <li><strong>AI as execution speed</strong> — a D2C brand spending ₹3L/month at an agency gets 20 posts. You give them 40 posts + strategy + positioning doc for ₹1.5L. That's your price vs value story.</li>
+        <li><strong>The small team is a feature, not a bug</strong> — "We're a lean, focused studio" is a positioning statement. One or two creative minds obsessed with your brand &gt; 10 distracted agency employees.</li>
+      </ul>
+    </div>
+
+    <div class="card warn full-card">
+      <div class="card-label">The Hard Truths — Don't Ignore These</div>
+      <ul class="checklist">
+        <li><strong>Instagram alone won't get you clients for months</strong> — it builds credibility, not pipeline. You need direct outreach now, Instagram later.</li>
+        <li><strong>No portfolio = no trust</strong> — your first 2–3 projects must exist, even if you create them for free or for yourself as case studies.</li>
+        <li><strong>Subscriptions are a real problem</strong> — Midjourney, Adobe, Runway all cost money. Solve this with free tiers + one shared subscription until revenue hits.</li>
+        <li><strong>Kokoro needs to look like a studio, not two friends with an Instagram</strong> — your visual identity must be extraordinary before you pitch anyone.</li>
+        <li><strong>D2C brands have slow procurement</strong> — budget approvals, legal, NDAs take 4–6 weeks even when they love you. Plan your cash flow accordingly.</li>
+      </ul>
+    </div>
+
+    <button class="ask-btn" onclick="sendPrompt('Tell me more about the D2C brand market in India and how Kokoro can specifically target them')">Ask about D2C market depth ↗</button>
+  </div>
+
+  <!-- WHO KOKORO IS -->
+  <div id="identity" class="section">
+    <div class="section-title">Who Kokoro Is — Identity & Positioning</div>
+    <div class="section-sub">Kokoro means "heart" in Japanese. Build everything from this truth: you are a studio that puts heart into brands that forgot they had one.</div>
+
+    <div class="card accent full-card">
+      <div class="card-label">Kokoro's Positioning Statement</div>
+      <div class="card-title" style="font-size:1.1rem">"We are a creative brand positioning studio that replaces the chaos of agencies with the clarity of two people who are obsessed with your brand."</div>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-label">The Core Idea</div>
+        <div class="card-title">Small team. Maximum obsession.</div>
+        <p>Kokoro positions itself as the anti-agency. Not boutique (overused). Not a freelancer (undervalued). A studio — two people who think like strategists, feel like creatives, and execute like machines.</p>
+      </div>
+      <div class="card">
+        <div class="card-label">What Kokoro Stands For</div>
+        <div class="card-title">Creativity with conviction</div>
+        <p>Most agencies play it safe because they fear losing clients. Kokoro's brand is built on honest creative courage — telling brands what their visuals are really saying, then fixing it. You're not vendors. You're creative partners.</p>
+      </div>
+    </div>
+
+    <div class="card full-card">
+      <div class="card-label">The Kokoro Brand Voice</div>
+      <ul class="checklist">
+        <li><strong>Direct but warm</strong> — like a friend who's also the smartest person in the room. Not corporate. Not cold. Not trying to sound like a big agency.</li>
+        <li><strong>Confident without arrogance</strong> — "We know what works" not "we are the best." Show, don't brag.</li>
+        <li><strong>Specific over vague</strong> — never say "we help brands grow." Say "we rebuilt a skincare brand's visual language and their engagement went up 3x in 6 weeks."</li>
+        <li><strong>Curious and provocative</strong> — your Instagram should ask uncomfortable questions about branding that make D2C founders stop scrolling.</li>
+      </ul>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-label">Visual Identity Direction</div>
+        <div class="card-title">Kokoro's own brand</div>
+        <p>Dark + warm. Not cold black. Rich dark tones with one hot accent (coral, red-orange, or deep gold). Your graphic designer's work should define Kokoro's aesthetic — this is your living portfolio. Make your own brand the case study that sells every other project.</p>
+      </div>
+      <div class="card">
+        <div class="card-label">What Kokoro is NOT</div>
+        <ul class="checklist" style="margin-top:0.5rem">
+          <li>Not a social media management agency</li>
+          <li>Not a "we do everything" agency</li>
+          <li>Not a cheap Canva design service</li>
+          <li>Not competing on price</li>
+          <li>Not trying to get 100 clients</li>
+        </ul>
+      </div>
+    </div>
+
+    <button class="ask-btn" onclick="sendPrompt('Help me write Kokoro studio bio, tagline and about section for Instagram')">Generate Kokoro's Instagram bio & tagline ↗</button>
+    <button class="ask-btn" onclick="sendPrompt('What should Kokoro\'s visual identity look like — colors, type, mood — to stand out in the Indian branding market')">Get visual identity direction ↗</button>
+  </div>
+
+  <!-- SERVICES -->
+  <div id="services" class="section">
+    <div class="section-title">What Kokoro Sells — Services & Pricing</div>
+    <div class="section-sub">Everything under "creative brand positioning" — and your specific packages at each price point for D2C brands.</div>
+
+    <div class="card accent full-card">
+      <div class="card-label">Kokoro's Service Universe</div>
+      <p style="color:#aaa; font-size:13px; margin-bottom:1rem">These are the services that legitimately fall under "creative brand positioning studio." Start with 2–3 you can actually deliver right now.</p>
+    </div>
+
+    <div class="card full-card">
+      <div class="card-label">Tier 1 — Entry Projects (₹15,000–₹40,000) — Start Here</div>
+      <div class="service-row">
+        <div class="service-icon">🎨</div>
+        <div>
+          <div class="service-name">Brand Audit & Positioning Report</div>
+          <div class="service-price">₹15,000–₹25,000</div>
+          <div class="service-desc">Analyze a D2C brand's visual identity, messaging, and Instagram positioning. Deliver a 10-page PDF with honest assessment + recommended direction. Fully doable by 2 people in 3 days.</div>
+        </div>
+      </div>
+      <div class="service-row">
+        <div class="service-icon">📱</div>
+        <div>
+          <div class="service-name">Instagram Visual Refresh (1-month package)</div>
+          <div class="service-price">₹20,000–₹35,000</div>
+          <div class="service-desc">12–16 static posts redesigned for brand consistency. New grid aesthetic. Caption direction. No video needed — pure graphic design + AI-enhanced images.</div>
+        </div>
+      </div>
+      <div class="service-row">
+        <div class="service-icon">🖼️</div>
+        <div>
+          <div class="service-name">Logo & Basic Visual Identity</div>
+          <div class="service-price">₹20,000–₹40,000</div>
+          <div class="service-desc">Logo, color palette, typography, 2 brand patterns. Delivered as Canva + AI-enhanced assets. Good starting project for your portfolio.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card full-card">
+      <div class="card-label">Tier 2 — Core Revenue (₹50,000–₹1,20,000) — Main Focus</div>
+      <div class="service-row">
+        <div class="service-icon">🏷️</div>
+        <div>
+          <div class="service-name">Brand Positioning System</div>
+          <div class="service-price">₹60,000–₹90,000</div>
+          <div class="service-desc">Full brand strategy document + visual identity system. Positioning statement, target persona, brand voice guide, visual system (logo, colors, type, imagery style), 5 example social posts. The complete package for funded D2C brands.</div>
+        </div>
+      </div>
+      <div class="service-row">
+        <div class="service-icon">📅</div>
+        <div>
+          <div class="service-name">Monthly Content Retainer (Static Only)</div>
+          <div class="service-price">₹40,000–₹70,000/month</div>
+          <div class="service-desc">20 static posts/month with positioning-aligned captions + content strategy. No video editing needed. Your graphic designer + AI for image generation. This is your recurring revenue engine — target 2–3 clients here.</div>
+        </div>
+      </div>
+      <div class="service-row">
+        <div class="service-icon">📦</div>
+        <div>
+          <div class="service-name">Product Launch Creative Kit</div>
+          <div class="service-price">₹50,000–₹1,00,000</div>
+          <div class="service-desc">For D2C brands launching a new SKU. 20 launch posts, packaging visual direction, launch messaging framework, 3 ad static creatives. High urgency = willingness to pay premium.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card full-card">
+      <div class="card-label">Tier 3 — Big Contracts (₹1,50,000–₹5,00,000+) — Future Goal</div>
+      <div class="service-row">
+        <div class="service-icon">🔄</div>
+        <div>
+          <div class="service-name">Brand Relaunch (Full Project)</div>
+          <div class="service-price">₹1,50,000–₹3,00,000</div>
+          <div class="service-desc">Complete rebrand — strategy + identity + content system + 3-month launch content calendar. For D2C brands that raised seed/pre-series A and need to look funded.</div>
+        </div>
+      </div>
+      <div class="service-row">
+        <div class="service-icon">🤝</div>
+        <div>
+          <div class="service-name">Creative Direction Partnership</div>
+          <div class="service-price">₹1,00,000–₹2,00,000/month</div>
+          <div class="service-desc">Kokoro becomes the embedded creative team. Monthly strategy calls, all creative output, ad creative, positioning evolution. Equivalent to a 3-person in-house team — at a fraction of the cost.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card info">
+      <div class="card-label">Video Without an Editor — What You Can Do</div>
+      <ul class="checklist">
+        <li><strong>CapCut free tier</strong> — sufficient for Reels with text, transitions, AI-enhanced clips</li>
+        <li><strong>Canva Pro video editor</strong> — one subscription covers both design + basic video</li>
+        <li><strong>AI video tools (free tiers)</strong> — Runway Gen-2 (limited), Pika Labs (free credits), Kling AI (free tier)</li>
+        <li><strong>Static carousels &gt; Reels for brand positioning</strong> — your content strategy should lean into carousels (your designer's strength) not videos</li>
+        <li><strong>Hire a video editor as a freelancer</strong> — for paid projects, add ₹5,000–10,000 to project cost and outsource editing</li>
+      </ul>
+    </div>
+
+    <button class="ask-btn" onclick="sendPrompt('Write a full proposal template for Kokoro\'s Brand Positioning System package targeting a D2C skincare brand')">Generate a client proposal template ↗</button>
+  </div>
+
+  <!-- FINDING CLIENTS -->
+  <div id="clients" class="section">
+    <div class="section-title">Finding Clients — Where, Who, How</div>
+    <div class="section-sub">The brutal truth: clients won't come to you for months. You go to them first. Here's exactly where and how.</div>
+
+    <div class="card accent full-card">
+      <div class="card-label">Your Target Client — Be Very Specific</div>
+      <div class="card-title">Indian D2C founder, 1–4 years old brand, ₹1–20Cr revenue, selling on Instagram + D2C website + Amazon/Nykaa</div>
+      <p style="color:#aaa; margin-top:0.5rem; font-size:13px">Categories: skincare, haircare, health foods, supplements, sustainable fashion, pet products, home decor, baby products. These founders understand branding, have budget, and feel their visuals are "not quite there."</p>
+    </div>
+
+    <div class="client-card">
+      <div class="client-type">Instagram DM Outreach</div>
+      <div class="client-where">Find them: Search Instagram for D2C Indian brands in your target categories. Look for accounts 10K–200K followers with inconsistent or mediocre visual identity.</div>
+      <div class="client-pitch">Message (DM): "Hi [Name], I run Kokoro Studio — we work specifically with D2C brands on creative positioning. I noticed [specific thing about their brand] — I think your brand has a much stronger story to tell visually. I'd love to share 2 specific ideas for free. Would a 15-minute call be worth it?"</div>
+      <div class="client-budget">Target: 20 DMs/day. Expect 3–5% response rate. 1–2 calls/week. 1 client/month.</div>
+    </div>
+
+    <div class="client-card">
+      <div class="client-type">LinkedIn — Founder Direct</div>
+      <div class="client-where">Find them: LinkedIn search "D2C founder India", "Founder skincare India", "co-founder [category]". Filter by 2nd-degree connections.</div>
+      <div class="client-pitch">Connection request + note: "Hi [Name], I follow [brand] — the product is great but I think the brand's visual positioning is underselling it. I run Kokoro, a creative positioning studio. Happy to share a quick visual audit — no strings. Worth a look?"</div>
+      <div class="client-budget">Target: 10 connects/day. Higher quality lead than Instagram. 1 client per 2–3 months of consistent effort.</div>
+    </div>
+
+    <div class="client-card">
+      <div class="client-type">D2C Communities & Forums</div>
+      <div class="client-where">Find them: Shark Tank India founder groups (Facebook), D2C India Slack communities, Indian Startup community (LinkedIn groups), Reddit r/IndiaBusiness, Founders Network India WhatsApp groups.</div>
+      <div class="client-pitch">Don't sell — contribute. Answer branding questions, share positioning insights, post mini case studies. Become the "branding person" in the community. DMs will come to you.</div>
+      <div class="client-budget">Slower but warmer leads. Takes 4–6 weeks to build reputation. Best ROI long-term.</div>
+    </div>
+
+    <div class="client-card">
+      <div class="client-type">Free Mini Audit Campaign</div>
+      <div class="client-where">Post on Instagram and LinkedIn: "We're doing 5 FREE brand positioning audits for D2C brands this month. DM 'AUDIT' to apply." Deliver exceptional quality. 1–2 will convert to paid.</div>
+      <div class="client-pitch">This also builds your portfolio, creates real case study content, and gets you warm testimonials. The free work IS the marketing. Do this in Month 1.</div>
+      <div class="client-budget">2 free audits → 1 paid client (likely). Time cost: 2 days each. Value created: portfolio + client + referral source.</div>
+    </div>
+
+    <div class="client-card">
+      <div class="client-type">Referral from Your Network</div>
+      <div class="client-where">Tell EVERY person you know what Kokoro does. Friends, family, ex-colleagues, college connections. "Do you know any small brand that struggles with their Instagram look?"</div>
+      <div class="client-pitch">Your first client will almost certainly come from someone you already know. This is statistically true for 80%+ of new studios. Don't underestimate warm network.</div>
+      <div class="client-budget">Zero cost. Highest conversion rate. Start here before Instagram or LinkedIn.</div>
+    </div>
+
+    <div class="card info full-card">
+      <div class="card-label">Cold Outreach Script That Works</div>
+      <div class="card-title">The 3-line formula</div>
+      <ul class="checklist">
+        <li><strong>Line 1 — Specific observation:</strong> "I noticed your packaging copy says premium but your Instagram grid feels entry-level."</li>
+        <li><strong>Line 2 — What you do:</strong> "Kokoro is a brand positioning studio — we close that gap for D2C brands."</li>
+        <li><strong>Line 3 — Low-commitment ask:</strong> "I have one idea specifically for you. 10 minutes this week?"</li>
+      </ul>
+      <p style="margin-top:0.75rem">Never: "We are a full-service agency offering end-to-end solutions." That's everyone. Be specific, human, and direct.</p>
+    </div>
+
+    <button class="ask-btn" onclick="sendPrompt('Write 5 different cold DM scripts for Kokoro to send to D2C brand founders on Instagram')">Get 5 outreach DM scripts ↗</button>
+    <button class="ask-btn" onclick="sendPrompt('How do I find D2C brand founders in India on LinkedIn — step by step search strategy')">LinkedIn finding strategy ↗</button>
+  </div>
+
+  <!-- ROADMAP -->
+  <div id="roadmap" class="section">
+    <div class="section-title">Phase Roadmap — Month by Month</div>
+    <div class="section-sub">What to do in what order. Every month has a primary objective. Don't try to do everything at once.</div>
+
+    <div class="phase">
+      <div class="phase-num">1</div>
+      <div class="phase-body">
+        <div class="phase-header">Foundation — Build What People Will Judge You By</div>
+        <div class="phase-time">Weeks 1–4 (Month 1)</div>
+        <p>Before outreach, before clients, before anything: Kokoro must look like a real studio. This month is 80% building, 20% outreach.</p>
+        <ul class="checklist" style="margin-top:0.75rem">
+          <li><strong>Design Kokoro's own visual identity</strong> — logo, color palette, typography, brand pattern. This is your #1 portfolio piece.</li>
+          <li><strong>Create 9 Instagram posts</strong> in Kokoro's voice before going live — grid should look intentional from day one</li>
+          <li><strong>Write Kokoro's positioning doc</strong> — who you are, who you serve, what you charge. Internal clarity = external confidence.</li>
+          <li><strong>Build 2 fake/self-initiated case studies</strong> — pick a real Indian D2C brand (e.g. a small skincare brand), redesign their Instagram identity as a concept project, post it as "Concept Rebrand: [Brand Name]"</li>
+          <li><strong>Start 20 DMs/day to warm network</strong> — tell everyone what Kokoro does. Not pitching. Just telling.</li>
+          <li><strong>Offer 2 free brand audits</strong> — post on Instagram, get 2 D2C brands, deliver excellent work, collect testimonial</li>
+          <li><strong>Goal:</strong> 1 paid project secured by end of month (even ₹15,000 is a win)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="phase-num">2</div>
+      <div class="phase-body">
+        <div class="phase-header">Traction — First Real Revenue & First Case Study</div>
+        <div class="phase-time">Month 2</div>
+        <p>Deliver excellently on your first client. Document everything. Begin cold outreach at scale.</p>
+        <ul class="checklist" style="margin-top:0.75rem">
+          <li><strong>Deliver first paid project</strong> at 150% of what they expected — over-deliver to get a testimonial + referral</li>
+          <li><strong>Turn first project into a case study</strong> — "Before vs After" post on Instagram. This is your most powerful content.</li>
+          <li><strong>Start structured LinkedIn outreach</strong> — 10 connects/day to D2C founders. Share Kokoro's perspective on branding.</li>
+          <li><strong>Join 3 D2C communities</strong> — contribute value, not sales. Become the positioning expert in the group.</li>
+          <li><strong>Price for Month 2: ₹40,000–60,000 project</strong> — don't undersell after you have a case study</li>
+          <li><strong>Goal:</strong> ₹40,000–60,000 revenue. 1 retainer conversation started.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="phase-num">3</div>
+      <div class="phase-body">
+        <div class="phase-header">Revenue Engine — First Retainer Client</div>
+        <div class="phase-time">Month 3</div>
+        <p>Retainer = predictable income. One retainer client changes everything for your mental clarity and business stability.</p>
+        <ul class="checklist" style="margin-top:0.75rem">
+          <li><strong>Close first monthly retainer</strong> — ₹40,000–60,000/month for content + positioning</li>
+          <li><strong>Systemize delivery</strong> — build a content calendar template, briefing doc, approval workflow</li>
+          <li><strong>Add second project client</strong> — run 1 retainer + 1 project simultaneously (2 people can handle this)</li>
+          <li><strong>Start pitching Tier 2 services</strong> — Brand Positioning System at ₹60,000–90,000</li>
+          <li><strong>Instagram hits 500–1000 followers</strong> — start posting case studies, brand thinking, positioning education</li>
+          <li><strong>Goal:</strong> ₹80,000–1,20,000 revenue. ₹40K–60K recurring.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="phase-num">4</div>
+      <div class="phase-body">
+        <div class="phase-header">Scale — 2 Retainers + Project Pipeline</div>
+        <div class="phase-time">Months 4–6</div>
+        <p>You're now a real studio. Raise prices, hire first freelancer, start working ON the business not just IN it.</p>
+        <ul class="checklist" style="margin-top:0.75rem">
+          <li><strong>Target: 2 retainer clients</strong> at ₹50,000–70,000 each = ₹1,00,000–1,40,000 recurring</li>
+          <li><strong>Add 1 project client/month</strong> at ₹60,000–1,00,000 = ₹1,60,000–2,40,000/month total</li>
+          <li><strong>Hire first freelancer</strong> — video editor for ₹8,000–12,000/month per project as needed</li>
+          <li><strong>Raise prices</strong> — with 3 case studies, you're no longer entry-level. Add 30–40% to all pricing.</li>
+          <li><strong>Build referral system</strong> — ask every happy client for 1 introduction. This is your growth engine now.</li>
+          <li><strong>6-Month Goal:</strong> ₹1,50,000–2,50,000/month revenue. This is your 6-figure business.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card success full-card">
+      <div class="card-label">6-Month Revenue Target</div>
+      <div class="money-row"><div class="label">2 retainer clients @ ₹60,000</div><div class="amount green">₹1,20,000/month</div></div>
+      <div class="money-row"><div class="label">1–2 project clients/month avg ₹60,000</div><div class="amount green">₹60,000–1,20,000/month</div></div>
+      <div class="money-row"><div class="label">Total monthly target by Month 6</div><div class="amount orange">₹1,80,000–2,40,000/month</div></div>
+      <div class="money-row"><div class="label">That's annualized</div><div class="amount orange">₹21–29 Lakhs/year</div></div>
+    </div>
+
+    <button class="ask-btn" onclick="sendPrompt('Give me a detailed week by week action plan for the first month of Kokoro studio')">Get week-by-week Month 1 plan ↗</button>
+  </div>
+
+  <!-- INSTAGRAM -->
+  <div id="insta" class="section">
+    <div class="section-title">Kokoro's Instagram Strategy</div>
+    <div class="section-sub">Instagram is your portfolio, not your sales channel. Design it accordingly. Here's a 4-week content system that builds credibility with D2C founders.</div>
+
+    <div class="card accent full-card">
+      <div class="card-label">Instagram Reality Check</div>
+      <p style="color:#aaa; font-size:13px">Instagram will not get you clients for 3–4 months. But it's the credibility check every potential client does after you reach out. It must look intentional, strategic, and creatively excellent — not random. You have infinite ideas — that's the problem. Filter everything through: "Would a D2C founder trust us more after seeing this?"</p>
+    </div>
+
+    <h3>Content Pillars (Post Types to Rotate)</h3>
+
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-label">Pillar 1 — Brand Teardowns (40% of posts)</div>
+        <div class="card-title">"Honest take on X brand's positioning"</div>
+        <p>Analyze a real D2C brand. What their visual identity says vs what their product really is. Before/after concept. This positions Kokoro as the smart studio that sees what others miss.</p>
+        <div style="margin-top:8px"><span class="tag tag-orange">High save rate</span><span class="tag tag-green">Founder magnet</span></div>
+      </div>
+      <div class="card">
+        <div class="card-label">Pillar 2 — Position Education (25% of posts)</div>
+        <div class="card-title">"Why your brand looks cheaper than it is"</div>
+        <p>Carousel posts that teach D2C founders something actionable about brand positioning. "3 signs your brand needs a visual refresh." These get shares in startup WhatsApp groups.</p>
+        <div style="margin-top:8px"><span class="tag tag-blue">High share rate</span><span class="tag tag-green">Community growth</span></div>
+      </div>
+      <div class="card">
+        <div class="card-label">Pillar 3 — Case Studies (20% of posts)</div>
+        <div class="card-title">"How we repositioned [brand]"</div>
+        <p>Real or concept projects. Before-during-after. What we changed and why. The thinking, not just the visuals. This is your proof of work — your most important content.</p>
+        <div style="margin-top:8px"><span class="tag tag-orange">Client converter</span><span class="tag tag-blue">Portfolio proof</span></div>
+      </div>
+      <div class="card">
+        <div class="card-label">Pillar 4 — Studio Life (15% of posts)</div>
+        <div class="card-title">"Behind Kokoro"</div>
+        <p>The two of you — your process, your tools, your obsessions. Make Kokoro feel human and real. Show your AI workflow (without giving away secrets). Founders want to work with people, not faceless studios.</p>
+        <div style="margin-top:8px"><span class="tag tag-gray">Trust building</span><span class="tag tag-green">Human connection</span></div>
+      </div>
+    </div>
+
+    <h3>First 4 Weeks — Post-by-Post Calendar</h3>
+    <div class="scrollable">
+      <div class="insta-week">
+        <div class="week-label">Week 1 — Launch Posts</div>
+        <div class="post-type">Post 1 (Day 1): Studio Manifesto</div>
+        <div class="post-desc">"We started Kokoro because we were tired of brands that look like they're trying to be everything to everyone. We work with D2C brands that have a point of view but don't know how to show it yet." — Dark visual, your best typography.</div>
+      </div>
+      <div class="insta-week">
+        <div class="week-label">Week 1 (continued)</div>
+        <div class="post-type">Post 2 (Day 3): Brand Teardown Carousel</div>
+        <div class="post-desc">Pick a famous Indian D2C brand. "What [Brand]'s Instagram is saying vs what it should say." 6-slide carousel. Honest, specific, non-mean. Design it beautifully.</div>
+      </div>
+      <div class="insta-week">
+        <div class="week-label">Week 2</div>
+        <div class="post-type">Post 3: "5 Signs Your Brand Needs a Visual Positioning Fix" Carousel</div>
+        <div class="post-desc">Educational. Specific. Every point should make a D2C founder go "oh that's us." End with a soft CTA to DM for a free audit.</div>
+      </div>
+      <div class="insta-week">
+        <div class="week-label">Week 2 (continued)</div>
+        <div class="post-type">Post 4: Concept Rebrand Case Study</div>
+        <div class="post-desc">Self-initiated: pick a small D2C brand that has bad visuals. Redesign their Instagram grid as a concept. "Concept rebrand: what [Brand] could look like if their visuals matched their product quality." Tag them — sometimes they respond and become clients.</div>
+      </div>
+      <div class="insta-week">
+        <div class="week-label">Week 3</div>
+        <div class="post-type">Post 5: "What is brand positioning actually?" — Clear, simple explainer</div>
+        <div class="post-desc">Many founders confuse branding with logo design. Educate them in 5 slides. "Logo = what you look like. Brand = what people think of you. Positioning = why they choose you over everyone else." This will get saved and shared.</div>
+      </div>
+      <div class="insta-week">
+        <div class="week-label">Week 3 (continued)</div>
+        <div class="post-type">Post 6: Studio process / behind the scenes</div>
+        <div class="post-desc">Show your actual working process. A photo of your designer working + AI tools you use. Normalize the lean studio model. "2 people. 10x output. Here's how."</div>
+      </div>
+      <div class="insta-week">
+        <div class="week-label">Week 4</div>
+        <div class="post-type">Post 7: Free Audit Offer Post</div>
+        <div class="post-desc">"We're doing 3 FREE 15-minute brand audits this month. DM us 'AUDIT' if your D2C brand's visuals feel off but you can't pinpoint why." This is your first client acquisition post — make it look premium.</div>
+      </div>
+      <div class="insta-week">
+        <div class="week-label">Week 4 (continued)</div>
+        <div class="post-type">Post 8: "Indian D2C brands and the premium gap" — Opinion piece</div>
+        <div class="post-desc">A provocative take: "Why Indian D2C brands can't charge premium prices even when their product is premium quality." The answer: visual positioning. Position Kokoro as the solution at the end.</div>
+      </div>
+    </div>
+
+    <div class="card info full-card" style="margin-top:1rem">
+      <div class="card-label">Managing Instagram with 2 People</div>
+      <ul class="checklist">
+        <li><strong>Post 3x/week maximum</strong> — quality over frequency. 1 carousel + 1 single + 1 reel or carousel.</li>
+        <li><strong>Your designer owns all visuals</strong> — you own strategy, captions, and content ideas. Clear division.</li>
+        <li><strong>Batch create on weekends</strong> — plan and design 3 weeks of content in one session. Use Notion or a simple doc.</li>
+        <li><strong>Spend 30 min/day on engagement</strong> — reply to every comment, engage on 10 founder accounts, respond to DMs within 2 hours.</li>
+        <li><strong>No reels requirement yet</strong> — carousels get higher save rates for educational content. They're your strength.</li>
+      </ul>
+    </div>
+
+    <button class="ask-btn" onclick="sendPrompt('Write captions for 5 different Kokoro Instagram posts including hashtags for D2C brand founders')">Generate 5 Instagram captions ↗</button>
+    <button class="ask-btn" onclick="sendPrompt('Give me 20 Instagram content ideas for Kokoro that would appeal to D2C brand founders in India')">Get 20 more content ideas ↗</button>
+  </div>
+
+  <!-- AI WITHOUT MONEY -->
+  <div id="tools" class="section">
+    <div class="section-title">AI Without Paid Subscriptions</div>
+    <div class="section-sub">You don't need ₹50,000/month in subscriptions. Here's the full free-first toolkit — and when to pay.</div>
+
+    <div class="card accent full-card">
+      <div class="card-label">The Subscription Strategy</div>
+      <p style="color:#aaa; font-size:13px">Free tiers + one shared Canva Pro is enough to start. Once you have your first ₹30,000 client, invest in one AI image tool. Prioritize tools that directly make money. Never pay for vanity tools.</p>
+    </div>
+
+    <h3>Free Tier AI Tools That Actually Work</h3>
+    <div class="card full-card">
+      <div class="tool-row"><div class="tool-name">Canva Free</div><div class="tool-use">All design, presentations, social posts</div><div class="tool-cost">Free (upgrade to Pro at ₹4,000/yr)</div></div>
+      <div class="tool-row"><div class="tool-name">Adobe Firefly (free credits)</div><div class="tool-use">AI image generation, text effects</div><div class="tool-cost">Free (25 credits/month)</div></div>
+      <div class="tool-row"><div class="tool-name">Leonardo.ai</div><div class="tool-use">AI image generation, product shots</div><div class="tool-cost">Free (150 tokens/day)</div></div>
+      <div class="tool-row"><div class="tool-name">Ideogram.ai</div><div class="tool-use">Text-in-image, logo concepts</div><div class="tool-cost">Free (10 images/day)</div></div>
+      <div class="tool-row"><div class="tool-name">Krea.ai</div><div class="tool-use">AI image enhancement, upscaling</div><div class="tool-cost">Free tier available</div></div>
+      <div class="tool-row"><div class="tool-name">CapCut (desktop)</div><div class="tool-use">Reels editing, AI effects</div><div class="tool-cost">Free</div></div>
+      <div class="tool-row"><div class="tool-name">Runway Gen-2</div><div class="tool-use">AI video generation</div><div class="tool-cost">Free (limited credits)</div></div>
+      <div class="tool-row"><div class="tool-name">Remove.bg</div><div class="tool-use">Background removal for product shots</div><div class="tool-cost">Free (limited)</div></div>
+      <div class="tool-row"><div class="tool-name">Claude.ai (this)</div><div class="tool-use">Strategy, copy, proposals, positioning</div><div class="tool-cost">Free tier sufficient</div></div>
+      <div class="tool-row"><div class="tool-name">Gamma.app</div><div class="tool-use">AI presentations, pitch decks for clients</div><div class="tool-cost">Free tier</div></div>
+      <div class="tool-row"><div class="tool-name">Notion (free)</div><div class="tool-use">Project management, content calendar</div><div class="tool-cost">Free forever</div></div>
+    </div>
+
+    <div class="card success full-card">
+      <div class="card-label">First 3 Subscriptions to Buy (In Order)</div>
+      <div class="money-row"><div class="label">1. Canva Pro (most important first)</div><div class="amount green">₹333/month (annual plan)</div></div>
+      <div class="money-row"><div class="label">2. Midjourney Basic (after first project paid)</div><div class="amount green">₹850/month</div></div>
+      <div class="money-row"><div class="label">3. Adobe Creative Cloud (when you can)</div><div class="amount green">₹1,675/month</div></div>
+      <div class="money-row"><div class="label">Total for serious studio toolkit</div><div class="amount orange">~₹2,860/month</div></div>
+    </div>
+
+    <div class="card info full-card">
+      <div class="card-label">AI Image Strategy — Getting Client-Grade Images for Free</div>
+      <ul class="checklist">
+        <li><strong>Leonardo.ai daily free tokens</strong> — use them every day. Regenerate in the morning. 150 tokens = 15–20 good images.</li>
+        <li><strong>Adobe Firefly's free credits</strong> — best for text-in-image effects (labels, packaging mockups). Commercial license even on free tier.</li>
+        <li><strong>Multiple free accounts</strong> — ethically, you can use your personal + business email for some platforms' free tiers.</li>
+        <li><strong>Canva's built-in AI</strong> — with Canva Pro, you get AI image generation, background removal, and Magic Design. One subscription solves many problems.</li>
+        <li><strong>Prompt library</strong> — build a shared doc of your best AI image prompts. This is Kokoro's secret weapon. Reusable, improvable, your competitive edge.</li>
+      </ul>
+    </div>
+
+    <button class="ask-btn" onclick="sendPrompt('Give me 10 professional AI image prompts for D2C brand product photography that I can use in Leonardo.ai or Midjourney')">Get AI image prompts for products ↗</button>
+  </div>
+
+  <!-- MONEY MATH -->
+  <div id="money" class="section">
+    <div class="section-title">The Money — Realistic Math</div>
+    <div class="section-sub">What you can actually earn, what it costs, what you keep.</div>
+
+    <div class="grid-3">
+      <div class="big-stat card">
+        <div class="num">₹30K</div>
+        <div class="label">Minimum Month 1 target (1 project)</div>
+      </div>
+      <div class="big-stat card">
+        <div class="num">₹80K</div>
+        <div class="label">Realistic Month 3 revenue</div>
+      </div>
+      <div class="big-stat card">
+        <div class="num">₹2L+</div>
+        <div class="label">Month 6 target (2 retainers + projects)</div>
+      </div>
+    </div>
+
+    <div class="card full-card">
+      <div class="card-label">Monthly Cost Structure (Lean)</div>
+      <div class="money-row"><div class="label">Canva Pro</div><div class="amount">₹333</div></div>
+      <div class="money-row"><div class="label">Midjourney Basic</div><div class="amount">₹850</div></div>
+      <div class="money-row"><div class="label">Domain + Hosting (annualized)</div><div class="amount">₹200</div></div>
+      <div class="money-row"><div class="label">Instagram boosts (once you have budget)</div><div class="amount">₹3,000–5,000</div></div>
+      <div class="money-row"><div class="label">Freelancer costs (video, etc.)</div><div class="amount">₹5,000–15,000</div></div>
+      <div class="money-row"><div class="label">Misc (phone data, prints, etc.)</div><div class="amount">₹500</div></div>
+      <div class="money-row"><div class="label" style="color:#ccc; font-weight:500">Total Monthly Costs</div><div class="amount orange">₹10,000–22,000</div></div>
+    </div>
+
+    <div class="card full-card">
+      <div class="card-label">6-Month P&L Projection</div>
+      <div class="money-row"><div class="label">Month 1</div><div class="amount">₹15,000–35,000</div></div>
+      <div class="money-row"><div class="label">Month 2</div><div class="amount">₹40,000–70,000</div></div>
+      <div class="money-row"><div class="label">Month 3</div><div class="amount">₹70,000–1,20,000</div></div>
+      <div class="money-row"><div class="label">Month 4</div><div class="amount">₹1,00,000–1,60,000</div></div>
+      <div class="money-row"><div class="label">Month 5</div><div class="amount">₹1,30,000–2,00,000</div></div>
+      <div class="money-row"><div class="label">Month 6</div><div class="amount">₹1,80,000–2,50,000</div></div>
+      <div class="money-row"><div class="label" style="color:#5fd07a; font-weight:500">Total 6-Month Revenue (realistic)</div><div class="amount green">₹5,35,000–8,35,000</div></div>
+    </div>
+
+    <div class="card info full-card">
+      <div class="card-label">Pricing Philosophy — Never Undersell</div>
+      <ul class="checklist">
+        <li><strong>Price is a positioning signal</strong> — a D2C brand paying ₹8,000 for 20 posts thinks you're a freelancer. ₹40,000 makes you a studio.</li>
+        <li><strong>Split all revenue 50/50</strong> — you and your partner take equal share from the start. This prevents resentment and builds real partnership.</li>
+        <li><strong>Invoice immediately</strong> — 50% advance, 50% on delivery. Never 100% on delivery for new clients.</li>
+        <li><strong>No discounts — add value instead</strong> — if they want a lower price, don't discount. Reduce scope or add a bonus deliverable at the same price.</li>
+      </ul>
+    </div>
+
+    <div class="card warn full-card">
+      <div class="card-label">Instagram Boost Budget (When Ready)</div>
+      <p style="color:#aaa; font-size:13px; margin-bottom:0.75rem">Don't boost until Month 3 when you have 3+ strong posts and a clear profile. Boosting an incomplete profile wastes money.</p>
+      <ul class="checklist">
+        <li><strong>Don't boost posts — run targeted ads</strong> from Facebook Ads Manager. Target: India, interests = D2C, startup, entrepreneurship, small business. Age 25–40.</li>
+        <li><strong>Start with ₹3,000–5,000/month</strong> on your best educational carousel. Optimize for profile visits + follows, not just likes.</li>
+        <li><strong>Best content to boost:</strong> "5 signs your brand needs a visual refresh" — speaks directly to your target client.</li>
+      </ul>
+    </div>
+
+    <button class="ask-btn" onclick="sendPrompt('Help me create an invoice template and payment terms document for Kokoro Studio')">Create invoice template ↗</button>
+  </div>
+
+  <!-- FREELANCER NETWORK -->
+  <div id="network" class="section">
+    <div class="section-title">The Freelancer Network Model</div>
+    <div class="section-sub">Your vision of contracting freelancers instead of hiring is exactly right. Here's how to build it properly.</div>
+
+    <div class="card accent full-card">
+      <div class="card-label">Why This Model Is Brilliant</div>
+      <div class="card-title">You're building a creative collective, not a company</div>
+      <p style="color:#aaa; margin-top:0.5rem; font-size:13px">Kokoro stays small (you + partner) at the core. But you have a network of 8–12 trusted freelancers across disciplines that you can activate per project. No salaries. No HR. No office. Pure creative output with maximum flexibility. This is how studios like Pentagram, Sagmeister & Walsh work — small core, project-based expansion.</p>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-label">Roles to Build Into Your Network</div>
+        <ul class="checklist">
+          <li><strong>Video editor</strong> — for Reels + ad videos (₹8,000–15,000/project)</li>
+          <li><strong>Copywriter</strong> — brand voice, website copy (₹5,000–12,000/project)</li>
+          <li><strong>Motion designer</strong> — animated posts, intro loops (₹10,000–20,000/project)</li>
+          <li><strong>Photographer</strong> — product shoots (₹5,000–15,000/shoot)</li>
+          <li><strong>Web designer</strong> — for brands that need a site refresh (₹15,000–40,000)</li>
+          <li><strong>Strategist</strong> — for large rebrands (₹15,000–30,000/project)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-label">Where to Find Good Freelancers</div>
+        <ul class="checklist">
+          <li><strong>Behance</strong> — best for designers and motion artists</li>
+          <li><strong>Dribbble</strong> — UI/visual designers</li>
+          <li><strong>Instagram creative community</strong> — DM people whose work you love</li>
+          <li><strong>LinkedIn</strong> — search "freelance video editor India"</li>
+          <li><strong>Design colleges</strong> — NID, MIT Pune, Srishti grads looking for projects</li>
+          <li><strong>Internshala / Unstop</strong> — for budget-conscious starter projects</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card full-card">
+      <div class="card-label">How to Structure Freelancer Relationships</div>
+      <ul class="checklist">
+        <li><strong>Test before you trust</strong> — give a small paid test (₹1,000–2,000) before onboarding anyone to your network. See their process, speed, and revision behavior.</li>
+        <li><strong>Keep a rate card for each person</strong> — know exactly what each person charges before you commit to a client price. Your margin should be 40–60% on subcontracted work.</li>
+        <li><strong>Simple contract for each project</strong> — 1-page agreement: deliverables, timeline, payment, IP ownership. No freelancer work should happen without this.</li>
+        <li><strong>Position them as "Kokoro network collaborators"</strong> — don't call them employees or contractors in client conversations. "We work with a curated network of specialists" sounds premium.</li>
+        <li><strong>Share credit selectively</strong> — some clients love knowing your collaborators. Others want to feel they're working with you only. Read the client.</li>
+      </ul>
+    </div>
+
+    <div class="card info full-card">
+      <div class="card-label">The 60-40 Revenue Split Model</div>
+      <p style="font-size:13px; color:#888; margin-bottom:0.75rem">When you bring in a freelancer on a client project, here's how to think about pricing:</p>
+      <div class="money-row"><div class="label">Client pays (example project)</div><div class="amount">₹80,000</div></div>
+      <div class="money-row"><div class="label">Freelancer cost (video editor + photographer)</div><div class="amount">₹20,000</div></div>
+      <div class="money-row"><div class="label">Your tools + platform costs</div><div class="amount">₹3,000</div></div>
+      <div class="money-row"><div class="label" style="color:#5fd07a">Kokoro keeps</div><div class="amount green">₹57,000 (71% margin)</div></div>
+      <p style="font-size:12px; color:#555; margin-top:0.5rem">Always price the project AFTER knowing your freelancer costs. Never guess on margins.</p>
+    </div>
+
+    <button class="ask-btn" onclick="sendPrompt('Write a simple freelancer agreement template for Kokoro Studio that covers deliverables, payment, and IP rights')">Create freelancer contract template ↗</button>
+  </div>
+
+  <!-- ACTION PLAN -->
+  <div id="action" class="section">
+    <div class="section-title">Start Tomorrow — The First 7 Days</div>
+    <div class="section-sub">Everything above means nothing without this. Do these in order. No skipping ahead.</div>
+
+    <div class="phase">
+      <div class="phase-num">1</div>
+      <div class="phase-body">
+        <div class="phase-header">Day 1: Internal Alignment (3 hours, you + partner)</div>
+        <p>Sit together. Define: Who is Kokoro? What do we sell first? Who's responsible for what? Write a 1-page internal brief. Both sign it metaphorically. This conversation will prevent 90% of future disagreements.</p>
+        <ul class="checklist" style="margin-top:0.5rem">
+          <li>Decide your 2 core services to lead with</li>
+          <li>Divide responsibilities: You = strategy/AI/outreach. Partner = design/visuals</li>
+          <li>Agree on a minimum project price (never below ₹15,000)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="phase-num">2</div>
+      <div class="phase-body">
+        <div class="phase-header">Day 2: Design Kokoro's Identity (Partner leads)</div>
+        <p>This is Priority Zero. Before any outreach, Kokoro must look real. Your partner designs the logo, color system, and basic visual identity. You work on the positioning copy simultaneously.</p>
+        <ul class="checklist" style="margin-top:0.5rem">
+          <li>Logo (3 concepts, pick 1)</li>
+          <li>Color palette + typography</li>
+          <li>Instagram profile design + bio</li>
+          <li>Email signature</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="phase-num">3</div>
+      <div class="phase-body">
+        <div class="phase-header">Day 3: Create 2 Concept Case Studies</div>
+        <p>Pick 2 real Indian D2C brands with weak visual identity. Redesign their Instagram grid concept. "What [Brand] could look like." These are your portfolio until you have real clients. They're also great content.</p>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="phase-num">4</div>
+      <div class="phase-body">
+        <div class="phase-header">Day 4: Tell Your Whole Network</div>
+        <p>Message everyone you know. WhatsApp, Instagram, LinkedIn. Not a sales pitch. A real message: "We just launched Kokoro — a studio that helps D2C brands get their visual identity right. If you know any brand founder, please intro us. Happy to do a free audit."</p>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="phase-num">5</div>
+      <div class="phase-body">
+        <div class="phase-header">Day 5: Post First 3 Instagram Posts</div>
+        <p>Manifesto post. Best concept rebrand. Educational carousel. These 3 posts are your portfolio for the next 2 weeks. Make them exceptional — they'll be seen by every potential client who checks your profile.</p>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="phase-num">6</div>
+      <div class="phase-body">
+        <div class="phase-header">Day 6–7: Start Outreach Machine</div>
+        <p>Find 50 D2C brands on Instagram that have weak visuals but good products. List them. Write 5 personalized DMs. Send them. Track responses. This is your client pipeline — start it on Day 6, never stop.</p>
+        <ul class="checklist" style="margin-top:0.5rem">
+          <li>20 Instagram DMs (personalized, not copy-paste)</li>
+          <li>5 LinkedIn connection requests to founders with notes</li>
+          <li>Post your free audit offer on Instagram</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="verdict" style="margin-top:1.5rem">
+      <div class="v-title">The One Thing That Determines Everything</div>
+      <p>Studios don't fail because of bad design or wrong pricing. They fail because they stop doing outreach the week they feel embarrassed or get one rejection. The answer to every slow period is the same: send 20 more DMs. Build the habit on Day 1. Never break it.</p>
+    </div>
+
+    <button class="ask-btn" onclick="sendPrompt('Help me write Kokoro\'s internal 1-page brand brief covering positioning, services, target client, and pricing')">Generate Kokoro's internal brief ↗</button>
+    <button class="ask-btn" onclick="sendPrompt('Give me a list of 20 Indian D2C brands that likely have weak brand positioning and would benefit from Kokoro\'s services')">Find 20 D2C target brands ↗</button>
+    <button class="ask-btn" onclick="sendPrompt('What are the most common mistakes new creative studios make in their first 6 months and how to avoid them')">Common mistakes to avoid ↗</button>
+  </div>
+
+</div>
+
+<script>
+function show(id) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.nav button').forEach(b => b.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  event.target.classList.add('active');
+  document.querySelector('.content').scrollTop = 0;
+}
+</script>
+
+</body>
+</html>
+kokoro_complete_business_roadmap.html
+Displaying kokoro_complete_business_roadmap.html.
