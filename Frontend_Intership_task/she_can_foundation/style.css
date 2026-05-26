@@ -1,0 +1,50 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+.nav-bar1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-right: 60px;
+  
+   
+}
+.contact1 {
+    display: flex;
+      gap: 50px;
+}
+
+.social_media_logo {
+        display: flex;
+       gap: 30px;
+       
+}
+.icons1 {
+    display: flex;
+    gap: 20px;
+}
+a {
+    text-decoration: none;
+}
+ ul  {
+    list-style-type: none;
+ }
+
+
+ /* 2ND NAVBAR */
+ .nav-bar2 {
+    display: flex;
+    justify-content: space-around;
+        padding: 20px;
+         /* background-color: aqua; */
+ }
+
+ .about1 {
+    display: flex;
+        gap: 30px;
+ }
+ .web_logo img {
+ width: 120px;
+ }
