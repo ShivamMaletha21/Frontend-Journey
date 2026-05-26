@@ -14,8 +14,6 @@ function percentage() {
 
     let result = total(math,physics,chem,eng,physical,total_max);
     document.getElementById("result").innerText = "total percentage is" + result;
-
-    
 }
 
 
