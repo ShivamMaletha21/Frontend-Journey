@@ -7,7 +7,7 @@
 
 body {
     min-height: 100vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Playfair Display', serif;
 }
 .nav-bar1 {
     display: flex;
@@ -370,6 +370,7 @@ hr {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: 0.3s ease;
     background: #fff;
+    cursor: pointer;
 }
 
 .second-page-card:hover {
@@ -380,6 +381,7 @@ hr {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    
 }
 
 .second-card-content {
@@ -616,6 +618,235 @@ hr {
     }
 
     .second-card-content p {
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+
+/* 3RD OR LAST PAGE */
+.third-page {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 40px 40px;
+    gap:60px;
+    
+}
+
+/* left text */
+.third-page-text {
+    flex: 1;
+    text-align: center;
+}
+/* 
+right side */
+.third-page-form {
+    flex: 1;
+
+}
+
+/* designing left side content */
+.third-page-text {
+
+}
+.third-page-text img {
+    width: 100%;
+    padding: 40px;
+}
+.third-content h2{
+ font-size: 55px;
+ font-weight: 700;
+ color: #1E293B;
+ 
+}
+.third-content p {
+    font-size: 18px;
+    font-weight: 200;
+    color: #475569;
+    letter-spacing: 1.0px;
+    text-align: justify;
+    padding: 30px;       
+}
+
+/* designing form  (Right Side content)*/
+.third-form {
+    display: flex;
+    flex-direction: column;
+    padding:80px ;
+    
+    margin-bottom: 30px;
+    background-color: #F7DB58;
+}
+.third-form h2 {
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+.third-form input{
+
+    padding:15px;
+    margin-bottom: 30px;
+    width:70%;
+    border: none;
+    font-size: 16px;
+}
+.text-msg {
+    width: 70%;
+    height:150px;
+    border: none;
+}
+
+#form-btn {
+    margin-top:40px;
+        width: 34%;
+        height: 50px; border-radius: 8px;
+        border: none;
+        background-color: #1E293B;
+        color: #ffffff;
+        font-size: 16px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-weight: 600;
+}
+
+/* adjusting text inside input box */
+.text-msg::placeholder {
+    
+    padding: 10px;
+    font-size: 16px;
+}
+
+#form-btn:hover {
+    background-color: transparent;
+        color: #1E293B;
+    border: 2px solid #1E293B;
+         
+}
+
+/* focus user clicked/selected element.. removing broder when user clicked input text inside form */
+input:focus,
+textarea:focus {
+    outline: none;
+    border: none;
+}
+
+
+
+ /* Resposive for 3rd page */
+
+ /* tablet */
+
+
+@media (max-width: 992px) {
+
+    .third-page {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 20px;
+        gap: 40px;
+    }
+
+    /* LEFT SECTION */
+    .third-page-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .third-page-text img {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .third-content h2 {
+        font-size: 42px;
+        line-height: 1.3;
+    }
+
+    .third-content p {
+        font-size: 17px;
+        padding: 15px;
+        text-align: center;
+        line-height: 1.8;
+    }
+
+    /* RIGHT FORM SECTION */
+    .third-page-form {
+        width: 100%;
+    }
+
+    .third-form {
+        padding: 50px 30px;
+        border-radius: 18px;
+    }
+
+    .third-form h2 {
+        font-size: 38px;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .third-form input {
+        width: 100%;
+    }
+
+    .text-msg {
+        width: 100%;
+    }
+
+    #form-btn {
+        width: 100%;
+    }
+}
+
+
+
+
+/* mobile */
+
+@media (max-width: 576px) {
+
+    .third-page {
+        padding: 25px 15px;
+        gap: 30px;
+    }
+
+    .third-page-text img {
+        padding: 5px;
+    }
+
+    .third-content h2 {
+        font-size: 32px;
+    }
+
+    .third-content p {
+        font-size: 15px;
+        padding: 10px;
+        letter-spacing: 0.5px;
+    }
+
+    .third-form {
+        padding: 35px 20px;
+    }
+
+    .third-form h2 {
+        font-size: 28px;
+    }
+
+    .third-form input {
+        padding: 14px;
+        font-size: 15px;
+    }
+
+    .text-msg {
+        height: 120px;
+    }
+
+    #form-btn {
+        width: 100%;
+        height: 48px;
         font-size: 15px;
     }
 }
