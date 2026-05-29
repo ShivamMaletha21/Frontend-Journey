@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>She_can_foundation</title>
+
+    <!-- font links -->
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap"
       rel="stylesheet"
@@ -12,6 +14,9 @@
       href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Lora:wght@400;500&display=swap"
       rel="stylesheet"
     />
+
+    <!-- animation AOS (animate on scroll) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
 
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -78,7 +83,7 @@
     <!-- MAIN -->
     <main>
       <!-- HERO SECTION -->
-      <section class="hero">
+      <section class="hero" data-aos="fade-up">
         <div class="hero-section">
           <h1 id="head1">Your Support Can Change Someone’s Life Today</h1>
           <p>
@@ -98,13 +103,13 @@
       <section class="second-page">
         <div class="second-content">
           <div class="second-page-content">
-            <div class="second-page-head">
+            <div class="second-page-head" data-aos="fade-right">
               <h1 id="head2">
                 Together, We Can Create a Better Future for Every Child
               </h1>
             </div>
 
-            <div class="second-content-para">
+            <div class="second-content-para" data-aos="fade-left">
               <p id="para2">
                 Millions of children around the world still struggle with
                 hunger, lack of education, and limited access to basic
@@ -122,6 +127,7 @@
               <img
                 src="assets/cards/pexels-balljinder-singh-666149-1895113.jpg"
                 alt="img1"
+                data-aos="zoom-in"
               />
 
               <div class="second-card-content">
@@ -139,6 +145,7 @@
               <img
                 src="assets/cards/pexels-ian-taylor-2156586581-36746074.jpg"
                 alt="img1"
+                data-aos="zoom-in"
               />
               <div class="second-card-content">
                 <h2>Empower Women</h2>
@@ -155,6 +162,7 @@
               <img
                 src="assets/cards/pexels-ian-taylor-2156586581-36915231.jpg"
                 alt="img1"
+                data-aos="zoom-in"
               />
               <div class="second-card-content">
                 <h2>Build Better Futures</h2>
@@ -171,6 +179,7 @@
               <img
                 src="assets/cards/pexels-swastikarora-18012459.jpg"
                 alt="img1"
+                data-aos="zoom-in"
               />
               <div class="second-card-content">
                 <h2>Stand For Humanity</h2>
@@ -206,7 +215,7 @@
           </div>
         </div>
 
-        <div class="third-page-form">
+        <div class="third-page-form" data-aos="fade-left">
           <form action="#" method="post" class="third-form">
             <h2>Become A Volunteer</h2>
 
@@ -321,5 +330,15 @@
         <p>© 2026 She Can Foundation. All Rights Reserved.</p>
       </div>
     </footer>
+
+    <!-- AOS code javascript -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
   </body>
 </html>

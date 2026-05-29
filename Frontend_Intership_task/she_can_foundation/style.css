@@ -10,6 +10,12 @@ body {
     font-family: 'Playfair Display', serif;
     display:flex;
     flex-direction: column;
+   
+}
+
+html,
+body {
+    overflow-x: hidden;
 }
 .nav-bar1 {
     display: flex;
@@ -414,8 +420,9 @@ font-family: 'Lora', serif;
 
     /* TOP NAVBAR */
     .nav-bar1 {
-        flex-direction: column;
-        align-items: center;
+        
+        flex-direction: row;
+        justify-content: space-between;
         gap: 20px;
         margin-right: 0;
         padding: 15px;
@@ -631,6 +638,8 @@ font-family: 'Lora', serif;
 
 
 
+
+
 /* 3RD OR LAST PAGE */
 .third-page {
     display: flex;
@@ -701,18 +710,6 @@ right side */
     border: none;
 }
 
-#form-btn {
-    margin-top:40px;
-        width: 34%;
-        height: 50px; border-radius: 8px;
-        border: none;
-        background-color: #1E293B;
-        color: #ffffff;
-        font-size: 16px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        font-weight: 600;
-}
 
 /* adjusting text inside input box */
 .text-msg::placeholder {
@@ -721,11 +718,27 @@ right side */
     font-size: 16px;
 }
 
+#form-btn {
+    margin-top: 40px;
+    width: 34%;
+    height: 50px;
+    border-radius: 8px;
+
+    border: 2px solid #1E293B;
+
+    background-color: #1E293B;
+    color: #ffffff;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
 #form-btn:hover {
     background-color: transparent;
-        color: #1E293B;
-    border: 2px solid #1E293B;
-         
+    color: #1E293B;
 }
 
 /* focus user clicked/selected element.. removing broder when user clicked input text inside form */
