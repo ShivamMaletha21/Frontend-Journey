@@ -8,6 +8,8 @@
 body {
     min-height: 100vh;
     font-family: 'Playfair Display', serif;
+    display:flex;
+    flex-direction: column;
 }
 .nav-bar1 {
     display: flex;
@@ -218,25 +220,27 @@ hr {
 
 /* HEADING */
 #head1 {
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 15px;
-    text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.6);
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    font-size: 60px;
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: white;
+    font-family: 'Cormorant Garamond', serif;
+        margin-bottom: 20px;
+    text-shadow: 2px 5px 20px rgba(0, 0, 0, 0.8);
     
 }
 
 
 /* PARAGRAPH */
 .hero-section p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: rgba(255, 255, 255, 0.85);
-    margin-bottom: 25px;
-    text-align: center;
+    font-size: 20px;
+        line-height: 1.7;
+        color: rgba(255, 255, 255, 0.85);
+font-family: 'Lora', serif;
+        max-width: 700px;
+        margin: 0 auto 30px;
 }
 
 /* BUTTON CONTAINER */
@@ -252,13 +256,14 @@ hr {
     padding: 16px 28px;
     border-radius: 30px;
     border: none;
-    background-color: #FF9671;
+    background-color:#DB473D;
     color: white;
     font-weight: 600;
     cursor: pointer;
     transition: 0.3s ease;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
 }
+
 
 /* SECONDARY BUTTON */
 .secondary-button {
@@ -274,13 +279,12 @@ hr {
 
 /* HOVER EFFECTS */
 .primary-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+    background-color: #D90429;
 }
 
 .secondary-button:hover {
     background: rgba(255, 255, 255, 0.1);
-    transform: translateY(-3px);
+   
 }
 
 
@@ -650,9 +654,7 @@ right side */
 }
 
 /* designing left side content */
-.third-page-text {
 
-}
 .third-page-text img {
     width: 100%;
     padding: 40px;
@@ -676,8 +678,8 @@ right side */
 .third-form {
     display: flex;
     flex-direction: column;
-    padding:80px ;
-    
+    padding:60px ;
+    height:153%;
     margin-bottom: 30px;
     background-color: #F7DB58;
 }
@@ -775,10 +777,11 @@ textarea:focus {
     /* RIGHT FORM SECTION */
     .third-page-form {
         width: 100%;
+       
     }
 
     .third-form {
-        padding: 50px 30px;
+        padding: 100px 90px;
         border-radius: 18px;
     }
 
@@ -854,7 +857,267 @@ textarea:focus {
 
 /* FOOTER-SECTION */
 
+
 .footer-section {
+
+    height:50vh;
     display:flex;
     justify-content: space-between;
+    margin-top: 20%;
+   
+    background-color: #2B2D42;
+    color: #F7FFF7;
+
+    position: relative;
+    
+}
+
+.footer-section::after {
+    content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        height: 1px;
+        background-color: #8D99AE;
+}
+
+/* Company */
+ .company {
+    padding:40px;
+    
+    
+}
+.company-content h2,p{
+    margin-bottom: 20px;
+    
+     
+}
+.company-content h2 {
+    font-size: 27px;
+    color: #1E293B;
+    color: #F7FFF7;
+}
+.company-content p{
+    font-size: 17px;
+    color:#8D99AE;
+    
+}
+
+/* quick links */
+.foot-about {
+    padding:44px;
+}
+
+.foot-about1 {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap:17px;
+    
+   
+}
+
+.foot-about1 h2 {
+    font-size: 27px;
+    color: #1E293B;
+    margin-bottom: 20px;
+    color: #F7FFF7;
+}
+
+.foot-about1  a {
+font-size: 19px;
+text-decoration: none;
+color: #475569;
+color: #F7FFF7;
+}
+.foot-subscribe {
+    display: flex;
+    flex-direction: column;
+    padding:40px;
+    gap:20px;
+    
+}
+
+.foot-subscribe h2 {
+    font-size: 27px;
+    color: #1E293B;
+    color: #F7FFF7;
+      
+}
+.foot-subscribe p {
+    font-size: 19px;
+    text-decoration: none;
+color: #8D99AE;
+}
+#subs  {
+    flex:2fr;
+width:100%;
+height:16%;
+border:1px solid #d3d3d3;
+}
+#sub-btn {
+    width:40%;
+    height:15%;
+    border: 1px solid #d3d3d3;
+    border:none;
+    border-radius: 8px;
+    
+    background-color: #FF9671;
+    color: white;
+    font-weight:600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+#sub-btn:hover {
+background-color: #F7DB58;
+}
+/* 
+GALLERY  */
+
+
+.gallery {
+    flex: 1;
+    padding:38px;
+  
+} 
+.gallery h2 {
+   margin-left: 40px;
+   margin-bottom: 20px;
+color: #F7FFF7;
+}
+.galery-cards {
+    flex:1fr;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;  
+    width: 100%;
+    height:70%;
+    gap:4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+}
+.gallery img {
+    width: 100%;
+        height: 100px;
+        object-fit: cover;
+    
+}
+
+.galery-cards:hover {
+transform: translateY(-3px);
+}
+
+
+.ending {
+    background-color: #2B2D42;
+    height:8vh;
+    text-align: center;
+}
+.ending p {
+    padding:10px;
+    font-size: 18px;
+    color: #8D99AE; 
+}
+
+
+
+
+
+/* Resposive footer */
+
+@media (max-width: 1024px) {
+
+    .footer-section {
+        flex-wrap: wrap;
+        height: auto;
+        gap: 30px;
+        padding-bottom: 40px;
+    }
+
+    .company,
+    .foot-about,
+    .foot-subscribe,
+    .gallery {
+        width: 45%;
+        padding: 25px;
+    }
+
+    .galery-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #subs {
+        height: 45px;
+    }
+
+    #sub-btn {
+        height: 45px;
+        width: 50%;
+    }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .footer-section {
+        flex-direction: column;
+        height: auto;
+        margin-top: 60px;
+        gap: 20px;
+    }
+
+    .company,
+    .foot-about,
+    .foot-subscribe,
+    .gallery {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .company-content h2,
+    .foot-about1 h2,
+    .foot-subscribe h2,
+    .gallery h2 {
+        font-size: 24px;
+    }
+
+    .company-content p,
+    .foot-subscribe p,
+    .foot-about1 a {
+        font-size: 16px;
+    }
+
+    .galery-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px;
+    }
+
+    .gallery img {
+        height: 90px;
+    }
+
+    #subs {
+        width: 100%;
+        height: 45px;
+        padding-left: 10px;
+    }
+
+    #sub-btn {
+        width: 100%;
+        height: 45px;
+    }
+
+    .ending {
+        height: auto;
+        padding: 10px;
+    }
+
+    .ending p {
+        font-size: 15px;
+    }
 }
