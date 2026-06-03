@@ -268,12 +268,13 @@ font-family: "Cormorant Garamond", serif;
 SERVICE SECTION STARST */
 .services {
     background-color: #F8F5F1;
-    padding: 120px 10%;
+    
     background-image: url(assets/about-us/Desenhos.jfif.jpeg);
     background-repeat: no-repeat;
-   background-color: white;
-padding: 120px 10%;
-    position: relative;
+   background-color: white;  
+padding:  10%;
+background-size: 700px;
+   
 }
 
 
@@ -309,7 +310,7 @@ padding: 120px 10%;
 .brands:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 40px rgba(0, 0, 0, .08);
-    transform: rotate(-1deg);
+   
 }
 .brands::before {
     content: "";
@@ -339,4 +340,127 @@ padding: 120px 10%;
 .services .brand {
     color: #CC0000;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+/* SERVICE SECTION ENDS HERE */
+
+
+/* OUR PORTFOILIO SECTION STARTS */
+/* PORTFOLIO SECTION */
+
+.portfolio {
+    padding: 100px 10%;
+background-color:white;
+}
+
+.section-tag {
+    color: #CC0000;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 15px;
+    font-family: "Inter", sans-serif;
+}
+
+.portfolio h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 5rem;
+    margin-bottom: 70px;
+    font-weight: 500;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.project-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: .4s;
+    border: 1px solid #ececec;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .08);
+}
+
+.project-card img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    display: block;
+}
+
+.project-content {
+    padding: 40px;
+}
+
+.project-content h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.project-type {
+    color: #CC0000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13px;
+    font-family: "Inter", sans-serif;
+}
+
+.project-content p {
+    margin-top: 25px;
+    line-height: 1.8;
+    font-size: 1.2rem;
+    font-family: "Cormorant Garamond", serif;
+}
+
+/* VIEW PROJECT */
+
+.view-project {
+    margin-top: 35px;
+}
+
+.view-project a {
+    text-decoration: none;
+    color: black;
+    letter-spacing: 2px;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    font-family: "Inter", sans-serif;
+}
+
+.view-project span {
+    transition: .3s;
+    color: black;
+    font-size: 30px;
+    margin-bottom: 3%;
+        
+}
+
+.project-card:hover .view-project span {
+    transform: translateX(10px);
+   
+}
+
+.view-project a::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #CC0000;
+    transition: .3s;
+}
+
+.project-card:hover .view-project a::after {
+    width: 100%;
 }
