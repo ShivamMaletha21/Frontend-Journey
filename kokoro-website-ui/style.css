@@ -267,8 +267,7 @@ font-family: "Cormorant Garamond", serif;
 /* 
 SERVICE SECTION STARST */
 .services {
-    background-color: #F8F5F1;
-    
+    background: #F4EFE8;
     background-image: url(assets/about-us/Desenhos.jfif.jpeg);
     background-repeat: no-repeat;
    background-color: white;  
@@ -349,7 +348,7 @@ background-size: 700px;
 
 .portfolio {
     padding: 100px 10%;
-background-color:white;
+background: #F8F5F1;
 }
 
 .section-tag {
@@ -463,4 +462,247 @@ background-color:white;
 
 .project-card:hover .view-project a::after {
     width: 100%;
+}
+
+/* PROJECT SECTION ENDS HERE */
+
+
+/* PROCESS SECTION STARTS FROM HERE */
+
+
+
+.process {
+    position: relative;
+    background: #F4EFE8;
+    padding: 160px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 120px;
+    overflow: hidden;
+}
+
+/* Giant background word */
+
+.process::before {
+    content: "PROCESS";
+    position: absolute;
+    top: 60px;
+    right: -30px;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 16rem;
+    font-weight: 600;
+
+    color: rgba(0, 0, 0, 0.03);
+
+    pointer-events: none;
+    user-select: none;
+}
+
+/* LEFT SIDE */
+
+.process-left {
+    width: 30%;
+    position: relative;
+    z-index: 2;
+}
+
+/* Red label */
+
+.process-tag {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+    color: #B6483D;
+
+    margin-bottom: 25px;
+}
+
+.process-tag::before {
+    content: "";
+    width: 40px;
+    height: 1px;
+    background: #B6483D;
+}
+
+/* Heading */
+
+.process-left h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 4.5rem;
+    line-height: 0.95;
+    font-weight: 500;
+    color: #111;
+}
+
+/* Quote */
+
+.process-quote {
+    margin-top: 70px;
+
+    font-family: "Parisienne", cursive;
+    font-size: 2.8rem;
+    line-height: 1.2;
+
+    color: #B6483D;
+
+    opacity: .9;
+}
+
+/* RIGHT SIDE */
+
+.process-right {
+    flex: 1;
+    position: relative;
+    z-index: 2;
+}
+
+/* Timeline */
+
+.timeline {
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 30px;
+}
+
+/* Main connecting line */
+
+.timeline-line {
+    position: absolute;
+
+    top: 62px;
+    left: 90px;
+    right: 90px;
+
+    height: 1px;
+
+    background: linear-gradient(to right,
+            #d9cfc5,
+            #b6483d,
+            #d9cfc5);
+
+    z-index: 1;
+}
+
+/* Step */
+
+.step {
+    width: 180px;
+    position: relative;
+    z-index: 3;
+    transition: .4s ease;
+    height:400px;
+    
+        }
+    
+
+
+
+/* Alternate layout */
+
+.step:nth-child(2) {
+    margin-top: 0;
+}
+
+.step:nth-child(3) {
+    margin-top: 35px;
+}
+
+.step:nth-child(4) {
+    margin-top: 0;
+}
+
+.step:nth-child(5) {
+    margin-top: 35px;
+}
+
+/* Circle */
+
+.circle {
+    width: 72px;
+    height: 72px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, .7);
+
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(182, 72, 61, .15);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto;
+
+    transition: .4s ease;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, .04);
+}
+
+/* Lucide Icons */
+
+.circle svg {
+    width: 24px;
+    height: 24px;
+
+    stroke: #8b6a57;
+    stroke-width: 1.5;
+}
+
+/* Titles */
+
+.step h3 {
+    margin-top: 30px;
+
+    text-align: center;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2rem;
+    font-weight: 600;
+
+    color: #111;
+}
+
+/* Text */
+
+.step p {
+    margin-top: 14px;
+
+    text-align: center;
+
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    line-height: 1.9;
+
+    color: #666;
+}
+
+/* Hover */
+
+.step:hover {
+    transform: translateY(-10px);
+}
+
+.step:hover .circle {
+    border-color: #B6483D;
+
+    box-shadow:
+        0 15px 35px rgba(182, 72, 61, .12);
+}
+
+.step:hover svg {
+    stroke: #B6483D;
 }
