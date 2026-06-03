@@ -236,8 +236,9 @@ font-family: "Cormorant Garamond", serif;
     flex:1.4;
 }
 .about-img img {
-    width: 100%;
+    width: 80%;
     height:auto;
+    display: block;
 }
 
 
@@ -260,4 +261,82 @@ font-family: "Cormorant Garamond", serif;
     font-size: 14px;
     font-family: "Inter", sans-serif;
 }
+/* ABOUT SECTION ENDS HERE */
 
+
+/* 
+SERVICE SECTION STARST */
+.services {
+    background-color: #F8F5F1;
+    padding: 120px 10%;
+    background-image: url(assets/about-us/Desenhos.jfif.jpeg);
+    background-repeat: no-repeat;
+   background-color: white;
+padding: 120px 10%;
+    position: relative;
+}
+
+
+.services h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 4rem;
+    margin-bottom: 70px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.services h1 {
+    grid-column: 1/-1;
+}
+
+.brands {
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid #e5e5e5;
+    transition: all .4s ease;
+
+}
+.brands {
+    background: rgba(255, 255, 255, .75);
+    backdrop-filter: blur(8px);
+}
+
+.brands:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .08);
+    transform: rotate(-1deg);
+}
+.brands::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: #CC0000;
+    margin-bottom: 20px;
+}
+
+
+.brands h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+
+}
+
+.brands p {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.3rem;
+    line-height: 1.7;
+ 
+
+}
+
+.services .brand {
+    color: #CC0000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
