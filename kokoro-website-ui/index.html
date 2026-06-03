@@ -15,6 +15,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+    <!-- style sheet -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -75,7 +79,7 @@
     <main>
       <!-- HERO SECTION -->
       <section class="hero">
-        <div class="hero-content-main">
+        <div class="hero-content-main" data-aos="fade-up">
           <div class="hero-content">
             <p id="tagline">harmony of heart, mind, and intention.</p>
             <h1>
@@ -99,7 +103,7 @@
       <!-- ABOUT US SECTION -->
 
       <section class="about-us">
-        <div class="about-content">
+        <div class="about-content" data-aos="fade-up">
           <h1>Design with Kokoro</h1>
           <p>
             We believe great branding is not just visuals—it is emotion,
@@ -133,7 +137,11 @@
         </div>
 
         <div class="about-img">
-          <img src="assets/about-us/download (9).jfif.jpeg" alt="aboutimg1" />
+          <img
+            src="assets/about-us/download (9).jfif.jpeg"
+            alt="aboutimg1"
+            data-aos="fade-left"
+          />
         </div>
       </section>
 
@@ -142,7 +150,7 @@
       <section class="services">
         <h1>What <span class="brand"> We Create</span> with Kokoro</h1>
 
-        <div class="brands">
+        <div class="brands" data-aos="fade-right">
           <h2>Brand Identity Design</h2>
           <p>
             We design logos, color systems, typography, and complete visual
@@ -150,21 +158,21 @@
           </p>
         </div>
 
-        <div class="brands">
+        <div class="brands" data-aos="fade-left">
           <h2>Website & Landing Page Design</h2>
           <p>
             We build clean, modern, and conversion-focused websites that turn
             visitors into customers.
           </p>
         </div>
-        <div class="brands">
+        <div class="brands" data-aos="fade-right">
           <h2>UI/UX Design</h2>
           <p>
             We design user-friendly digital experiences that feel smooth,
             simple, and professional.
           </p>
         </div>
-        <div class="brands">
+        <div class="brands" data-aos="fade-left">
           <h2>Social Media Branding</h2>
           <p>
             We create consistent Instagram and social media visuals that
@@ -179,50 +187,54 @@
         <p class="section-tag">OUR PORTFOLIO</p>
 
         <h1>Selected Work</h1>
+        <div class="port-content">
+          <div class="portfolio-grid">
+            <!-- Glowora -->
+            <div class="project-card" data-aos="fade-right">
+              <img src="assets/our_products/glowora.png" alt="Glowora" />
 
-        <div class="portfolio-grid">
-          <!-- Glowora -->
-          <div class="project-card">
-            <img src="assets/our_products/glowora.png" alt="Glowora" />
+              <div class="project-content">
+                <h2>Glowora</h2>
 
-            <div class="project-content">
-              <h2>Glowora</h2>
+                <span class="project-type"> Skincare Brand </span>
 
-              <span class="project-type"> Skincare Brand </span>
+                <p>
+                  A soft, minimal skincare brand identity designed with Kokoro
+                  principles—focused on trust, elegance, and emotional
+                  connection.
+                </p>
 
-              <p>
-                A soft, minimal skincare brand identity designed with Kokoro
-                principles—focused on trust, elegance, and emotional connection.
-              </p>
-
-              <div class="view-project">
-                <a href="#">
-                  VIEW PROJECT
-                  <span>→</span>
-                </a>
+                <div class="view-project">
+                  <a href="#">
+                    VIEW PROJECT
+                    <span>→</span>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
 
-          <!-- FitCore -->
-          <div class="project-card">
-            <img src="assets/our_products/fitcore.png" alt="FitCore" />
+            <!-- FitCore -->
+            <div class="fit" data-aos="fade-left">
+              <div class="project-card">
+                <img src="assets/our_products/fitcore.png" alt="FitCore" />
 
-            <div class="project-content">
-              <h2>FitCore</h2>
+                <div class="project-content">
+                  <h2>FitCore</h2>
 
-              <span class="project-type"> Fitness Brand </span>
+                  <span class="project-type"> Fitness Brand </span>
 
-              <p>
-                A bold and energetic identity designed to inspire strength,
-                motivation, and performance.
-              </p>
+                  <p>
+                    A bold and energetic identity designed to inspire strength,
+                    motivation, and performance.
+                  </p>
 
-              <div class="view-project">
-                <a href="#">
-                  VIEW PROJECT
-                  <span>→</span>
-                </a>
+                  <div class="view-project">
+                    <a href="#">
+                      VIEW PROJECT
+                      <span>→</span>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -231,7 +243,7 @@
 
       <!-- PROCESS SECTION -->
       <section class="process">
-        <div class="process-left">
+        <div class="process-left" data-aos="fade-up">
           <p class="process-tag">OUR PROCESS</p>
 
           <h2>
@@ -246,7 +258,7 @@
           </p>
         </div>
 
-        <div class="process-right">
+        <div class="process-right" data-aos="fade-up">
           <div class="timeline">
             <div class="timeline-line"></div>
 
@@ -294,6 +306,15 @@
       </section>
     </main>
 
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 1500,
+        once: true,
+      });
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
