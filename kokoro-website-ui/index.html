@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
+    <!-- Cormorant+Garamond font -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Parisienne&family=Poppins:wght@300;400;500;600&display=swap");
+    </style>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -94,12 +98,32 @@
           <p>
             We believe great branding is not just visuals—it is emotion,
             clarity, and meaning combined. <br />
-            Kokoro (心) represents the unity of heart, mind, and inner self.
+
+            <span class="brand">Kokoro (心)</span> represents the unity of
+            heart, mind, and inner self.
             <br />
             We use this philosophy to design brands that feel human, premium,
             and trustworthy. We don’t just design logos or websites. We design
             how people feel about your brand.
           </p>
+
+          <!-- animation counter -->
+          <div class="stats">
+            <div class="stat">
+              <h3 class="counter" data-target="25">0</h3>
+              <p>Projects Completed</p>
+            </div>
+
+            <div class="stat">
+              <h3 class="counter" data-target="12">0</h3>
+              <p>Brands Built</p>
+            </div>
+
+            <div class="stat">
+              <h3 class="counter" data-target="100">0</h3>
+              <p>Client Focus</p>
+            </div>
+          </div>
         </div>
 
         <div class="about-img">
@@ -107,5 +131,7 @@
         </div>
       </section>
     </main>
+
+    <script src="script.js"></script>
   </body>
 </html>
