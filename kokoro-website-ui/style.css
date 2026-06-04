@@ -935,4 +935,149 @@ height:80%;
         font-size: 3rem;
     }
 }
+/* WHY CHOOSE US SECTION FINISH HERE */
 
+
+
+
+
+/* FINAL CTA SECTION STARTS FROM HERE */
+/* RESET */
+/* ================= CTA SECTION ================= */
+.cta {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+
+    background: linear-gradient(180deg, #f8f4ee 0%, #f3ede5 100%);
+}
+
+/* ================= SOFT GLOW ================= */
+.cta-glow {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    filter: blur(90px);
+    opacity: 0.65;
+    animation: floatGlow 12s ease-in-out infinite;
+    z-index: 1;
+}
+
+.glow1 {
+    background: radial-gradient(circle, rgba(255, 200, 170, 0.35), transparent 60%);
+    top: -10%;
+    left: -10%;
+}
+
+.glow2 {
+    background: radial-gradient(circle, rgba(255, 220, 230, 0.25), transparent 60%);
+    bottom: -15%;
+    right: -10%;
+    animation-delay: 3s;
+}
+
+@keyframes floatGlow {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    50% {
+        transform: translate(60px, -40px) scale(1.1);
+    }
+
+    100% {
+        transform: translate(0, 0) scale(1);
+    }
+}
+
+/* ================= BACKGROUND KOKORO SYMBOL ================= */
+.cta-symbol {
+    position: absolute;
+    font-size: 420px;
+
+    /* IMPORTANT FIX — visible but premium */
+    color:   rgba(204, 0, 0, 0.10);
+
+    transform: rotate(-10deg);
+    user-select: none;
+    z-index: 1;
+}
+
+/* ================= CONTENT ================= */
+.cta-content {
+    position: relative;
+    z-index: 10;
+    max-width: 850px;
+    padding: 0 20px;
+}
+
+.cta-tag {
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #8d7f71;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.cta-content h2 {
+    font-size: clamp(3rem, 6vw, 5.8rem);
+    font-weight: 500;
+    color: #111;
+    line-height: 1.05;
+    margin-bottom: 20px;
+}
+
+.cta-content p {
+    font-size: 1.15rem;
+    color: #666;
+    line-height: 1.8;
+    max-width: 650px;
+    margin: 0 auto 40px;
+}
+
+/* ================= BUTTON ================= */
+.cta-btn {
+    display: inline-block;
+    padding: 16px 40px;
+    border-radius: 999px;
+    border: 1px solid rgba(17, 17, 17, 0.6);
+    text-decoration: none;
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+    background: #111;
+}
+
+.cta-btn:hover {
+    background:  #CC0000;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+
+
+
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+    .cta-content h2 {
+        font-size: 3rem;
+    }
+
+    .cta-content p {
+        font-size: 1rem;
+    }
+
+    .cta-symbol {
+        font-size: 250px;
+    }
+}
