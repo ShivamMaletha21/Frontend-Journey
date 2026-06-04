@@ -1,13 +1,15 @@
 // Q2 Create a function with a default price value if the user does not provide one.
 
-const real_price = (price="400$") => {
-    document.getElementById("msg").innerText = price;
-}
+const defaultPrice = (userprice = "500")=> {
+
+    document.getElementById("msg").innerText = `Hey the actual price is $${userprice}`
+};
 
 let btn = document.getElementById("btn");
+btn.addEventListener("click",()=> {
+    let realprice = Number(document.getElementById("input").value.trim());
 
-btn.addEventListener("click", () => {
-    let new_price = document.getElementById("price").value;
+    defaultPrice(realprice || undefined);
+});
 
-    real_price(new_price || undefined)
-})
+

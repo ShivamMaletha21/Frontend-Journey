@@ -1,16 +1,17 @@
-// Q1. Create a function with a default parameter that greets a user. If no name is passed, use Guest.
+// Q1 Create a function with a default parameter that greets a user. If no name is passed, use Guest.
 
-const greet = (name = "Guest") => {
-    document.getElementById("msg").innerText = name;
-}
 
+// Passed value > Default value... here default value which is guest is reaplce by the value that we pass
+const greetUser = (username = "Guest") => {
+        document.getElementById("msg").innerText = 
+        `Hey this is ${username}`;
+    };
+
+    
 let btn = document.getElementById("btn");
+btn.addEventListener("click",() => {
+    let inputValue = document.getElementById("input").value.trim();
 
-btn.addEventListener("click", () => {
-    let user = document.getElementById("name").value;
-
-    // If value is undefined → use default..If value exists → use that value
-
-    greet(user || undefined);
-}); 
+    greetUser(inputValue || undefined);
+});
 
