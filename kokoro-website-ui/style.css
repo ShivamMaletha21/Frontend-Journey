@@ -466,10 +466,10 @@ background: #F8F5F1;
 /* PROJECT SECTION ENDS HERE */
 
 
+
+
+
 /* PROCESS SECTION STARTS FROM HERE */
-
-
-
 .process {
     position: relative;
     background: #F4EFE8;
@@ -705,3 +705,234 @@ background: #F8F5F1;
 .step:hover svg {
     stroke: #B6483D;
 }
+/* PROCESS SECTION ENDS HERE */
+
+
+
+
+/* WHY US SECTION  STARTS HERE*/
+
+.why-us {
+    padding: 120px 5%;
+    background: #f5f3ef;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.label {
+    display: block;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #8d7f71;
+    margin-bottom: 20px;
+}
+
+.section-header h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 4.5rem;
+    font-weight: 500;
+    line-height: 1.05;
+    color: #111;
+    margin-bottom: 20px;
+}
+
+.section-header p {
+    max-width: 650px;
+    margin: auto;
+    color: #6e6e6e;
+    line-height: 1.7;
+}
+
+/* GRID */
+
+.bento-grid {
+    max-width: 1250px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* CARD */
+
+.card {
+    background: #fbfaf8;
+    border-radius: 18px;
+
+    min-height: 290px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 34px;
+
+    overflow: hidden;
+}
+
+.beige {
+    background: #f1ece2;
+}
+
+.dark {
+    background: #0f0f0f;
+}
+
+.dark h3,
+.dark p,
+.dark .number {
+    color: white;
+}
+
+/* CONTENT */
+
+.card-content {
+    width: 45%;
+}
+
+
+.number {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 25px;
+    color: #111;
+}
+
+.card-content h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2.2rem;
+    line-height: 1.15;
+    font-weight: 500;
+    color: #111;
+
+    margin-bottom: 18px;
+}
+
+.card-content p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #666;
+}
+
+/* card 3 */
+.card-content .card3-ui {
+color: rgba(255, 255, 255, 0.8);
+}
+/* IMAGE */
+
+.card-image {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-image img {
+    width: 90%;
+        max-width: 600px;
+        height:100%;
+    
+}
+
+ .card2 img {
+width: 90%;
+height:80%;
+
+}
+
+/* FULL WIDTH CARD */
+
+.full-width {
+    grid-column: 1 / -1;
+    min-height: 240px;
+}
+
+.large-image {
+    width: 70%;
+    height: 110%;
+    
+}
+
+.large-image img {
+    max-width: 1000px;
+    max-height: 1000px;
+ 
+    
+}
+
+/* HOVER */
+
+.card {
+    transition: .35s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* card5th */
+.philosophy {
+    margin-top: 22px;
+    padding-top: 18px;
+
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.philosophy h4 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+
+    color: #1a1a1a;
+
+    margin-bottom: 8px;
+}
+
+.philosophy-text {
+    font-size: 0.95rem;
+    line-height: 1.7;
+
+    color: #7a7a7a;
+
+    max-width: 280px;
+}
+
+/* MOBILE */
+
+@media(max-width:900px) {
+
+    .bento-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .full-width {
+        grid-column: auto;
+    }
+
+    .card {
+        flex-direction: column;
+        text-align: center;
+        min-height: auto;
+        padding: 30px;
+    }
+
+    .card-content {
+        width: 100%;
+    }
+
+    .card-image {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .section-header h2 {
+        font-size: 3rem;
+    }
+}
+
