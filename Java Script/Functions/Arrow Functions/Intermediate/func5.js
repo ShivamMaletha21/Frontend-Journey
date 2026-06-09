@@ -1,8 +1,7 @@
 // Q5 Create a function that accepts a user's name and unlimited hobbies.
 
 const Realname = (userName, ...hobbies) => {
-
-    let result = document.getElementById("msg").innerText = `The user name is ${userName} and its hobbies are ${hobbies}`
+      let result = `The user name is ${userName} and its hobbies are ${hobbies}`;
     return result;
 }
 
@@ -15,5 +14,7 @@ btn.addEventListener("click",() => {
       let realhobbies = hobbies.split(" ");
 
     let RealResult = Realname(name,...realhobbies);
+
+    document.getElementById("msg").innerText = RealResult;
 
 })
