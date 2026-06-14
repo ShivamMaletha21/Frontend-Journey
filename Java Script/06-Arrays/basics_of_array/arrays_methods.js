@@ -107,6 +107,39 @@ numbers3.sort((a,b)=>b-a);
 console.log(numbers3);
 
 
+//method level3... forEach(),map(),filter(),find(),reduce()
 
+//1. forEach() -> loop through every element of an array
+let fruits3 = ["Apple","Banana","Mango"];
+fruits3.forEach(function(fruit){
+    console.log(fruit);
+})
 
+//2. map() -> creates new array from old(previous)
+let numbers4 = [1,2,3];
+let doubled = numbers4.map(function(num){
+    return num * 2;
+});
+console.log(doubled);
 
+//3. filter -> creates a new array, contains only element that pass a condition.
+let numbers5 = [10,20,30,40,50];
+let result5 = numbers5.filter((num)=>{
+    return num>25;
+});
+console.log(result5);
+
+//4. find -> returns the first element that matches a condition.
+let numbers6 = [10,20,30,40,50];
+let result6 = numbers6.find((num)=>{
+    return num > 10;
+});
+console.log(result6);
+
+//5. reduce -> it reduces the entire array into a single value
+// combines everything into one final result
+let numbers7 = [10,20,30];
+let result7 = numbers7.reduce((acc,curr)=>{
+    return acc + curr;
+},0);
+console.log(result7);
