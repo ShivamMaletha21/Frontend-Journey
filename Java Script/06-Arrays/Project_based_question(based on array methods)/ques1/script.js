@@ -16,3 +16,15 @@ queue.shift();
 queue.shift();
 
 console.log("Final Queue:", queue);
+
+let ticketQueue = ["Customer1", "Customer2", "Customer3"];
+
+ticketQueue.push("Customer4");
+ticketQueue.push("Customer5");
+
+console.log("Current Queue:", ticketQueue);
+
+ticketQueue.shift();
+ticketQueue.shift();
+
+console.log("Queue After Serving:", ticketQueue);
