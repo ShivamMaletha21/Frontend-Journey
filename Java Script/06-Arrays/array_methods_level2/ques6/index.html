@@ -1,0 +1,37 @@
+<!-- Practical Question 3: Student Marks Dashboard
+Array:[85, 65, 92, 45, 78]
+Create buttons:
+Show Highest to Lowest
+Output:
+92, 85, 78, 65, 45
+Show Lowest to Highest
+Output:45, 65, 78, 85, 92
+Check Mark
+Input:78
+Display:Mark Found or Mark Not Found
+This naturally uses:
+sort()
+includes()
+join() -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="input" placeholder="enter marks" />
+    <button id="btn1">Display</button>
+    <button id="btn2">Descending</button>
+    <button id="btn3">Ascending</button>
+    <button id="btn4">Check Marks Exist</button>
+
+    <p id="display"></p>
+    <p id="desnd"></p>
+    <p id="asnd"></p>
+    <p id="exist"></p>
+
+    <script src="script.js"></script>
+  </body>
+</html>
