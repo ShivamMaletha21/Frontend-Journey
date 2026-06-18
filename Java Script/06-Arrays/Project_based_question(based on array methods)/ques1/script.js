@@ -1,30 +1,34 @@
-// Write a program to simulate a queue system where:
-// New customers join at the end.
-// Served customers leave from the front.
-// Print the final queue
+// Question 1: Classroom Attendance Manager
+// Create:
+// An input field
+// "Add Student" button
+// "Remove Last Student" button
+// Display all students on screen
 
+// Requirements:
+// When user enters a name and clicks Add Student, add it to the attendance list.
+// When Remove Last Student is clicked, remove the most recently added student.
+// Update the UI after every action.
 
-let queue = ["Rahul", "Aman", "Priya"];
+     // creating array
+    let students = [];
 
+    // Add Student
+    let btn1 = document.getElementById("btn1");
+    btn1.addEventListener("click",()=>{
+    //getting input
+    let input = document.getElementById("input").value ;
+    students.push(input);
+    document.getElementById("display").innerText = students;
+    // clearing the input field
+     document.getElementById("input").value = "";
+    });
 
-queue.push("Neha");
-queue.push("Rohit");
+    //Remove Last Student
 
-console.log("Queue after new customers:", queue);
+    let btn2 = document.getElementById("btn2");
+    btn2.addEventListener("click",()=>{
+        students.pop();
+     document.getElementById("display").innerText = students;
 
-queue.shift();
-queue.shift();
-
-console.log("Final Queue:", queue);
-
-let ticketQueue = ["Customer1", "Customer2", "Customer3"];
-
-ticketQueue.push("Customer4");
-ticketQueue.push("Customer5");
-
-console.log("Current Queue:", ticketQueue);
-
-ticketQueue.shift();
-ticketQueue.shift();
-
-console.log("Queue After Serving:", ticketQueue);
+    });
