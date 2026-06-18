@@ -1,0 +1,41 @@
+<!-- Question 2: Hospital Waiting Queue
+Create:
+
+Input field
+"Normal Patient" button
+"Emergency Patient" button
+"Treat Patient" button
+
+Requirements:
+
+Normal patient joins at the end of the queue.
+Emergency patient joins at the beginning.
+Treat Patient removes the patient who is first in the queue.
+Display the current queue on screen.
+
+This question covers:
+
+push()
+unshift()
+shift() -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="input" placeholder="enter patients" />
+    <button id="btn1">Normal Patients</button>
+    <button id="btn2">Emergency Patients</button>
+    <button id="btn3">Treat Patients</button>
+    <button id="btn4">Current Patients</button>
+
+    <p id="display"></p>
+    <p id="display_current"></p>
+
+    <script src="script.js"></script>
+  </body>
+</html>
