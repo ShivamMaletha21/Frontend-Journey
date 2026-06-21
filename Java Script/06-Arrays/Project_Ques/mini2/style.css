@@ -15,16 +15,20 @@ font-family: 'Inter', system-ui, -apple-system, Arial, sans-serif;
 /* HEADER */
 .header {
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .header h1 {
     font-size: 28px;
     margin: 0;
+    text-align: center;
 }
 
 .header p {
     color: #6b7c93;
     margin-top: 5px;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 /* SUMMARY */

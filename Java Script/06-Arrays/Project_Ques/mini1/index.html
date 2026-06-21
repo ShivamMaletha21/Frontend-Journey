@@ -1,0 +1,114 @@
+<!-- Smart Expense Tracker
+A JavaScript-based expense tracking application that allows users to manage and analyze their daily expenses.
+Features: 
+Add expenses with category and amount
+View all recorded expenses
+Filter expenses by category (Food, Travel, Shopping, etc.)
+Find high-value expenses
+Calculate total spending
+Format and display expense data dynamically
+Delete specific expenses -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- style sheet -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+
+  <!-- body -->
+  <body>
+    <!-- Main BOX -->
+    <div class="container">
+      <div class="header">
+        <h1>SMART EXPENSE TRACKER</h1>
+        <p>Track your daily spending smartly</p>
+        <span id="headline"></span>
+      </div>
+
+      <!-- Dashboard-->
+      <div class="dashboard">
+        <div class="box">
+          <h4>Total Spending</h4>
+          <p id="total_spend">$0</p>
+        </div>
+        <div class="box">
+          <h4>Biggest Expense</h4>
+          <p id="big_expense">$0</p>
+        </div>
+        <div class="box">
+          <h4>Expense This Month</h4>
+          <p id="monthly_expense">0</p>
+        </div>
+      </div>
+
+      <!-- MAIN -->
+      <div class="main">
+        <!-- left side -->
+        <div class="left">
+          <div class="box">
+            <h3>ADD EXPENSE</h3>
+
+            <!-- (input) -->
+            <div class="form">
+              <select name="category" id="category">
+                <option value="all" disabled selected>All Categories</option>
+                <option value="Food">Food</option>
+                <option value="Shopping">Shopping</option>
+                <option value="Travel">Travel</option>
+                <option value="Utilities">Utilities</option>
+                <option value="Bills">Bills</option>
+              </select>
+              <!-- amount -->
+              <input type="text" id="amount" placeholder="enter amount" />
+              <!-- button -->
+              <button id="box2_btn">+ Add Expense</button>
+            </div>
+          </div>
+
+          <!-- EXPENSE LIST -->
+          <div class="box">
+            <h3>EXPENSE LIST</h3>
+            <div>Date</div>
+            <div>Category</div>
+            <div>Amount</div>
+            <div>Action</div>
+
+            <!-- JS Code come here -->
+            <div id="expenseList" class="expense-list"></div>
+          </div>
+
+          <!-- left close -->
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="right">
+          <div class="box">
+            <h3>Analytics</h3>
+
+            <select>
+              <option value="all" disabled selected>All Categories</option>
+              <option value="food">Food</option>
+              <option value="travel">Travel</option>
+              <option value="shopping">Shopping</option>
+              <option value="bills">Bills</option>
+            </select>
+            <button class="big-btn">Find Big Expense (&gt; 5000)</button>
+
+            <div class="chart">📊 Chart Area (JS/Chart.js later)</div>
+          </div>
+        </div>
+
+        <!-- Main ends here -->
+      </div>
+
+      <!-- Main Box ends here -->
+    </div>
+
+    <!-- java script -->
+    <script src="script.js"></script>
+  </body>
+</html>
