@@ -30,17 +30,29 @@ Delete specific expenses -->
       </div>
 
       <!-- Dashboard-->
+      <!-- Dashboard-->
       <div class="dashboard">
         <div class="card">
-          <h4>Total Spending</h4>
+          <div class="card-title">
+            <h4>Total Spending</h4>
+            <span class="tag total">TOTAL</span>
+          </div>
           <p id="total_spend">$0</p>
         </div>
+
         <div class="card highlight">
-          <h4>Biggest Expense</h4>
+          <div class="card-title">
+            <h4>Biggest Expense</h4>
+            <span class="tag big">HIGH</span>
+          </div>
           <p id="big_expense">$0</p>
         </div>
+
         <div class="card">
-          <h4>Expense This Month</h4>
+          <div class="card-title">
+            <h4>Expense This Month</h4>
+            <span class="tag month">MONTH</span>
+          </div>
           <p id="monthly_expense">0</p>
         </div>
       </div>
@@ -55,7 +67,6 @@ Delete specific expenses -->
             <!-- (input) -->
             <div class="form">
               <select name="category" id="category">
-                <option value="all" disabled selected>All Categories</option>
                 <option value="Food">Food</option>
                 <option value="Shopping">Shopping</option>
                 <option value="Travel">Travel</option>
@@ -92,16 +103,20 @@ Delete specific expenses -->
           <div class="box">
             <h3>Analytics</h3>
 
-            <select>
-              <option value="all" disabled selected>All Categories</option>
+            <select id="filter">
+              <option value="all" selected>All Categories</option>
               <option value="food">Food</option>
               <option value="travel">Travel</option>
               <option value="shopping">Shopping</option>
               <option value="bills">Bills</option>
             </select>
-            <button class="big-btn">Find Big Expense (&gt; 5000)</button>
 
-            <div class="chart">📊 Chart Area (JS/Chart.js later)</div>
+            <button class="big-btn" id="bigExpenseBtn">
+              Find Big Expense (> 5000)
+            </button>
+
+            <!-- REPLACED CHART -->
+            <div id="analyticsBox" class="analytics-box"></div>
           </div>
         </div>
 
