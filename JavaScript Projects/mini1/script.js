@@ -27,7 +27,6 @@ box2_btn.addEventListener("click",()=>{
     // so instead of writing repetedly we write it at one place and then
     // we call it
         renderUI();
-        renderAnalytics(expense); 
     
     // The input box becomes empty and ready for the next expense.
     document.getElementById("amount").value = "";
@@ -92,8 +91,7 @@ function deleteExpense(index) {
 // it removes data from array only, but data is still shown in screen
 expense.splice(index,1);
 //therefore we use renderUI(), it updates
-renderUI();
-renderAnalytics(expense);   
+renderUI(); 
 };
 
 // STATS
@@ -116,68 +114,3 @@ function updateStats() {
     document.getElementById("monthly_expense").innerText =
         expense.length;
 }
-
-
-
-
-// chart code
-
-
-const categoryColors = {
-    food: "#ff6b6b",      // red
-    travel: "#4dabf7",    // blue
-    shopping: "#51cf66",  // green
-    bills: "#ffd43b"      // yellow
-};
-
-
-div.className = "progress-item";
-
-
-function renderAnalytics(data) {
-    const box = document.getElementById("analyticsBox");
-    box.innerHTML = "";
-
-    if (!data || data.length === 0) {
-        box.innerHTML = "<p>No data available</p>";
-        return;
-    }
-
-    let totals = {};
-
-    data.forEach(item => {
-        if (!totals[item.category]) {
-            totals[item.category] = 0;
-        }
-        totals[item.category] += item.amount;
-    });
-
-    let max = Math.max(...Object.values(totals));
-
-    Object.keys(totals).forEach(cat => {
-
-        let percent = max === 0 ? 0 : (totals[cat] / max) * 100;
-
-        //  GET COLOR FOR CATEGORY
-        let color = categoryColors[cat.toLowerCase()] || "#4dabf7";
-
-        let div = document.createElement("div");
-        div.className = "progress-item";
-
-        div.innerHTML = `
-            <div class="progress-label">
-                <span>${cat.toUpperCase()}</span>
-                <span>₹${totals[cat]}</span>
-            </div>
-
-            <div class="progress-bar">
-                <div class="progress-fill" 
-                     style="width:${percent}%; background:${color}">
-                </div>
-            </div>
-        `;
-
-        box.appendChild(div);
-    });
-}
- renderAnalytics(expense);
