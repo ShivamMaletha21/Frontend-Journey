@@ -90,3 +90,20 @@ delete laptop.ram;
 document.getElementById("display5").innerText = JSON.stringify(laptop,null,2);
 
 
+// 7.Create a student object and:
+// add 3 properties
+// update 1 property
+// delete 1 property
+// print final object
+
+let student3 = {
+  name:"Shivam",
+  age:21,
+  work:"web developer"
+}
+document.getElementById("display7").innerText = JSON.stringify(student3,null,2);
+student3.name = "Rahul";
+document.getElementById("display7").innerText = JSON.stringify(student3,null,2);
+
+delete student3.work;
+document.getElementById("display7").innerText = JSON.stringify(student3,null,2);
