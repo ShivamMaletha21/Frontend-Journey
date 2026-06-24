@@ -38,34 +38,24 @@ let user = {
 };
 user.showName();
 
-//Q4: for...in Loop
-// Use this:
-// let person = {
-//   name: "Aman",
-//   age: 22,
-//   city: "Dehradun"
-// };
-
-// Print all keys
-// Print all values
-// Print key + value together
-// Count total properties in object
-let person = {
-    name: "Karan",
-    age: 22,
-    city: "Dehradun"
+// Q4 Create an object student with:
+// name
+// age
+// marks array
+// address object
+// method getInfo() that prints name and city
+let student3 = {
+    name: "Aman",
+    age: 21,
+    course: "BCA",
+    marks:[80,90,78],
+    address: {
+        city:"Delhi",
+        state: "Delhi",
+        pincode: 110001,   
+    },
+    getInfo: function() {
+        document.getElementById("display4").innerText = `the name of student is ${this.name} and the city he lives in ${this.address.city}`
+    }
 };
-
-let output = "";
-let count = 0;
-
-for (let key in person) {
-    output += `Key: ${key} <br>`;
-    output += `Value: ${person[key]} <br>`;
-    output += `Pair: ${key} - ${person[key]} <br><br>`;
-    count++;
-}
-
-output += `Total properties: ${count}`;
-
-document.getElementById("display4").innerHTML = output;
+student3.getInfo();
