@@ -48,3 +48,33 @@ Object.keys(student).forEach((key) => {
   }
 });
 document.getElementById("display4").innerHTML = result4;
+
+
+// Object.values()
+// Write a program to print only numeric values from an object.
+// Write a program to find the sum of all numeric values.
+
+
+let employee = {
+  name: "Shivam",
+  age: 21,
+  salary: 50000,
+  city: "Dehradun"
+};
+
+// Write a program to print only numeric values from an object.
+ Object.values(employee).forEach((key)=>{
+  if(typeof key ==="number") {
+    document.getElementById("display5").innerHTML += key + "<br>";
+  }
+ });
+
+// Write a program to find the sum of all numeric values.
+ let sum = 0;
+
+Object.values(employee).forEach((value) => {
+  if (typeof value === "number") {
+    sum += value;
+  }
+});
+document.getElementById("display6").innerHTML = sum;
