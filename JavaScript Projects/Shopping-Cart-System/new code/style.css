@@ -156,18 +156,17 @@ body {
 ============================== */
 
 .hero {
-
     height: 60vh;
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    text-align: center;
-
-    background: linear-gradient(135deg, #dbeafe, #edf7ff);
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    
+        background-image: url("images/hero-section/bgimg.png");
+        background-size: 115%;
+        background-position: center;
+        background-repeat: no-repeat;
 
 }
 
@@ -303,7 +302,7 @@ body {
 
     display: grid;
 
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
     gap: 25px;
 
@@ -333,9 +332,9 @@ body {
 
 .product-card img {
 
-    width: 120px;
+    width: 250px;
 
-    height: 120px;
+    height:250px;
 
     object-fit: contain;
 
@@ -491,11 +490,6 @@ body {
 
 }
 
-.cart-item img {
-
-    width: 60px;
-
-}
 .icon a {
     display: flex;
     align-items: center;

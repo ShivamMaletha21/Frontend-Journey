@@ -512,34 +512,21 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 15px;
 }
 
-.cards i {
-    font-size: 38px;
-    color: #0d4cd3;
-    transition: .3s;
+.cards img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.cards i:hover {
-    transform: scale(1.15);
-}
 
-/* ==========================================
-   SCROLLBAR
-========================================== */
 
-::-webkit-scrollbar {
-    width: 8px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #0d4cd3;
-    border-radius: 20px;
-}
-
-::-webkit-scrollbar-track {
-    background: #ececec;
-}
 
 /* ==========================================
    RESPONSIVE
