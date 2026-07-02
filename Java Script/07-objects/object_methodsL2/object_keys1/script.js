@@ -78,3 +78,4 @@ Object.values(employee).forEach((value) => {
   }
 });
 document.getElementById("display6").innerHTML = sum;
+

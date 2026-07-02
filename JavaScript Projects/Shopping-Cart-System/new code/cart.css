@@ -1,0 +1,665 @@
+/* ==========================================
+   GOOGLE FONT
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ==========================================
+   RESET
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f8fc;
+    color: #222;
+}
+
+/* ==========================================
+   NAVBAR
+========================================== */
+
+.navbar {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 8%;
+
+    background: #ffffff;
+
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .08);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
+
+.logo {
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+}
+
+.logo img {
+
+    width: 50px;
+
+}
+
+.logo h2 {
+
+    color: #0d4cd3;
+    font-size: 28px;
+
+}
+
+.navbar ul {
+
+    display: flex;
+    list-style: none;
+    gap: 35px;
+
+}
+
+.navbar ul li a {
+
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: .3s;
+
+}
+
+.navbar ul li a:hover {
+
+    color: #0d4cd3;
+
+}
+
+.icons {
+
+    display: flex;
+    gap: 25px;
+    font-size: 22px;
+
+}
+
+.icons a {
+
+    color: #222;
+
+}
+
+.icons i {
+
+    cursor: pointer;
+    transition: .3s;
+
+}
+
+.icons i:hover {
+
+    color: #0d4cd3;
+
+}
+
+/* ==========================================
+   CART PAGE
+========================================== */
+
+.cart-page {
+
+    padding: 60px 8%;
+
+}
+
+.cart-container {
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 35px;
+
+}
+
+/* ==========================================
+   LEFT SECTION
+========================================== */
+
+.cart-left {
+
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 18px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .08);
+
+}
+
+.cart-header {
+
+    margin-bottom: 25px;
+
+}
+
+.cart-header h1 {
+
+    font-size: 40px;
+    margin-bottom: 10px;
+
+}
+
+.cart-header p {
+
+    color: #777;
+
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.cart-buttons {
+
+    display: flex;
+    gap: 15px;
+    margin-bottom: 35px;
+    flex-wrap: wrap;
+
+}
+
+.cart-buttons button {
+
+    border: none;
+
+    padding: 12px 22px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-weight: 600;
+
+    transition: .3s;
+
+}
+
+.continue {
+
+    background: #0d4cd3;
+    color: white;
+
+}
+
+.continue:hover {
+
+    background: #0636a5;
+
+}
+
+.clear {
+
+    background: #ff4b4b;
+    color: white;
+
+}
+
+.clear:hover {
+
+    background: #d73434;
+
+}
+
+.save {
+
+    background: #e9eef9;
+
+}
+
+.save:hover {
+
+    background: #d8e2fa;
+
+}
+
+/* ==========================================
+   CART ITEMS
+========================================== */
+
+.cart-item {
+
+    display: grid;
+
+    grid-template-columns: 100px 1fr auto auto;
+
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 25px 0;
+
+    border-bottom: 1px solid #ececec;
+
+}
+
+.cart-item img {
+
+    width: 90px;
+
+    height: 90px;
+
+    object-fit: contain;
+
+}
+
+.item-info h3 {
+
+    margin-bottom: 8px;
+
+}
+
+.item-info p {
+
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+
+}
+
+.item-info span {
+
+    font-size: 22px;
+
+    color: #0d4cd3;
+
+    font-weight: 700;
+
+}
+
+/* ==========================================
+   QUANTITY
+========================================== */
+
+.quantity {
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+}
+
+.quantity button {
+
+    width: 34px;
+    height: 34px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #0d4cd3;
+
+    color: white;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+.quantity button:hover {
+
+    background: #0636a5;
+
+}
+
+.quantity span {
+
+    font-weight: 600;
+
+    font-size: 18px;
+
+}
+
+/* ==========================================
+   DELETE BUTTON
+========================================== */
+
+.remove {
+
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #ffe9e9;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+.remove i {
+
+    color: #ff4b4b;
+
+    font-size: 18px;
+
+}
+
+.remove:hover {
+
+    background: #ff4b4b;
+
+}
+
+.remove:hover i {
+
+    color: white;
+
+}
+
+/* ==========================================
+   RIGHT SIDE
+========================================== */
+
+.cart-right {
+
+    position: sticky;
+    top: 100px;
+    height: max-content;
+
+}
+/* ==========================================
+   ORDER SUMMARY CARD
+========================================== */
+
+.summary-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    margin-bottom: 25px;
+}
+
+.summary-card h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #222;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+    font-size: 16px;
+}
+
+.summary-row p {
+    color: #666;
+}
+
+.summary-row span {
+    font-weight: 600;
+}
+
+.summary-card hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+.summary-row.total {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0d4cd3;
+}
+
+/* ==========================================
+   COUPON
+========================================== */
+
+.coupon {
+    margin-top: 25px;
+    display: flex;
+    gap: 10px;
+}
+
+.coupon input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+}
+
+.coupon input:focus {
+    border-color: #0d4cd3;
+}
+
+.coupon button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #0d4cd3;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.coupon button:hover {
+    background: #0636a5;
+}
+
+/* ==========================================
+   CHECKOUT BUTTON
+========================================== */
+
+.checkout {
+    width: 100%;
+    margin-top: 25px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #0d4cd3;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.checkout:hover {
+    background: #0636a5;
+    transform: translateY(-2px);
+}
+
+/* ==========================================
+   PAYMENT BOX
+========================================== */
+
+.payment-box {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 25px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.payment-box h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cards i {
+    font-size: 38px;
+    color: #0d4cd3;
+    transition: .3s;
+}
+
+.cards i:hover {
+    transform: scale(1.15);
+}
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0d4cd3;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ececec;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width:1200px) {
+
+    .cart-container {
+        grid-template-columns: 1fr;
+    }
+
+    .cart-right {
+        position: static;
+    }
+
+}
+
+@media (max-width:992px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .navbar ul {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .cart-item {
+        grid-template-columns: 80px 1fr;
+        row-gap: 20px;
+    }
+
+    .quantity {
+        justify-content: flex-start;
+    }
+
+    .remove {
+        justify-self: start;
+    }
+
+}
+
+@media (max-width:768px) {
+
+    .cart-page {
+        padding: 30px 20px;
+    }
+
+    .cart-left {
+        padding: 20px;
+    }
+
+    .summary-card {
+        padding: 20px;
+    }
+
+    .cart-header h1 {
+        font-size: 30px;
+    }
+
+    .cart-buttons {
+        flex-direction: column;
+    }
+
+    .cart-buttons button {
+        width: 100%;
+    }
+
+    .coupon {
+        flex-direction: column;
+    }
+
+    .coupon button {
+        width: 100%;
+    }
+
+    .cards {
+        justify-content: space-around;
+    }
+
+}
+
+@media (max-width:576px) {
+
+    .navbar {
+        padding: 15px;
+    }
+
+    .logo h2 {
+        font-size: 24px;
+    }
+
+    .cart-item {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .item-info {
+        margin-top: 10px;
+    }
+
+    .quantity {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .remove {
+        margin-top: 15px;
+    }
+
+    .summary-row {
+        font-size: 15px;
+    }
+
+    .checkout {
+        font-size: 16px;
+    }
+
+}
