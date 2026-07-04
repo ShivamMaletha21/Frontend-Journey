@@ -98,13 +98,8 @@ document.getElementById("display10").innerHTML =  ` ${full_names} `;
 // WAP to calculate the sum of all numbers.
 // WAP to calculate the product of all numbers.
 // WAP to find the maximum number.
-// WAP to find the minimum number.
 // WAP to calculate the average of all numbers.
-// WAP to count the frequency of each element.
-// WAP to count the total number of characters in all strings.
-// WAP to calculate the total salary of all employees.
-// WAP to calculate the total bill amount of a shopping cart.
-// WAP to find the total quantity of products in a cart.
+// WAP to count the frequency of each element..
 
 // WAP to calculate the sum of all numbers.
 let num5 = [10,20,30];
@@ -114,3 +109,60 @@ let sum5 = num5.reduce((acc,curr)=>{
 document.getElementById("display11").innerHTML = `${sum5}`;
 
 
+// HOW IT WORKS INTERNALLY:
+
+// Initial value passed to reduce()
+// let acc = 0;   
+
+// This is the callback function we passed to reduce()
+// function callback(acc, curr) {
+//     return acc + curr;
+// }
+// for (let i = 0; i < num5.length; i++) {
+
+//     acc = callback(acc, num5[i]);
+// }
+// let sum5 = acc;
+
+
+
+// WAP to calculate the product of all numbers.
+let prod5 = num5.reduce((acc,curr)=>{
+    return acc * curr;
+},1);
+
+document.getElementById("display12").innerHTML = `${prod5}`;
+
+// WAP to find the maximum number.
+let max5 = num5.reduce((acc,curr)=>{
+    if (acc>curr){
+        return acc;
+    }
+    else {
+        return curr;
+    }
+},-Infinity);
+
+document.getElementById("display13").innerHTML = `${max5}`;
+
+// WAP to calculate the average of all numbers.
+let avg5 = num5.reduce((acc,curr)=> {
+    return acc + curr ;
+
+},0)/ num5.length;
+document.getElementById("display14").innerHTML = `${avg5}`;
+
+// WAP to count the frequency of each element.
+let countries3 = [ "India", "USA", "Canada", "India", "Germany", "USA", "France", "India", "Japan", "Canada"];
+let freq = countries3.reduce((acc,curr)=>{
+
+    if (acc[curr]===undefined){
+        acc[curr] = 1;
+    }
+    else {
+        acc[curr] += 1;
+    }
+    return acc;
+    
+},{});
+document.getElementById("display15").innerHTML = JSON.stringify(freq);
