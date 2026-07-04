@@ -92,3 +92,25 @@ let full_names  = employees.map((value)=>{
 
 });
 document.getElementById("display10").innerHTML =  ` ${full_names} `;
+
+
+// reduce()
+// WAP to calculate the sum of all numbers.
+// WAP to calculate the product of all numbers.
+// WAP to find the maximum number.
+// WAP to find the minimum number.
+// WAP to calculate the average of all numbers.
+// WAP to count the frequency of each element.
+// WAP to count the total number of characters in all strings.
+// WAP to calculate the total salary of all employees.
+// WAP to calculate the total bill amount of a shopping cart.
+// WAP to find the total quantity of products in a cart.
+
+// WAP to calculate the sum of all numbers.
+let num5 = [10,20,30];
+let sum5 = num5.reduce((acc,curr)=>{
+ return acc + curr;
+},0);
+document.getElementById("display11").innerHTML = `${sum5}`;
+
+
