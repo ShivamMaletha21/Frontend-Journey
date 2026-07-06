@@ -1,10 +1,6 @@
-// Level 2 — Intermediate
-// WAP to remove duplicate values from an array.
-// WAP to count how many times each word appears.
-// WAP to create initials from full names.
-// WAP to return only active users.
-// WAP to find the employee with the highest salary.
-// WAP to calculate the age of users from their birth year.
+
+
+
 
 // WAP to remove duplicate values from an array
 let num = [10,20,30,10,40,50,20,30,10];
@@ -100,3 +96,38 @@ let user_age = users3.map((value)=>{
     return value.name + (current_year - value.birthYear);
 });
 document.getElementById("display6").innerHTML = JSON.stringify(user_age);
+
+
+
+// WAP to sort students by their marks in descending order.
+const students = [
+  { id: 1, name: "Shivam", marks: 78 },
+  { id: 2, name: "Aarav", marks: 92 },
+  { id: 3, name: "Priya", marks: 65 },
+  { id: 4, name: "Rohan", marks: 85 }
+];
+
+const sortedStudents = students.sort((a, b) => b.marks - a.marks);
+
+console.log(sortedStudents);
+
+// WAP to group products by their category.
+const products = [
+  { id: 1, name: "Laptop", category: "Electronics" },
+  { id: 2, name: "Phone", category: "Electronics" },
+  { id: 3, name: "Shirt", category: "Clothing" },
+  { id: 4, name: "Jeans", category: "Clothing" },
+  { id: 5, name: "Rice", category: "Grocery" }
+];
+
+const groupedProducts = products.reduce((acc, curr) => {
+  if (!acc[curr.category]) {
+    acc[curr.category] = [];
+  }
+
+  acc[curr.category].push(curr);
+
+  return acc;
+}, {});
+
+console.log(groupedProducts);
