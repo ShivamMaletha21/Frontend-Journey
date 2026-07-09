@@ -131,3 +131,4 @@ const groupedProducts = products.reduce((acc, curr) => {
 }, {});
 
 console.log(groupedProducts);
+
