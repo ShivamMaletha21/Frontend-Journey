@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #121212;
+    color: white;
+}
+
+header {
+    background: #1DB954;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .3);
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+.all_content {
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    gap: 30px;
+}
+
+.left-content {
+    flex: 2;
+    background: #181818;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.right-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #1DB954;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover {
+    background: #169b46;
+}
+
+.search-box {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.search-box input {
+    width: 100%;
+    padding-left: 40px;
+}
+
+.search-box i {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+}
+
+.quick_action,
+.playlist_stats,
+.preview {
+    background: #181818;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.quick_action h3,
+.preview h3 {
+    margin-bottom: 15px;
+}
+
+.quick {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.quick_action button {
+    width: 100%;
+    text-align: left;
+}
+
+
+.playlist_stats {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.playlist_stats p {
+    padding: 10px;
+    background: #242424;
+    border-radius: 8px;
+}
+
+.preview {
+    min-height: 180px;
+}
+
+#playlist {
+    margin-top: 20px;
+    list-style: none;
+}
+
+#playlist li {
+    background: #242424;
+    margin-bottom: 10px;
+    padding: 14px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media(max-width:900px) {
+
+    .all_content {
+        flex-direction: column;
+    }
+
+}

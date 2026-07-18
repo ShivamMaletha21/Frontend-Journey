@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Playlist Manager</title>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/fea7f68681.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>
+        <i class="fa-solid fa-music"></i>
+        Spotify Playlist Manager
+      </h1>
+    </header>
+
+    <!-- Main Container -->
+    <main class="all_content">
+      <!-- Left Section -->
+      <section class="left-content">
+        <!-- Add Song -->
+        <form id="playlistForm">
+          <label for="new_song">Add New Song</label>
+
+          <input
+            type="text"
+            id="new_song"
+            placeholder="Enter song name..."
+            required
+          />
+
+          <button type="submit">
+            <i class="fa-solid fa-plus"></i>
+            Add Song
+          </button>
+        </form>
+
+        <!-- Search -->
+        <div class="search-section">
+          <label for="search_song">Search Songs</label>
+
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+              type="text"
+              id="search_song"
+              placeholder="Search in playlist..."
+            />
+          </div>
+        </div>
+
+        <!-- Playlist -->
+        <section class="playlist-container">
+          <h2>Your Playlist</h2>
+
+          <ul id="playlist">
+            <!-- Songs will come here using JavaScript -->
+          </ul>
+        </section>
+      </section>
+
+      <!-- Right Section -->
+      <aside class="right-content">
+        <!-- Quick Actions -->
+        <section class="quick_action">
+          <h3>Quick Actions</h3>
+
+          <div class="quick">
+            <button id="sortBtn">
+              <i class="fa-solid fa-arrow-down-a-z"></i>
+              Sort A-Z
+            </button>
+
+            <button id="reverseBtn">
+              <i class="fa-solid fa-arrow-rotate-left"></i>
+              Reverse
+            </button>
+
+            <button id="shuffleBtn">
+              <i class="fa-solid fa-shuffle"></i>
+              Shuffle
+            </button>
+
+            <button id="starBtn">
+              <i class="fa-regular fa-star"></i>
+              Star Song
+            </button>
+
+            <button id="randomBtn">
+              <i class="fa-solid fa-dice"></i>
+              Random Song
+            </button>
+
+            <button id="clearBtn">
+              <i class="fa-solid fa-trash"></i>
+              Clear Playlist
+            </button>
+          </div>
+        </section>
+
+        <!-- Playlist Stats -->
+        <section class="playlist_stats">
+          <h3>Playlist Stats</h3>
+
+          <p id="totalSongs">
+            <i class="fa-solid fa-music"></i>
+            Total Songs : 0
+          </p>
+
+          <p id="firstSong">
+            <i class="fa-solid fa-forward"></i>
+            First Song : -
+          </p>
+
+          <p id="lastSong">
+            <i class="fa-solid fa-forward-step"></i>
+            Last Song : -
+          </p>
+
+          <p id="recentSong">
+            <i class="fa-regular fa-clock"></i>
+            Recently Added : -
+          </p>
+        </section>
+
+        <!-- Preview -->
+        <section class="preview" id="preview">
+          <h3>Playlist Preview</h3>
+
+          <p>No songs in playlist.</p>
+        </section>
+      </aside>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
