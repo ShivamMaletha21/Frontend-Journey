@@ -88,3 +88,13 @@ document.getElementById("playlist").innerHTML = JSON.stringify(playlist);
 })
 
 
+// Search Song
+search_song.addEventListener("input", () => {
+    let search_value = document.getElementById("search_song").value;
+
+    let search = playlist.filter(function(song) {
+        return song.title.toLowerCase().includes(search_value.toLowerCase());
+    });
+
+    document.getElementById("playlist").innerHTML = search;
+});
