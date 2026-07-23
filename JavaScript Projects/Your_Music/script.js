@@ -10,6 +10,12 @@ let music = [
         duration: "3:24"
     },
 
+
+    {
+    title: "Attention",
+    artist: "Charlie Puth",
+    duration: "3:28"
+    },
     {
         title: "Shape of you",
         artist: "Ed Sheeran",
@@ -96,5 +102,83 @@ search_song.addEventListener("input", () => {
         return song.title.toLowerCase().includes(search_value.toLowerCase());
     });
 
-    document.getElementById("playlist").innerHTML = search;
+    document.getElementById("playlist").innerHTML = JSON.stringify(search);
+});
+
+
+
+
+
+// with the help of render playlist whatever we do i.e sort , push, update, delete we can do it directly with the help of it
+// bcz of this we dont need to write document.getElementById("playlist").innerHTML = JSON.stringify(playlist); every single time when we are implementing something..
+function RenderPlaylist() {
+    document.getElementById("playlist").innerHTML = JSON.stringify(playlist);
+}
+
+
+
+// Sort Song
+sortBtn.addEventListener("click",()=>{
+    playlist.sort((songA, songB) => {
+    return songA.title.localeCompare(songB.title);
+
+// // another approach
+// //     playlist.sort((songA, songB) => {
+// //     if (songA.title < songB.title) {
+// //         return -1;
+// //     } 
+// //     else if (songA.title > songB.title) {
+// //         return 1;
+// //     } 
+// //     else {
+// //         return 0;
+// //     }
+// // });
+});
+
+RenderPlaylist();
+
+})
+
+
+
+// Reverse
+reverseBtn.addEventListener("click",()=>{
+    playlist.reverse((reverse_song)=>{
+        return reverse_song;
+
+    });
+RenderPlaylist();
+});
+
+
+
+
+// Shufflesong ->change the order of the entire playlist.
+shuffleBtn.addEventListener("click", () => {
+
+    // playlist.length - 1 → starts with the last index
+    // i-- → moves backward to the previous position
+    for (let i = playlist.length - 1; i > 0; i--) {
+
+        // Generate a random index
+        // i + 1 → gives the number of available positions
+        let shuffleIndex = Math.floor(Math.random() * (i + 1));
+
+        // Swap values using destructuring
+        [playlist[i], playlist[shuffleIndex]] =
+        [playlist[shuffleIndex], playlist[i]];
+
+    }
+
+    RenderPlaylist();
+});
+
+// Random song-> select one random song from the playlist
+randomBtn.addEventListener("click",()=>{
+
+    let randomIndex = Math.floor(Math.random ()* playlist.length);
+    let randomSong = playlist[randomIndex];
+
+    document.getElementById("playlist").innerHTML =JSON.stringify(randomSong);
 });
