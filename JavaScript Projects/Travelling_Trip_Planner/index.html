@@ -119,48 +119,65 @@
              ACCOMMODATION & TRANSPORTATION
         ========================== -->
 
-      <div class="two-column">
-        <!-- Accommodation -->
+      <!-- Accommodation -->
 
-        <section class="section-card">
-          <div class="section-heading compact">
-            <h2>Accommodation</h2>
+      <section class="section-card">
+        <div class="section-heading compact">
+          <h2>Accommodation</h2>
+        </div>
 
-            <button class="text-btn">View Details</button>
+        <!-- User Input -->
+        <div class="input-box">
+          <input id="hotel-input" placeholder="Enter hotel name" />
+
+          <input id="price-input" placeholder="Price per night" />
+
+          <input id="nights-input" placeholder="Number of nights" />
+
+          <button id="add-btn">Add Hotel</button>
+        </div>
+
+        <!-- Dynamic Card -->
+        <div class="detail-card accommodation">
+          <div>
+            <h3 id="hotel-name"></h3>
+
+            <p id="hotel-details"></p>
           </div>
 
-          <div class="detail-card accommodation">
-            <div>
-              <h3>Tokyo Hotel</h3>
+          <strong id="hotel-total"></strong>
+        </div>
+      </section>
 
-              <p>$100 per night &nbsp; • &nbsp; 5 Nights</p>
-            </div>
+      <!-- Transportation -->
 
-            <strong> $500 </strong>
+      <section class="section-card">
+        <div class="section-heading compact">
+          <h2>Transportation</h2>
+        </div>
+
+        <!-- User Input -->
+        <div class="input-box">
+          <input id="transport-input" placeholder="Transport type" />
+
+          <input id="description-input" placeholder="Description..." />
+
+          <input id="cost-input" placeholder="Cost" />
+
+          <button id="add-transport-btn">Add Transportation</button>
+        </div>
+
+        <!-- Dynamic Card -->
+        <div class="detail-card transportation">
+          <div>
+            <h3 id="transport-type"></h3>
+
+            <p id="transport-description"></p>
           </div>
-        </section>
 
-        <!-- Transportation -->
-
-        <section class="section-card">
-          <div class="section-heading compact">
-            <h2>Transportation</h2>
-
-            <button class="text-btn">View Details</button>
-          </div>
-
-          <div class="detail-card transportation">
-            <div>
-              <h3>Train</h3>
-
-              <p>Between Cities</p>
-            </div>
-
-            <strong> $150 </strong>
-          </div>
-        </section>
-      </div>
-
+          <strong id="transport-cost"></strong>
+        </div>
+      </section>
       <!-- =========================
              ACTIVITIES
         ========================== -->

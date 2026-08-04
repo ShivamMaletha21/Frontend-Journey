@@ -10,6 +10,7 @@ const submitResult = document.getElementById("submit-result");
 
 
 
+
 // form
 const form = document.querySelector("form");
 form.addEventListener("submit",(event)=>{
@@ -25,6 +26,7 @@ form.addEventListener("submit",(event)=>{
     const people = peopleInput.value;
 
 
+
     // creating object called -> trip
 // Rule of ES6 Object Property Shorthand
 // If:
@@ -37,6 +39,8 @@ form.addEventListener("submit",(event)=>{
      endDate,
      budget,
     people,
+    accommodation,
+    transportation,
 }
 
   // Show success message
@@ -50,8 +54,63 @@ form.addEventListener("submit",(event)=>{
     submitResult.innerText = "Values saved successfully ✅";
   }
 
-
 })
+
+
+
+
+// Accomodation and Transportation
+
+//accomodation
+const accbutton = document.getElementById("add-btn");
+accbutton.addEventListener("click", function(){
+
+    const accommodation = {
+        hotelName: document.getElementById("hotel-input").value,
+        pricePerNight: Number(document.getElementById("price-input").value),
+        nights: Number(document.getElementById("nights-input").value)
+    };
+
+    accommodation.totalCost = 
+    accommodation.pricePerNight * accommodation.nights;
+
+
+
+    document.getElementById("hotel-name").innerText =
+    accommodation.hotelName;
+
+    document.getElementById("hotel-details").innerText =
+    `$${accommodation.pricePerNight} per night • ${accommodation.nights} Nights`;
+
+    document.getElementById("hotel-total").innerText =
+    `$${accommodation.totalCost}`;
+
+});
+
+// transportation
+const transbutton = document.getElementById("add-transport-btn");
+transbutton.addEventListener("click",()=>{
+
+  const transportation = {
+    type : document.getElementById("transport-input").value,
+    description : document.getElementById("description-input").value,
+    cost: document.getElementById("cost-input").value
+  };
+
+  document.getElementById("transport-type").innerText = transportation.type;
+  document.getElementById("transport-description").innerText = transportation.description;
+  document.getElementById("transport-cost").innerText = transportation.cost;
+
+});
+
+
+
+
+
+
+
+
+
 
 
 
