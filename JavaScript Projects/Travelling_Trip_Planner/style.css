@@ -157,6 +157,62 @@ body {
     margin-bottom: 16px;
 }
 
+
+/* ===========================
+   TRIP FORM
+=========================== */
+
+#tripForm {
+    margin-top: 25px;
+}
+
+.overview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.info-item input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    font-size: 15px;
+    background: #fff;
+    transition: 0.3s;
+}
+
+.info-item input:focus {
+    outline: none;
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, .15);
+}
+
+.info-item input::placeholder {
+    color: #999;
+}
+
+/* Save Button */
+
+#tripForm .btn {
+    margin-top: 30px;
+    padding: 12px 24px;
+}
+
+
+
 /* Overview */
 .overview-grid {
     display: grid;
