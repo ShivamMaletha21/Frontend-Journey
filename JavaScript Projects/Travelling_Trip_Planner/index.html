@@ -49,7 +49,7 @@
       <!-- =========================
              TRIP OVERVIEW
         ========================== -->
-      <section class="section-card">
+      <section class="section-card card1">
         <div class="section-heading">
           <div>
             <h2>🗺️ Trip Details</h2>
@@ -62,7 +62,7 @@
             <!-- Destination -->
             <div class="info-item">
               <label for="destination" class="info-label"> Destination </label>
-              <input type="text" id="destination" placeholder="e.g. Japan" />
+              <input type="text" id="destination" placeholder="e.g. New York" />
             </div>
 
             <!-- Traveler -->
@@ -178,6 +178,7 @@
           <strong id="transport-cost"></strong>
         </div>
       </section>
+
       <!-- =========================
              ACTIVITIES
         ========================== -->
@@ -186,8 +187,7 @@
         <div class="section-heading activities-heading">
           <div>
             <h2>Activities</h2>
-
-            <p>Manage the activities you want to do during your trip</p>
+            <p>Manage the activities you want to do during your trip.</p>
           </div>
 
           <button id="add-activity-btn" class="btn btn-primary">
@@ -195,113 +195,44 @@
           </button>
         </div>
 
-        <!-- Search and Filter -->
+        <!-- Activity Inputs -->
 
-        <div class="activity-controls">
-          <input
-            type="search"
-            id="search-input"
-            placeholder=" Search activities..."
-          />
+        <div class="activity-form">
+          <input type="text" id="activity-name" placeholder="Activity Name" />
 
-          <select id="location-filter">
-            <option value="all">All Locations</option>
+          <input type="text" id="activity-location" placeholder="Location" />
 
-            <option value="Tokyo">Tokyo</option>
-
-            <option value="Kyoto">Kyoto</option>
-
-            <option value="Osaka">Osaka</option>
-          </select>
+          <input type="number" id="activity-cost" placeholder="Cost" min="0" />
         </div>
 
-        <!-- Activities Table -->
+        <!-- Table -->
 
         <div class="table-wrapper">
           <table>
             <thead>
               <tr>
                 <th>Activity</th>
-
                 <th>Location</th>
-
                 <th>Cost</th>
-
                 <th>Actions</th>
               </tr>
             </thead>
 
-            <tbody id="activities-list">
-              <tr>
-                <td>
-                  <span class="status-dot"> </span>
-
-                  Visit Shibuya
-                </td>
-
-                <td>Tokyo</td>
-
-                <td class="cost">$0</td>
-
-                <td class="actions">
-                  <button class="icon-btn edit-btn">✏</button>
-
-                  <button class="icon-btn delete-btn">🗑</button>
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  <span class="status-dot"> </span>
-
-                  Tokyo Tower
-                </td>
-
-                <td>Tokyo</td>
-
-                <td class="cost">$20</td>
-
-                <td class="actions">
-                  <button class="icon-btn edit-btn">✏</button>
-
-                  <button class="icon-btn delete-btn">🗑</button>
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  <span class="status-dot"> </span>
-
-                  Visit Fushimi Inari
-                </td>
-
-                <td>Kyoto</td>
-
-                <td class="cost">$0</td>
-
-                <td class="actions">
-                  <button class="icon-btn edit-btn">✏</button>
-
-                  <button class="icon-btn delete-btn">🗑</button>
-                </td>
-              </tr>
-            </tbody>
+            <tbody id="activities-list"></tbody>
           </table>
         </div>
 
-        <!-- Activity Statistics -->
+        <!-- Summary -->
 
         <div class="activity-summary">
           <div>
-            <span> Total Activities </span>
-
-            <strong id="total-activities"> 3 </strong>
+            <span>Total Activities</span>
+            <strong id="total-activities">0</strong>
           </div>
 
           <div>
-            <span> Activities Cost </span>
-
-            <strong id="activities-cost"> $20 </strong>
+            <span>Activities Cost</span>
+            <strong id="activities-cost">$0</strong>
           </div>
         </div>
       </section>
@@ -317,77 +248,37 @@
 
         <div class="cost-summary">
           <div class="cost-box accommodation-box">
-            <span> Accommodation </span>
+            <span>Accommodation</span>
 
-            <strong> $500 </strong>
+            <strong id="accommodation-cost">$0</strong>
           </div>
 
           <span class="operator"> + </span>
 
           <div class="cost-box transportation-box">
-            <span> Transportation </span>
+            <span>Transportation</span>
 
-            <strong> $150 </strong>
+            <strong id="transportation-cost">$0</strong>
           </div>
 
           <span class="operator"> + </span>
 
           <div class="cost-box activities-box">
-            <span> Activities </span>
+            <span>Activities</span>
 
-            <strong> $20 </strong>
+            <strong id="activities-total-cost">$0</strong>
           </div>
 
           <span class="operator"> = </span>
 
           <div class="cost-box total-box">
-            <span> Total Cost </span>
+            <span>Total Cost</span>
 
-            <strong> $670 </strong>
+            <strong id="total-trip-cost">$0</strong>
           </div>
         </div>
       </section>
     </main>
-
-    <!-- =========================
-         ADD ACTIVITY MODAL
-    ========================== -->
-
-    <div id="activity-modal" class="modal hidden">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h2>Add Activity</h2>
-
-          <button id="close-modal" class="close-btn">&times;</button>
-        </div>
-
-        <form id="activity-form">
-          <label for="activity-name"> Activity Name </label>
-
-          <input type="text" id="activity-name" required />
-
-          <label for="activity-location"> Location </label>
-
-          <select id="activity-location" required>
-            <option value="">Select Location</option>
-
-            <option value="Tokyo">Tokyo</option>
-
-            <option value="Kyoto">Kyoto</option>
-
-            <option value="Osaka">Osaka</option>
-          </select>
-
-          <label for="activity-cost"> Cost </label>
-
-          <input type="number" id="activity-cost" min="0" required />
-
-          <button type="submit" class="btn btn-primary full-width">
-            Add Activity
-          </button>
-        </form>
-      </div>
-    </div>
 
     <!-- JavaScript File -->
 
