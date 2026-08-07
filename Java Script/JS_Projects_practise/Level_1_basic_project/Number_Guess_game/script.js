@@ -44,7 +44,7 @@ gameLevels.addEventListener("change", () => {
         maxAttempts = 8;
     }
 
-    if (selectedLevel === "diff") {
+    if (selectedLevel === "difficult") {
         maxNumber = 500;
         maxAttempts = 7;
     }
@@ -72,7 +72,6 @@ gameLevels.addEventListener("change", () => {
 
     document.getElementById("num").value = "";
 });
-
 
 // Check button
 button.addEventListener("click", () => {
@@ -110,18 +109,16 @@ button.addEventListener("click", () => {
 
         document.getElementById("hint").innerText =
             `Hint: Try a number between 1 and ${num - 1}`;
-    }
 
-    else if (num < computer_num) {
+    } else if (num < computer_num) {
 
         document.getElementById("show_input").innerText =
             "Your guess is lower";
 
         document.getElementById("hint").innerText =
             `Hint: Try a number between ${num + 1} and ${maxNumber}`;
-    }
 
-    else {
+    } else {
 
         document.getElementById("show_input").innerText =
             `Your guess is correct ${computer_num}`;
@@ -158,7 +155,6 @@ button.addEventListener("click", () => {
     // Clear input
     document.getElementById("num").value = "";
 });
-
 
 // Start game with Easy difficulty
 maxNumber = 50;
