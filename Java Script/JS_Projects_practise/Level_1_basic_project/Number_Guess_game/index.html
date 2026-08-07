@@ -1,3 +1,11 @@
+<!-- V2 adds 5 things:
+
+Maximum attempts
+Remaining attempts
+Guess history
+Input validation
+Prevent duplicate guesses -->
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -7,11 +15,30 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <label for="num">Guess Number</label>
-    <input type="number" id="num" />
-    <p id="show_input"></p>
+    <div class="game-container">
+      <!-- select game levles -->
+      <select name="game" id="game_levels">
+        <option value="Select">Game Levels</option>
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="diff">Difficult</option>
+      </select>
 
-    <button id="check">Click to check</button>
+      <!-- giving input -->
+      <label for="num">Guess Number</label>
+      <input type="number" id="num" placeholder="enter number" />
+
+      <!-- showing input -->
+      <p id="show_input">Show Result</p>
+      <p id="show_attempts">Remaining Attempts</p>
+      <p id="guess"></p>
+      <p id="show_level"></p>
+      <p id="hint"></p>
+      <p id="best_score"></p>
+
+      <button id="check">Click to check</button>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
