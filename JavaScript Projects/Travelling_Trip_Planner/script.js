@@ -362,18 +362,14 @@ function renderActivities() {
         activities.length;
 
 
-
     // Calculate activity cost
     let totalCost = 0;
-
-
     for (let i = 0; i < activities.length; i++) {
 
         totalCost += activities[i].cost;
 
     }
-
-
+    
     activitiesCost.innerText =
         "$" + totalCost;
 
