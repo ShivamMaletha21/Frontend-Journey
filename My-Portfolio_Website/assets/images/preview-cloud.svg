@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cloud-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#191B24"/>
+      <stop offset="100%" stop-color="#0E0F14"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="450" rx="16" fill="url(#cloud-grad)"/>
+  <rect x="20" y="20" width="560" height="410" rx="12" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+
+  <!-- Header -->
+  <rect x="20" y="20" width="560" height="45" rx="12" fill="#1C1E28"/>
+  <text x="50" y="47" fill="#FF5722" font-family="monospace" font-size="12" font-weight="700">AWS / KUBERNETES INFRASTRUCTURE</text>
+  <circle cx="530" cy="42" r="5" fill="#00E676"/>
+  <text x="440" y="46" fill="#8898AA" font-family="monospace" font-size="11">eu-west-1 (Live)</text>
+
+  <!-- Infrastructure Pipeline Diagram -->
+  <g transform="translate(45, 90)">
+    <!-- GitHub Action CI/CD -->
+    <rect width="145" height="110" rx="8" fill="#202430" stroke="#FF5722" stroke-width="1.5"/>
+    <text x="20" y="32" fill="#FFFFFF" font-family="system-ui" font-size="13" font-weight="700">CI/CD Pipeline</text>
+    <text x="20" y="55" fill="#8E8E9E" font-family="monospace" font-size="11">Automated Tests</text>
+    <text x="20" y="75" fill="#8E8E9E" font-family="monospace" font-size="11">Docker Build</text>
+    <text x="20" y="95" fill="#00E676" font-family="monospace" font-size="11">✓ Build 43s</text>
+
+    <!-- Arrow -->
+    <line x1="155" y1="55" x2="185" y2="55" stroke="#FF5722" stroke-width="2" stroke-dasharray="4 4"/>
+
+    <!-- Terraform EKS Cluster -->
+    <rect x="195" width="145" height="110" rx="8" fill="#202430" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="215" y="32" fill="#FFFFFF" font-family="system-ui" font-size="13" font-weight="700">K8s Cluster</text>
+    <text x="215" y="55" fill="#8E8E9E" font-family="monospace" font-size="11">Auto-scaling</text>
+    <text x="215" y="75" fill="#8E8E9E" font-family="monospace" font-size="11">4 Microservices</text>
+    <text x="215" y="95" fill="#00E676" font-family="monospace" font-size="11">✓ Multi-AZ</text>
+
+    <!-- Arrow -->
+    <line x1="350" y1="55" x2="380" y2="55" stroke="#FF5722" stroke-width="2" stroke-dasharray="4 4"/>
+
+    <!-- CloudFront / Edge -->
+    <rect x="390" width="120" height="110" rx="8" fill="#202430" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="405" y="32" fill="#FFFFFF" font-family="system-ui" font-size="13" font-weight="700">Global Edge</text>
+    <text x="405" y="55" fill="#8E8E9E" font-family="monospace" font-size="11">CloudFront</text>
+    <text x="405" y="75" fill="#8E8E9E" font-family="monospace" font-size="11">WAF Enabled</text>
+    <text x="405" y="95" fill="#00E676" font-family="monospace" font-size="11">✓ SSL / TLS</text>
+  </g>
+
+  <!-- Metrics Grid -->
+  <g transform="translate(45, 230)">
+    <rect width="510" height="170" rx="8" fill="#14161C"/>
+    <text x="30" y="35" fill="#8E8E9E" font-family="monospace" font-size="11">TERRAFORM STATE: MATCHED</text>
+    
+    <rect x="30" y="55" width="215" height="90" rx="6" fill="#1D2028"/>
+    <text x="45" y="85" fill="#FF5722" font-family="system-ui" font-size="24" font-weight="800">&lt; 15ms</text>
+    <text x="45" y="115" fill="#8E8E9E" font-family="system-ui" font-size="12">Global CDN Edge Latency</text>
+
+    <rect x="265" y="55" width="215" height="90" rx="6" fill="#1D2028"/>
+    <text x="280" y="85" fill="#00E676" font-family="system-ui" font-size="24" font-weight="800">100% Zero</text>
+    <text x="280" y="115" fill="#8E8E9E" font-family="system-ui" font-size="12">Downtime Deployment (Blue/Green)</text>
+  </g>
+</svg>

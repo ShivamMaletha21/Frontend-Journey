@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 440" width="100%" height="100%">
+  <defs>
+    <linearGradient id="be-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#12141A"/>
+      <stop offset="100%" stop-color="#080A0E"/>
+    </linearGradient>
+    <linearGradient id="blue-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00E5FF"/>
+      <stop offset="100%" stop-color="#2979FF"/>
+    </linearGradient>
+    <linearGradient id="sunset-pip" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF2A5F"/>
+      <stop offset="100%" stop-color="#FF7A00"/>
+    </linearGradient>
+    <filter id="node-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#00E5FF" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="620" height="440" rx="16" fill="url(#be-bg)"/>
+  <rect x="15" y="15" width="590" height="410" rx="12" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+
+  <!-- Top Terminal Header -->
+  <rect x="15" y="15" width="590" height="44" rx="12" fill="#181C24"/>
+  <circle cx="42" cy="37" r="5.5" fill="#FF5F56"/>
+  <circle cx="60" cy="37" r="5.5" fill="#FFBD2E"/>
+  <circle cx="78" cy="37" r="5.5" fill="#27C93F"/>
+  <text x="110" y="41" fill="#8898AA" font-family="'JetBrains Mono', monospace" font-size="11">shivam@dev-server: ~/api-gateway (python 3.12 &amp; node.js)</text>
+  
+  <rect x="500" y="27" width="90" height="20" rx="10" fill="rgba(0,229,255,0.12)" stroke="rgba(0,229,255,0.3)" stroke-width="1"/>
+  <circle cx="512" cy="37" r="3.5" fill="#00E5FF"/>
+  <text x="522" y="41" fill="#00E5FF" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700">REST API</text>
+
+  <!-- Top Architecture Nodes Flow -->
+  <g transform="translate(35, 75)">
+    <!-- Node 1: Client Request -->
+    <rect width="165" height="90" rx="8" fill="#161B24" stroke="#00E5FF" stroke-width="1.5" filter="url(#node-glow)"/>
+    <text x="16" y="28" fill="#00E5FF" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">01 // CLIENT HTTP</text>
+    <text x="16" y="52" fill="#FFFFFF" font-family="'JetBrains Mono', monospace" font-size="11">POST /api/playlist</text>
+    <rect x="16" y="64" width="70" height="16" rx="4" fill="rgba(0,230,118,0.15)"/>
+    <text x="24" y="76" fill="#00E676" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700">JSON PAYLOAD</text>
+
+    <!-- Arrow 1 -->
+    <line x1="175" y1="45" x2="200" y2="45" stroke="#00E5FF" stroke-width="2" stroke-dasharray="4 3"/>
+    <polygon points="200,41 207,45 200,49" fill="#00E5FF"/>
+
+    <!-- Node 2: Server Controller -->
+    <rect x="212" width="165" height="90" rx="8" fill="#161B24" stroke="#FF7A00" stroke-width="1.5"/>
+    <text x="228" y="28" fill="#FF7A00" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">02 // ROUTER LOGIC</text>
+    <text x="228" y="52" fill="#FFFFFF" font-family="'JetBrains Mono', monospace" font-size="11">Python / Node App</text>
+    <rect x="228" y="64" width="85" height="16" rx="4" fill="rgba(255,122,0,0.15)"/>
+    <text x="236" y="76" fill="#FF8A00" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700">ASYNC HANDLER</text>
+
+    <!-- Arrow 2 -->
+    <line x1="387" y1="45" x2="412" y2="45" stroke="#FF7A00" stroke-width="2" stroke-dasharray="4 3"/>
+    <polygon points="412,41 419,45 412,49" fill="#FF7A00"/>
+
+    <!-- Node 3: Database & State -->
+    <rect x="424" width="126" height="90" rx="8" fill="#161B24" stroke="#7C4DFF" stroke-width="1.5"/>
+    <text x="440" y="28" fill="#B388FF" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">03 // DB STATE</text>
+    <text x="440" y="52" fill="#FFFFFF" font-family="'JetBrains Mono', monospace" font-size="11">CRUD Storage</text>
+    <rect x="440" y="64" width="85" height="16" rx="4" fill="rgba(124,77,255,0.15)"/>
+    <text x="448" y="76" fill="#B388FF" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700">PERSISTENT</text>
+  </g>
+
+  <!-- Live Server Output & Terminal Console -->
+  <g transform="translate(35, 185)">
+    <rect width="550" height="220" rx="10" fill="#0C0E12" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    
+    <!-- Code / Log line 1 -->
+    <text x="22" y="32" fill="#00E676" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">[200 OK]</text>
+    <text x="100" y="32" fill="#FFF" font-family="'JetBrains Mono', monospace" font-size="11">POST /api/v1/trips/calculate-budget</text>
+    <text x="440" y="32" fill="#00E5FF" font-family="'JetBrains Mono', monospace" font-size="11">6.4ms • 1.2KB</text>
+
+    <!-- Code / Log line 2 -->
+    <text x="22" y="62" fill="#00E676" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">[200 OK]</text>
+    <text x="100" y="62" fill="#FFF" font-family="'JetBrains Mono', monospace" font-size="11">GET /api/v1/spotify/shuffle-playlist</text>
+    <text x="440" y="62" fill="#00E5FF" font-family="'JetBrains Mono', monospace" font-size="11">3.8ms • 3.4KB</text>
+
+    <!-- Code / Log line 3 -->
+    <text x="22" y="92" fill="#00E676" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">[200 OK]</text>
+    <text x="100" y="92" fill="#FFF" font-family="'JetBrains Mono', monospace" font-size="11">PUT /api/v1/cart/sync-localstorage</text>
+    <text x="440" y="92" fill="#00E5FF" font-family="'JetBrains Mono', monospace" font-size="11">4.1ms • 0.8KB</text>
+
+    <!-- Terminal Code Box -->
+    <rect x="20" y="115" width="510" height="85" rx="6" fill="#141820" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="35" y="140" fill="#FF7A00" font-family="'JetBrains Mono', monospace" font-size="11">def <tspan fill="#64B5F6">sync_playlist_data</tspan>(tracks: list):</text>
+    <text x="55" y="162" fill="#8898AA" font-family="'JetBrains Mono', monospace" font-size="11">return { <tspan fill="#CCFF00">"status"</tspan>: "success", <tspan fill="#CCFF00">"count"</tspan>: len(tracks), <tspan fill="#CCFF00">"shuffled"</tspan>: True }</text>
+    <text x="35" y="185" fill="#00E676" font-family="'JetBrains Mono', monospace" font-size="10">⚡ Server running at http://localhost:8000 • 0 Downtime</text>
+  </g>
+</svg>

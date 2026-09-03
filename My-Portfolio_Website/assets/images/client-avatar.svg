@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
+  <circle cx="60" cy="60" r="58" fill="#1E1E24" stroke="#FF5722" stroke-width="2"/>
+  <circle cx="60" cy="45" r="22" fill="#E0BC9F"/>
+  <!-- Beard / Hair -->
+  <path d="M 40 42 C 40 24, 80 24, 80 42 C 80 62, 70 72, 60 72 C 50 72, 40 62, 40 42 Z" fill="#2E241E" opacity="0.95"/>
+  <circle cx="60" cy="46" r="16" fill="#E0BC9F"/>
+  <path d="M 48 50 C 48 64, 72 64, 72 50 C 72 68, 48 68, 48 50 Z" fill="#2E241E"/>
+  <path d="M 28 108 C 28 85, 45 78, 60 78 C 75 78, 92 85, 92 108 Z" fill="#3D3B46"/>
+</svg>

@@ -1,0 +1,2144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Shivam Maletha — Frontend Developer &amp; AI / Full-Stack Enthusiast
+    </title>
+    <meta
+      name="description"
+      content="Portfolio of Shivam Maletha — Frontend Developer building clean, responsive, and modern web applications with HTML, CSS, JavaScript, and exploring AI & Full Stack."
+    />
+    <meta
+      name="keywords"
+      content="Shivam Maletha, Frontend Developer, Web Developer, HTML, CSS, JavaScript, Python, AI Data Science, Graphic Era University, Portfolio"
+    />
+    <meta name="author" content="Shivam Maletha" />
+
+    <!-- Open Graph / Meta -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Shivam Maletha — Frontend Developer" />
+    <meta
+      property="og:description"
+      content="Building modern, responsive, and performance-focused web experiences."
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- Google Fonts (Plus Jakarta Sans, Poppins & JetBrains Mono) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="blueprint-bg">
+    <!-- Custom Interactive Cursor Elements -->
+    <div class="custom-cursor-dot" id="cursor-dot"></div>
+    <div class="custom-cursor-ring" id="cursor-ring"></div>
+
+    <!-- Ambient Glowing Background Orbs -->
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+    <div class="ambient-orb orb-3"></div>
+
+    <!-- ============================================================
+       TOP HEADER & NAVIGATION
+       ============================================================ -->
+    <header class="site-header" id="site-header">
+      <div class="header-container">
+        <!-- Brand Logo -->
+        <a href="#hero" class="brand-logo" aria-label="Shivam Maletha Homepage">
+          <span class="logo-name">SHIVAM</span>
+          <span class="logo-accent">MALETHA</span>
+          <span class="lime-tag pulse-badge">✦ AVAILABLE</span>
+        </a>
+
+        <!-- Desktop Navigation Menu -->
+        <nav class="desktop-nav" aria-label="Main Navigation">
+          <ul class="nav-list">
+            <li><a href="#hero" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills-overview" class="nav-link">Expertise</a></li>
+            <li><a href="#timeline" class="nav-link">Journey</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#faq" class="nav-link">FAQ</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Header Action Buttons -->
+        <div class="header-actions">
+          <button
+            class="btn btn-sunset btn-sm open-contact-btn magnetic-btn"
+            id="header-contact-btn"
+            aria-label="Get in touch"
+          >
+            <span>Let's Talk</span>
+            <svg
+              class="btn-arrow"
+              width="12"
+              height="12"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button
+            class="mobile-menu-toggle"
+            id="mobile-toggle"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+          >
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+      <div class="mobile-drawer-inner">
+        <nav class="mobile-nav">
+          <ul class="mobile-nav-list">
+            <li><a href="#hero" class="mobile-nav-link">Home</a></li>
+            <li><a href="#about" class="mobile-nav-link">About Me</a></li>
+            <li>
+              <a href="#skills-overview" class="mobile-nav-link"
+                >Core Expertise</a
+              >
+            </li>
+            <li>
+              <a href="#timeline" class="mobile-nav-link">Academic Journey</a>
+            </li>
+            <li>
+              <a href="#technical-focus" class="mobile-nav-link"
+                >Technical Focus</a
+              >
+            </li>
+            <li><a href="#projects" class="mobile-nav-link">My Projects</a></li>
+            <li><a href="#faq" class="mobile-nav-link">FAQ</a></li>
+            <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-drawer-footer">
+          <button class="btn btn-sunset btn-block open-contact-btn">
+            Send Message
+          </button>
+          <div class="mobile-socials">
+            <a
+              href="https://github.com/ShivamMaletha21"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              ><i class="fa-brands fa-github"></i> GitHub</a
+            >
+            <a
+              href="https://www.linkedin.com/in/shivam-maletha-46983b337/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              ><i class="fa-brands fa-linkedin"></i> LinkedIn</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <!-- ============================================================
+         HERO SECTION (Split-Grid Design with Radiant Sunset Contrast)
+         ============================================================ -->
+      <section class="hero-section" id="hero">
+        <div class="hero-container">
+          <!-- Left Hero Content -->
+          <div class="hero-content">
+            <div class="neon-lime-pill reveal-fade">
+              <span class="status-indicator"></span>
+              <span>✦ FRONTEND DEVELOPER &amp; ASPIRING SOFTWARE ENGINEER</span>
+            </div>
+
+            <h1 class="hero-title reveal-up">
+              Hi, I’m <br />
+              <span class="gradient-text animated-gradient">Shivam</span>
+              Maletha
+            </h1>
+
+            <!-- Interactive Typing Subtitle -->
+            <div class="hero-typing-wrapper reveal-fade">
+              <span class="typing-prefix">Building</span>
+              <span class="typing-text" id="typing-text"
+                >Modern Web Interfaces</span
+              >
+              <span class="typing-cursor">|</span>
+            </div>
+
+            <p class="hero-bio reveal-up delay-1">
+              I build clean, accessible, and high-performance web applications
+              using <strong>HTML</strong>, <strong>CSS</strong>, and
+              <strong>JavaScript</strong>, while actively strengthening my
+              foundations in
+              <strong>Data Structures &amp; Algorithms (DSA)</strong>,
+              algorithmic problem solving, and
+              <strong>Backend / Full-Stack</strong> engineering.
+            </p>
+
+            <!-- Core Skills Badges Grid -->
+            <div class="hero-tech-stack reveal-up delay-2">
+              <span class="tech-label">CORE TOOLKIT</span>
+              <div class="tech-icons-grid">
+                <div
+                  class="tech-badge magnetic-item"
+                  title="HTML5 Semantic Markup"
+                >
+                  <i class="fa-brands fa-html5" style="color: #e34f26"></i>
+                  <span>HTML5</span>
+                </div>
+                <div
+                  class="tech-badge magnetic-item"
+                  title="CSS3 &amp; Modern Layouts"
+                >
+                  <i class="fa-brands fa-css3-alt" style="color: #1572b6"></i>
+                  <span>CSS3 (Flex/Grid)</span>
+                </div>
+                <div class="tech-badge magnetic-item" title="JavaScript ES6+">
+                  <i class="fa-brands fa-js" style="color: #f7df1e"></i>
+                  <span>JavaScript</span>
+                </div>
+                <div
+                  class="tech-badge magnetic-item"
+                  title="Data Structures &amp; Algorithms"
+                >
+                  <i class="fa-solid fa-code" style="color: #ff6b00"></i>
+                  <span>DSA &amp; Problem Solving</span>
+                </div>
+                <div
+                  class="tech-badge magnetic-item"
+                  title="Python &amp; Backend Logic"
+                >
+                  <i class="fa-brands fa-python" style="color: #3776ab"></i>
+                  <span>Python &amp; APIs</span>
+                </div>
+                <div
+                  class="tech-badge magnetic-item"
+                  title="Git Version Control"
+                >
+                  <i class="fa-brands fa-git-alt" style="color: #f05032"></i>
+                  <span>Git &amp; GitHub</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dual Action CTA Buttons & Social Icons -->
+            <div class="hero-actions-wrapper reveal-up delay-3">
+              <div class="hero-actions">
+                <a href="#projects" class="btn btn-sunset magnetic-btn">
+                  <span>View Projects</span>
+                  <svg
+                    class="btn-arrow"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                  >
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+                <a href="#contact" class="btn btn-outline magnetic-btn">
+                  <span>Contact Me</span>
+                </a>
+              </div>
+
+              <!-- Social Links -->
+              <div class="hero-social-links">
+                <a
+                  href="https://www.linkedin.com/in/shivam-maletha-46983b337/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-icon-btn magnetic-btn"
+                  aria-label="LinkedIn"
+                >
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a
+                  href="https://github.com/ShivamMaletha21"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-icon-btn magnetic-btn"
+                  aria-label="GitHub"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/shiv_maletha/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-icon-btn magnetic-btn"
+                  aria-label="Instagram"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Hero Visual with 3D Tilt -->
+          <div class="hero-visual reveal-scale">
+            <div class="visual-wrapper">
+              <div
+                class="portrait-card gradient-border-card tilt-card"
+                data-tilt
+              >
+                <img
+                  src="assets/images/shivam-portrait.jpg"
+                  onerror="
+                    this.onerror = null;
+                    this.src = 'assets/images/shivam-portrait-original.jpg';
+                  "
+                  alt="Shivam Maletha"
+                  class="portrait-img"
+                  width="480"
+                  height="600"
+                  loading="eager"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+         4-COLUMN STATS IMPACT BAR WITH ANIMATED COUNTERS
+         ============================================================ -->
+      <section class="metrics-bar-section">
+        <div class="metrics-container">
+          <div class="metrics-grid">
+            <div class="metric-item reveal-up">
+              <div class="metric-value">
+                <span class="counter" data-target="95">0</span>%
+              </div>
+              <div class="metric-label">Clean Code &amp; Performance Score</div>
+            </div>
+
+            <div class="metric-item reveal-up delay-1">
+              <div class="metric-value">
+                <span class="counter" data-target="200">0</span>+
+              </div>
+              <div class="metric-label">Hours of Hands-On Engineering</div>
+            </div>
+
+            <div class="metric-item reveal-up delay-2">
+              <div class="metric-value">
+                <span class="counter" data-target="2026">2020</span>
+              </div>
+              <div class="metric-label">Full-Stack &amp; AI Evolution</div>
+            </div>
+
+            <div class="metric-item reveal-up delay-3">
+              <div class="metric-value">
+                <span class="counter" data-target="4">0</span>+
+              </div>
+              <div class="metric-label">
+                Live Web Applications &amp; Projects
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+         CIRCULAR SKILLS & CREATIVE PHILOSOPHY INFOGRAPHIC
+         ============================================================ -->
+      <section class="skills-infographic-section" id="skills-overview">
+        <div class="skills-info-container">
+          <div class="skills-info-grid">
+            <!-- Left: Segmented Donut Chart Graphic with 3D Tilt -->
+            <div class="donut-chart-box tilt-card reveal-up" data-tilt>
+              <div class="donut-wrapper">
+                <img
+                  src="assets/images/skills-donut.svg"
+                  alt="Core Skillset Breakdown"
+                  class="donut-img spin-glow"
+                  width="340"
+                  height="340"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="donut-legend">
+                <div class="legend-pill">
+                  <span class="dot-sunset"></span> Frontend &amp; UI (40%)
+                </div>
+                <div class="legend-pill">
+                  <span class="dot-lime"></span> AI &amp; Python (25%)
+                </div>
+                <div class="legend-pill">
+                  <span class="dot-cyan"></span> Full Stack (20%)
+                </div>
+                <div class="legend-pill">
+                  <span class="dot-gray"></span> Motion (15%)
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Statement & Problem Solving -->
+            <div class="skills-info-content reveal-up delay-1">
+              <span class="section-tag-lime">✦ CORE PHILOSOPHY</span>
+              <h2 class="infographic-title">
+                Turning creative ideas into responsive, interactive digital
+                experiences that engage users seamlessly.
+              </h2>
+              <p class="infographic-desc">
+                Every interface I develop combines clean semantic markup, fast
+                loading speeds, fluid responsive layouts, and structured
+                problem-solving. My goal is to build software that not only
+                functions flawlessly under the hood but feels enjoyable to
+                interact with on every screen size.
+              </p>
+
+              <div class="feature-bullets-grid">
+                <div class="feature-bullet-item">
+                  <i class="fa-solid fa-bolt" style="color: #ff7a00"></i>
+                  <div>
+                    <strong>High Performance</strong>
+                    <span
+                      >Optimized for fast rendering and smooth 60 FPS
+                      transitions</span
+                    >
+                  </div>
+                </div>
+                <div class="feature-bullet-item">
+                  <i
+                    class="fa-solid fa-mobile-screen"
+                    style="color: #ccff00"
+                  ></i>
+                  <div>
+                    <strong>Mobile First</strong>
+                    <span
+                      >Adaptive layouts engineered using modern Flexbox and
+                      Grid</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="infographic-cta">
+                <a href="#projects" class="btn btn-sunset magnetic-btn">
+                  <span>Explore Featured Work</span>
+                  <svg
+                    class="btn-arrow"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                  >
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+         ABOUT ME SECTION (Editorial Split Layout)
+         ============================================================ -->
+      <section class="about-section" id="about">
+        <div class="about-container">
+          <!-- Left Image Card with 3D Tilt -->
+          <div class="about-media-box reveal-up">
+            <div
+              class="about-img-frame gradient-border-card tilt-card"
+              data-tilt
+            >
+              <img
+                src="assets/images/shivam-portrait.jpg"
+                onerror="
+                  this.onerror = null;
+                  this.src = 'assets/images/shivam-portrait-original.jpg';
+                "
+                alt="Shivam Maletha Working"
+                class="about-img"
+                loading="lazy"
+              />
+              <div class="about-badge-overlay">
+                <span class="lime-badge-sm"
+                  >✦ Frontend &amp; UI Specialist</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Content Area -->
+          <div class="about-content-box reveal-up delay-1">
+            <span class="section-tag-light">ABOUT ME</span>
+            <h2 class="about-heading">A Few Words About Me</h2>
+
+            <h3 class="about-subheading">
+              Frontend Developer &amp; Aspiring Software Engineer driven by
+              problem-solving and clean engineering.
+            </h3>
+
+            <p class="about-text">
+              I’m passionate about modern web engineering and computer science
+              fundamentals, specializing in building clean, responsive, and
+              user-friendly web applications using <strong>HTML</strong>,
+              <strong>CSS</strong>, and <strong>JavaScript</strong>. I love
+              taking complex problems and breaking them down into clean,
+              performant code.
+            </p>
+
+            <p class="about-text">
+              Driven by an aspiring software engineer mindset, I actively
+              practice
+              <strong>Data Structures &amp; Algorithms (DSA)</strong> daily,
+              strengthening my problem-solving logic and algorithm optimization
+              while learning
+              <strong>Backend &amp; Full-Stack foundations</strong> (Node.js
+              &amp; Python) to build scalable, full-featured systems.
+            </p>
+
+            <!-- Skills Badges Grid -->
+            <div class="skills-highlight-grid">
+              <div class="skill-check-item">
+                <span class="check-icon-circle"
+                  ><i class="fa-solid fa-check"></i
+                ></span>
+                <span>Semantic HTML5 &amp; CSS3 Layouts</span>
+              </div>
+              <div class="skill-check-item">
+                <span class="check-icon-circle"
+                  ><i class="fa-solid fa-check"></i
+                ></span>
+                <span>JavaScript (ES6+ &amp; DOM State)</span>
+              </div>
+              <div class="skill-check-item">
+                <span class="check-icon-circle"
+                  ><i class="fa-solid fa-check"></i
+                ></span>
+                <span>Data Structures &amp; Algorithms (DSA)</span>
+              </div>
+              <div class="skill-check-item">
+                <span class="check-icon-circle"
+                  ><i class="fa-solid fa-check"></i
+                ></span>
+                <span>Time &amp; Space Complexity (Big-O)</span>
+              </div>
+              <div class="skill-check-item">
+                <span class="check-icon-circle"
+                  ><i class="fa-solid fa-check"></i
+                ></span>
+                <span>Backend Foundations (Node.js &amp; Python)</span>
+              </div>
+              <div class="skill-check-item">
+                <span class="check-icon-circle"
+                  ><i class="fa-solid fa-check"></i
+                ></span>
+                <span>Git, GitHub &amp; Clean Architecture</span>
+              </div>
+            </div>
+
+            <div class="about-action-buttons">
+              <a href="#projects" class="btn btn-sunset magnetic-btn">
+                <span>View Portfolio</span>
+                <svg
+                  class="btn-arrow"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="#contact" class="btn btn-outline magnetic-btn">
+                <span>Get in Touch</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+         ACADEMIC & JOURNEY TIMELINE
+         ============================================================ -->
+      <section class="timeline-section" id="timeline">
+        <div class="timeline-container">
+          <div class="section-header-center">
+            <span class="section-tag-light">EXPERIENCE &amp; EDUCATION</span>
+            <h2 class="section-title text-center">
+              Academic &amp; Journey Background
+            </h2>
+            <p class="section-subtitle text-center">
+              A milestone roadmap detailing my education, creative evolution,
+              and focused web engineering journey.
+            </p>
+          </div>
+
+          <div class="timeline-track">
+            <!-- Milestone 1 -->
+            <div class="timeline-node reveal-up">
+              <div class="timeline-side-content">
+                <div class="timeline-card tilt-card" data-tilt>
+                  <div class="timeline-badge-year">2021 – 2022</div>
+                  <h3 class="timeline-role">Senior Secondary (12th Class)</h3>
+                  <h4 class="timeline-institution">The Horizon School</h4>
+                  <p class="timeline-desc">
+                    Completed 12th standard with a PCM (Physics, Chemistry,
+                    Mathematics) background. This phase helped me build
+                    analytical thinking and systematic problem-solving skills
+                    that strongly support my passion for programming.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-center-marker">
+                <div class="marker-dot">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+              </div>
+              <div class="timeline-empty-side"></div>
+            </div>
+
+            <!-- Milestone 2 -->
+            <div class="timeline-node reverse reveal-up delay-1">
+              <div class="timeline-empty-side"></div>
+              <div class="timeline-center-marker">
+                <div class="marker-dot">
+                  <i class="fa-solid fa-laptop-code"></i>
+                </div>
+              </div>
+              <div class="timeline-side-content">
+                <div class="timeline-card tilt-card" data-tilt>
+                  <div class="timeline-badge-year">2023 – 2024</div>
+                  <h3 class="timeline-role">
+                    Core Programming &amp; Logic Building
+                  </h3>
+                  <h4 class="timeline-institution">
+                    Foundational CS &amp; Algorithms
+                  </h4>
+                  <p class="timeline-desc">
+                    Explored computer science fundamentals, logic building in
+                    Python and C/C++, algorithmic thinking, and object-oriented
+                    programming. Built a strong foundation in structured problem
+                    solving.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Milestone 3 -->
+            <div class="timeline-node reveal-up delay-2">
+              <div class="timeline-side-content">
+                <div class="timeline-card active-node tilt-card" data-tilt>
+                  <div class="timeline-badge-year current">
+                    2023 – 2027 (Ongoing)
+                  </div>
+                  <h3 class="timeline-role">
+                    BCA (Hons) Artificial Intelligence &amp; Data Science
+                  </h3>
+                  <h4 class="timeline-institution">
+                    Graphic Era Deemed To Be University
+                  </h4>
+                  <p class="timeline-desc">
+                    Currently pursuing a specialized Honors degree in AI &amp;
+                    Data Science. Learning Data Structures &amp; Algorithms,
+                    Python, Web Development, and Machine Learning while building
+                    real-world software applications.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-center-marker">
+                <div class="marker-dot active">
+                  <i class="fa-solid fa-brain"></i>
+                </div>
+              </div>
+              <div class="timeline-empty-side"></div>
+            </div>
+
+            <!-- Milestone 4 -->
+            <div class="timeline-node reverse reveal-up delay-3">
+              <div class="timeline-empty-side"></div>
+              <div class="timeline-center-marker">
+                <div class="marker-dot active">
+                  <i class="fa-solid fa-code"></i>
+                </div>
+              </div>
+              <div class="timeline-side-content">
+                <div class="timeline-card active-node tilt-card" data-tilt>
+                  <div class="timeline-badge-year current">2026 – Present</div>
+                  <h3 class="timeline-role">
+                    Focused Web Development &amp; Full-Stack
+                  </h3>
+                  <h4 class="timeline-institution">
+                    Continuous Engineering &amp; Projects
+                  </h4>
+                  <p class="timeline-desc">
+                    Dedicated focus on modern Web Development — engineering
+                    responsive, accessible, and fast user interfaces using HTML,
+                    CSS, JavaScript, and advancing into Full-Stack and AI-driven
+                    web architectures.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+         TECHNICAL FOCUS / SKILLS (Dark Obsidian Section)
+         ============================================================ -->
+      <section class="tech-focus-section" id="technical-focus">
+        <div class="tech-focus-container">
+          <div class="section-header-dark">
+            <span class="section-tag">// TECHNICAL EXPERTISE</span>
+            <h2 class="section-title-dark">
+              I specialize in crafting responsive user interfaces, mastering
+              modern web standards, and exploring AI-driven development.
+            </h2>
+          </div>
+
+          <div class="focus-grid">
+            <div class="focus-accordion" id="focus-accordion" role="tablist">
+              <div
+                class="accordion-item active"
+                data-preview="frontend"
+                data-index="0"
+              >
+                <button
+                  class="accordion-header"
+                  aria-expanded="true"
+                  id="accordion-btn-0"
+                  aria-controls="accordion-panel-0"
+                >
+                  <span class="item-title"
+                    >Frontend &amp; Responsive Web Design</span
+                  >
+                  <span class="item-icon">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <line x1="12" y1="5" x2="12" y2="19"></line>
+                      <polyline points="19 12 12 19 5 12"></polyline>
+                    </svg>
+                  </span>
+                </button>
+                <div
+                  class="accordion-content"
+                  id="accordion-panel-0"
+                  role="tabpanel"
+                  aria-labelledby="accordion-btn-0"
+                >
+                  <p class="item-description">
+                    Building pixel-perfect, accessible, and mobile-friendly web
+                    applications with clean semantic HTML5, modern CSS3 (Flexbox
+                    &amp; CSS Grid), and interactive JavaScript (DOM state
+                    synchronization &amp; ES6+ features).
+                  </p>
+                  <div class="item-tags">
+                    <span class="badge-tag">HTML5 / Semantic</span>
+                    <span class="badge-tag">CSS3 / Flexbox &amp; Grid</span>
+                    <span class="badge-tag">JavaScript ES6+</span>
+                    <span class="badge-tag">Responsive UI</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item" data-preview="dsa" data-index="1">
+                <button
+                  class="accordion-header"
+                  aria-expanded="false"
+                  id="accordion-btn-1"
+                  aria-controls="accordion-panel-1"
+                >
+                  <span class="item-title"
+                    >Data Structures &amp; Algorithms (DSA)</span
+                  >
+                  <span class="item-icon">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <line x1="12" y1="5" x2="12" y2="19"></line>
+                      <polyline points="19 12 12 19 5 12"></polyline>
+                    </svg>
+                  </span>
+                </button>
+                <div
+                  class="accordion-content"
+                  id="accordion-panel-1"
+                  role="tabpanel"
+                  aria-labelledby="accordion-btn-1"
+                >
+                  <p class="item-description">
+                    Active daily problem solving and algorithm practice: Arrays,
+                    Strings, Two Pointers, Sliding Window, Sorting algorithms
+                    (Fisher-Yates, Quick/Merge Sort), Recursion, and Time &amp;
+                    Space Complexity (Big-O) optimization.
+                  </p>
+                  <div class="item-tags">
+                    <span class="badge-tag">Arrays &amp; Strings</span>
+                    <span class="badge-tag">Two-Pointers &amp; Sorting</span>
+                    <span class="badge-tag">Time &amp; Space (Big-O)</span>
+                    <span class="badge-tag">Problem Solving</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item" data-preview="backend" data-index="2">
+                <button
+                  class="accordion-header"
+                  aria-expanded="false"
+                  id="accordion-btn-2"
+                  aria-controls="accordion-panel-2"
+                >
+                  <span class="item-title"
+                    >Full-Stack &amp; Backend Exploration</span
+                  >
+                  <span class="item-icon">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <line x1="12" y1="5" x2="12" y2="19"></line>
+                      <polyline points="19 12 12 19 5 12"></polyline>
+                    </svg>
+                  </span>
+                </button>
+                <div
+                  class="accordion-content"
+                  id="accordion-panel-2"
+                  role="tabpanel"
+                  aria-labelledby="accordion-btn-2"
+                >
+                  <p class="item-description">
+                    Expanding into server-side development with Python and
+                    Node.js. Understanding client-server architectures, RESTful
+                    APIs, JSON data pipelines, and database CRUD state.
+                  </p>
+                  <div class="item-tags">
+                    <span class="badge-tag">Python &amp; APIs</span>
+                    <span class="badge-tag">Node.js Basics</span>
+                    <span class="badge-tag">RESTful Endpoints</span>
+                    <span class="badge-tag">Database CRUD</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item" data-preview="ai" data-index="3">
+                <button
+                  class="accordion-header"
+                  aria-expanded="false"
+                  id="accordion-btn-3"
+                  aria-controls="accordion-panel-3"
+                >
+                  <span class="item-title"
+                    >AI &amp; Data Science Fundamentals</span
+                  >
+                  <span class="item-icon">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <line x1="12" y1="5" x2="12" y2="19"></line>
+                      <polyline points="19 12 12 19 5 12"></polyline>
+                    </svg>
+                  </span>
+                </button>
+                <div
+                  class="accordion-content"
+                  id="accordion-panel-3"
+                  role="tabpanel"
+                  aria-labelledby="accordion-btn-3"
+                >
+                  <p class="item-description">
+                    Academic training in AI &amp; Data Science at Graphic Era
+                    University: Machine Learning fundamentals, algorithmic
+                    graphs, statistical data modeling, and Python for data
+                    analysis (NumPy &amp; Pandas).
+                  </p>
+                  <div class="item-tags">
+                    <span class="badge-tag">Machine Learning Basics</span>
+                    <span class="badge-tag">Python / NumPy / Pandas</span>
+                    <span class="badge-tag">Data Analysis</span>
+                    <span class="badge-tag">Algorithmic Models</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="focus-preview-col">
+              <div class="preview-display-card tilt-card" data-tilt>
+                <div class="preview-header">
+                  <span class="preview-status-dot"></span>
+                  <span class="preview-caption" id="preview-caption"
+                    >Live IDE &amp; Code Pipeline: Frontend &amp; Responsive
+                    Design</span
+                  >
+                </div>
+                <div class="preview-media-wrapper">
+                  <img
+                    src="assets/images/preview-frontend.svg"
+                    alt="Technical Preview"
+                    id="preview-image"
+                    class="preview-img"
+                    width="560"
+                    height="400"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="preview-footer">
+                  <span class="preview-meta-pill" id="preview-meta"
+                    >⚡ Core Web Vitals: 100/100 Perf Score</span
+                  >
+                  <span class="preview-meta-badge">Verified</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+         FEATURED PROJECTS SECTION (Shivam's Real Applications)
+         ============================================================ -->
+      <section class="projects-section" id="projects">
+        <div class="projects-container">
+          <div class="section-header">
+            <div class="header-left">
+              <span class="section-tag-lime">✦ FEATURED WORK</span>
+              <h2 class="section-title">
+                Every project is a step forward in my journey as a developer.
+              </h2>
+              <p class="section-subtitle-left">
+                Hands-on applications built with clean JavaScript logic, modern
+                web architectures, and interactive interfaces.
+              </p>
+            </div>
+            <div class="project-filter-tabs" role="tablist">
+              <button class="filter-tab active" data-filter="all">
+                All Projects (4)
+              </button>
+              <button class="filter-tab" data-filter="javascript">
+                JavaScript &amp; Logic (3)
+              </button>
+              <button class="filter-tab" data-filter="frontend">
+                UI &amp; Layouts (1)
+              </button>
+            </div>
+          </div>
+
+          <div class="projects-grid">
+            <!-- ==========================================
+               PROJECT 1: TRAVEL TRIP PLANNER
+               ========================================== -->
+            <article class="project-card reveal-up" data-category="javascript">
+              <div class="browser-mockup-frame">
+                <div class="browser-header">
+                  <div class="browser-dots">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                  </div>
+                  <div class="browser-address-bar">
+                    <i class="fa-solid fa-lock"></i>
+                    <span>travel-planner.app</span>
+                  </div>
+                  <div class="browser-badge">JS Objects</div>
+                </div>
+                <div class="project-image-box">
+                  <img
+                    src="assets/images/project-trip-planner.png"
+                    onerror="
+                      this.onerror = null;
+                      this.src = 'assets/images/project-1.svg';
+                    "
+                    alt="JavaScript Travel Trip Planner"
+                    class="project-img"
+                    width="600"
+                    height="375"
+                    loading="lazy"
+                  />
+                  <div class="project-overlay">
+                    <a
+                      href="https://trip-planner-chi-fawn.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="btn btn-sm btn-sunset"
+                    >
+                      <span>Open Live Demo</span>
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-info">
+                <div class="project-meta">
+                  <span class="project-category"
+                    >JavaScript Objects &amp; CRUD</span
+                  >
+                  <span class="project-metric">Live Web App</span>
+                </div>
+
+                <h3 class="project-title">
+                  01 // JavaScript Travel Trip Planner
+                </h3>
+
+                <p class="project-summary">
+                  A dynamic trip planning application built with JavaScript
+                  Objects to organize real-world travel schedules, dynamic
+                  budgets, accommodations, transport, and activities.
+                </p>
+
+                <!-- Feature Highlights -->
+                <div class="project-features-box">
+                  <span class="features-label">KEY FEATURES BUILT</span>
+                  <ul class="project-feature-list">
+                    <li>
+                      <i class="fa-solid fa-check text-accent"></i> Save trip
+                      details &amp; date scheduling
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-check text-accent"></i> Add
+                      accommodation &amp; transport logistics
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-check text-accent"></i> Full CRUD:
+                      Add, edit &amp; delete activities
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-check text-accent"></i> Real-time
+                      activity search &amp; category filtering
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-check text-accent"></i> Dynamic
+                      total trip cost calculation
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Concepts Practiced -->
+                <div class="project-tech-list">
+                  <span class="tech-tag">Objects &amp; References</span>
+                  <span class="tech-tag">Arrays of Objects</span>
+                  <span class="tech-tag">ES6 Shorthand</span>
+                  <span class="tech-tag">DOM Manipulation</span>
+                  <span class="tech-tag">Event Handling</span>
+                  <span class="tech-tag">CRUD Logic</span>
+                </div>
+
+                <!-- Project Action Buttons -->
+                <div class="project-actions-row">
+                  <a
+                    href="https://trip-planner-chi-fawn.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-sm btn-sunset magnetic-btn"
+                  >
+                    <span>Live Demo</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                  <a
+                    href="https://github.com/ShivamMaletha21/Frontend-Journey/tree/main/JavaScript%20Projects"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-sm btn-outline magnetic-btn"
+                  >
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span>
+                  </a>
+                  <button
+                    class="btn btn-sm btn-details open-project-modal-btn"
+                    data-project-id="trip-planner"
+                  >
+                    <span>Deep Dive</span>
+                    <i class="fa-solid fa-book-open"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- ==========================================
+               PROJECT 2: SPOTIFY PLAYLIST MANAGER
+               ========================================== -->
+            <article
+              class="project-card reveal-up delay-1"
+              data-category="javascript"
+            >
+              <div class="browser-mockup-frame">
+                <div class="browser-header">
+                  <div class="browser-dots">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                  </div>
+                  <div class="browser-address-bar">
+                    <i class="fa-solid fa-lock"></i>
+                    <span>spotify-manager.app</span>
+                  </div>
+                  <div class="browser-badge lime">Fisher-Yates</div>
+                </div>
+                <div class="project-image-box">
+                  <img
+                    src="assets/images/project-spotify-manager.png"
+                    onerror="
+                      this.onerror = null;
+                      this.src = 'assets/images/project-2.svg';
+                    "
+                    alt="Spotify Playlist Manager"
+                    class="project-img"
+                    width="600"
+                    height="375"
+                    loading="lazy"
+                  />
+                  <div class="project-overlay">
+                    <a
+                      href="https://your-music-qbb0yjcxc-sh-ivam1.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="btn btn-sm btn-sunset"
+                    >
+                      <span>Open Live Demo</span>
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-info">
+                <div class="project-meta">
+                  <span class="project-category"
+                    >Algorithms &amp; State Sync</span
+                  >
+                  <span class="project-metric">Live Web App</span>
+                </div>
+
+                <h3 class="project-title">02 // Spotify Playlist Manager 🎵</h3>
+
+                <p class="project-summary">
+                  A full-featured music playlist manager application
+                  implementing data synchronization across sorting, reversing,
+                  array shuffling algorithms, and dynamic playlist statistics.
+                </p>
+
+                <!-- Feature Highlights -->
+                <div class="project-features-box">
+                  <span class="features-label">KEY FEATURES BUILT</span>
+                  <ul class="project-feature-list">
+                    <li>
+                      <i class="fa-solid fa-check text-accent"></i> Add songs
+                      with duplicate entry prevention
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-check text-accent"></i> Real-time
+                      song search &amp; starred track filtering
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-check text-accent"></i> A–Z
+                      Alphabetical sorting &amp; playlist reversing
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-check text-accent"></i> True shuffle
+                      using Fisher-Yates Algorithm
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-check text-accent"></i> Dynamic
+                      stats: total songs, recent track, live preview
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Concepts Practiced -->
+                <div class="project-tech-list">
+                  <span class="tech-tag">Fisher-Yates Shuffle</span>
+                  <span class="tech-tag">Math.random()</span>
+                  <span class="tech-tag">UI &amp; Data Sync</span>
+                  <span class="tech-tag">Array Methods</span>
+                  <span class="tech-tag">DOM Manipulation</span>
+                  <span class="tech-tag">Modular Functions</span>
+                </div>
+
+                <!-- Project Action Buttons -->
+                <div class="project-actions-row">
+                  <a
+                    href="https://your-music-qbb0yjcxc-sh-ivam1.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-sm btn-sunset magnetic-btn"
+                  >
+                    <span>Live Demo</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                  <a
+                    href="https://github.com/ShivamMaletha21/Frontend-Journey/tree/main/JavaScript%20Projects"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-sm btn-outline magnetic-btn"
+                  >
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span>
+                  </a>
+                  <button
+                    class="btn btn-sm btn-details open-project-modal-btn"
+                    data-project-id="spotify-manager"
+                  >
+                    <span>Deep Dive</span>
+                    <i class="fa-solid fa-book-open"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- ==========================================
+               PROJECT 3: SHOPPING CART SYSTEM
+               ========================================== -->
+            <article
+              class="project-card reveal-up delay-2"
+              data-category="javascript"
+            >
+              <div class="browser-mockup-frame">
+                <div class="browser-header">
+                  <div class="browser-dots">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                  </div>
+                  <div class="browser-address-bar">
+                    <i class="fa-solid fa-lock"></i>
+                    <span>cart-system.app</span>
+                  </div>
+                  <div class="browser-badge">LocalStorage</div>
+                </div>
+                <div class="project-image-box">
+                  <img
+                    src="assets/images/project-shopping-cart.png"
+                    onerror="
+                      this.onerror = null;
+                      this.src = 'assets/images/project-3.svg';
+                    "
+                    alt="Shopping Cart System"
+                    class="project-img"
+                    width="600"
+                    height="375"
+                    loading="lazy"
+                  />
+                  <div class="project-overlay">
+                    <a
+                      href="https://shopping-cart-javas.netlify.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="btn btn-sm btn-sunset"
+                    >
+                      <span>Open Live Demo</span>
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-info">
+                <div class="project-meta">
+                  <span class="project-category"
+                    >Array Methods &amp; Logic</span
+                  >
+                  <span class="project-metric">Live Web App</span>
+                </div>
+
+                <h3 class="project-title">03 // Shopping Cart System</h3>
+
+                <p class="project-summary">
+                  A robust e-commerce shopping cart system built to master deep
+                  JavaScript array methods, state mutations, dynamic price
+                  calculations, and persistent LocalStorage syncing.
+                </p>
+
+                <!-- Feature Highlights -->
+                <div class="project-features-box">
+                  <span class="features-label">KEY FEATURES BUILT</span>
+                  <ul class="project-feature-list">
+                    <li>
+                      <i class="fa-solid fa-check text-accent"></i> Add &amp;
+                      remove items with real-time quantity updates
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-check text-accent"></i> Live product
+                      search &amp; inventory catalogue view
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-check text-accent"></i> Dynamic
+                      total price, tax &amp; coupon discount engine
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-check text-accent"></i> Persistent
+                      cart state saved via Browser LocalStorage
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-check text-accent"></i> Clean,
+                      functional user-centric interface
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Concepts Practiced -->
+                <div class="project-tech-list">
+                  <span class="tech-tag">map() &amp; reduce()</span>
+                  <span class="tech-tag">find() &amp; findIndex()</span>
+                  <span class="tech-tag">push() &amp; splice()</span>
+                  <span class="tech-tag">LocalStorage API</span>
+                  <span class="tech-tag">Event Delegation</span>
+                  <span class="tech-tag">Business Logic</span>
+                </div>
+
+                <!-- Project Action Buttons -->
+                <div class="project-actions-row">
+                  <a
+                    href="https://shopping-cart-javas.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-sm btn-sunset magnetic-btn"
+                  >
+                    <span>Live Demo</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                  <a
+                    href="https://github.com/ShivamMaletha21/Frontend-Journey/tree/main/JavaScript%20Projects"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-sm btn-outline magnetic-btn"
+                  >
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span>
+                  </a>
+                  <button
+                    class="btn btn-sm btn-details open-project-modal-btn"
+                    data-project-id="shopping-cart"
+                  >
+                    <span>Deep Dive</span>
+                    <i class="fa-solid fa-book-open"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- ==========================================
+               PROJECT 4: PERSONAL PORTFOLIO WEBSITE
+               ========================================== -->
+            <article
+              class="project-card reveal-up delay-3"
+              data-category="frontend"
+            >
+              <div class="browser-mockup-frame">
+                <div class="browser-header">
+                  <div class="browser-dots">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                  </div>
+                  <div class="browser-address-bar">
+                    <i class="fa-solid fa-lock"></i>
+                    <span>shivam-maletha.dev</span>
+                  </div>
+                  <div class="browser-badge lime">Active Live</div>
+                </div>
+                <div class="project-image-box">
+                  <img
+                    src="assets/images/project-portfolio.png"
+                    onerror="
+                      this.onerror = null;
+                      this.src = 'assets/images/project-4.svg';
+                    "
+                    alt="Personal Portfolio Website"
+                    class="project-img"
+                    width="600"
+                    height="375"
+                    loading="lazy"
+                  />
+                  <div class="project-overlay">
+                    <a href="#hero" class="btn btn-sm btn-sunset">
+                      <span>Current Website</span>
+                      <i class="fa-solid fa-sparkles"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-info">
+                <div class="project-meta">
+                  <span class="project-category"
+                    >Editorial UI &amp; Motion Design</span
+                  >
+                  <span class="project-metric">Live Portfolio</span>
+                </div>
+
+                <h3 class="project-title">04 // Modern Personal Portfolio</h3>
+
+                <p class="project-summary">
+                  A custom-engineered developer portfolio fusing warm editorial
+                  typography, blueprint grid textures, radiant sunset gradients,
+                  3D card tilt physics, and zero external framework bloat.
+                </p>
+
+                <!-- Feature Highlights -->
+                <div class="project-features-box">
+                  <span class="features-label">KEY FEATURES BUILT</span>
+                  <ul class="project-feature-list">
+                    <li>
+                      <i class="fa-solid fa-check text-accent"></i> Blueprint
+                      grid background with floating radiant ambient orbs
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-check text-accent"></i> Custom
+                      spring-interpolated magnetic cursor physics
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-check text-accent"></i> Dynamic
+                      typewriter headline &amp; 3D perspective tilt
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-check text-accent"></i> Technical
+                      Focus live SVG preview pipeline
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-check text-accent"></i> Numbered FAQ
+                      accordion &amp; animated counter metrics
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Concepts Practiced -->
+                <div class="project-tech-list">
+                  <span class="tech-tag">CSS Grid &amp; Flexbox</span>
+                  <span class="tech-tag">Vanilla ES6+ JS</span>
+                  <span class="tech-tag">IntersectionObserver</span>
+                  <span class="tech-tag">Custom Cursor Lerp</span>
+                  <span class="tech-tag">3D Tilt Physics</span>
+                  <span class="tech-tag">SVG Architecture</span>
+                </div>
+
+                <!-- Project Action Buttons -->
+                <div class="project-actions-row">
+                  <a href="#hero" class="btn btn-sm btn-sunset magnetic-btn">
+                    <span>View Live</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                  <a
+                    href="https://github.com/ShivamMaletha21"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-sm btn-outline magnetic-btn"
+                  >
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span>
+                  </a>
+                  <button
+                    class="btn btn-sm btn-details open-project-modal-btn"
+                    data-project-id="portfolio-site"
+                  >
+                    <span>Deep Dive</span>
+                    <i class="fa-solid fa-book-open"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+         FREQUENTLY ASKED QUESTIONS (FAQ Accordion from Ref 2)
+         ============================================================ -->
+      <section class="faq-section" id="faq">
+        <div class="faq-container">
+          <div class="section-header-center">
+            <span class="section-tag-light">FAQ</span>
+            <h2 class="section-title text-center">
+              Frequently Asked Questions
+            </h2>
+            <p class="section-subtitle text-center">
+              Common questions about my skillset, development process, and
+              availability.
+            </p>
+          </div>
+
+          <div class="faq-accordion-list" id="faq-accordion">
+            <div class="faq-item active">
+              <button class="faq-header" aria-expanded="true">
+                <span class="faq-number">01</span>
+                <span class="faq-question"
+                  >What technologies do you use for building websites?</span
+                >
+                <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+              </button>
+              <div class="faq-body">
+                <p>
+                  I primarily build with semantic HTML5, modern CSS3 (Flexbox
+                  &amp; CSS Grid), and modern JavaScript (ES6+). I focus on
+                  clean structure, zero bloated dependencies, fast loading
+                  speed, and full responsive compatibility across all device
+                  sizes.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-header" aria-expanded="false">
+                <span class="faq-number">02</span>
+                <span class="faq-question"
+                  >Are you open to internships or freelance opportunities?</span
+                >
+                <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+              </button>
+              <div class="faq-body">
+                <p>
+                  Yes! I am actively looking for frontend internships,
+                  collaborative software projects, and freelance web development
+                  opportunities. Feel free to reach out via the contact form or
+                  on LinkedIn.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-header" aria-expanded="false">
+                <span class="faq-number">03</span>
+                <span class="faq-question"
+                  >How does your AI and Data Science background help your web
+                  development?</span
+                >
+                <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+              </button>
+              <div class="faq-body">
+                <p>
+                  Pursuing BCA (Hons) in AI &amp; Data Science at Graphic Era
+                  University alongside active daily Data Structures &amp;
+                  Algorithms (DSA) problem solving and backend exploration gives
+                  me a strong foundation in structured logic, algorithmic
+                  optimization, and software engineering best practices.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-header" aria-expanded="false">
+                <span class="faq-number">04</span>
+                <span class="faq-question"
+                  >How can we start working together?</span
+                >
+                <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+              </button>
+              <div class="faq-body">
+                <p>
+                  Simply send a message through the contact form below or email
+                  me directly at <strong>malethashivam43@gmail.com</strong> with
+                  a brief description of what you're looking to build. I usually
+                  reply within 24 hours.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+         IN-PAGE CONTACT SECTION
+         ============================================================ -->
+      <section class="contact-page-section" id="contact">
+        <div class="contact-page-container">
+          <div class="contact-split-grid">
+            <div class="contact-info-col reveal-up">
+              <span class="section-tag-light">CONTACT ME</span>
+              <h2 class="contact-heading">
+                Feel free to reach out for collaboration or any opportunities.
+              </h2>
+              <p class="contact-subtext">
+                Whether you have a question, a project idea, or just want to
+                connect, my inbox is always open!
+              </p>
+
+              <div class="contact-details-card tilt-card" data-tilt>
+                <div class="contact-detail-row">
+                  <div class="detail-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div class="detail-text">
+                    <span class="detail-label">Email</span>
+                    <strong class="detail-value" id="page-email-text"
+                      >malethashivam43@gmail.com</strong
+                    >
+                  </div>
+                  <button
+                    class="copy-pill-btn magnetic-item"
+                    id="page-copy-email-btn"
+                    title="Copy email address"
+                  >
+                    <i class="fa-regular fa-copy"></i>
+                    <span id="page-copy-status">Copy</span>
+                  </button>
+                </div>
+
+                <div class="contact-detail-row">
+                  <div class="detail-icon">
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <div class="detail-text">
+                    <span class="detail-label">Phone</span>
+                    <strong class="detail-value">+91 xxxxxxxxxx</strong>
+                  </div>
+                </div>
+
+                <div class="contact-detail-row">
+                  <div class="detail-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div class="detail-text">
+                    <span class="detail-label">Location</span>
+                    <strong class="detail-value"
+                      >India (Open to Remote Globally)</strong
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-socials-box">
+                <span class="socials-label">FOLLOW &amp; CONNECT</span>
+                <div class="socials-pills-row">
+                  <a
+                    href="https://www.linkedin.com/in/shivam-maletha-46983b337/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-pill magnetic-item"
+                  >
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                  </a>
+                  <a
+                    href="https://github.com/ShivamMaletha21"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-pill magnetic-item"
+                  >
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/shiv_maletha/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-pill magnetic-item"
+                  >
+                    <i class="fa-brands fa-instagram"></i>
+                    <span>Instagram</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-form-col reveal-up delay-1">
+              <div class="form-container-card tilt-card" data-tilt>
+                <h3 class="form-card-title">Send a Message</h3>
+
+                <form class="contact-form" id="page-contact-form" novalidate>
+                  <div class="form-group">
+                    <label for="p-name" class="form-label"
+                      >Your Name <span class="required">*</span></label
+                    >
+                    <input
+                      type="text"
+                      id="p-name"
+                      class="form-input"
+                      placeholder="e.g. John Doe"
+                      required
+                    />
+                    <span class="form-error-msg" id="p-name-error"
+                      >Please enter your name</span
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label for="p-email" class="form-label"
+                      >Your Email <span class="required">*</span></label
+                    >
+                    <input
+                      type="email"
+                      id="p-email"
+                      class="form-input"
+                      placeholder="john@example.com"
+                      required
+                    />
+                    <span class="form-error-msg" id="p-email-error"
+                      >Please enter a valid email address</span
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label for="p-message" class="form-label"
+                      >Your Message <span class="required">*</span></label
+                    >
+                    <textarea
+                      id="p-message"
+                      class="form-textarea"
+                      rows="5"
+                      placeholder="Hi Shivam, I would love to discuss a project..."
+                      required
+                    ></textarea>
+                    <span class="form-error-msg" id="p-message-error"
+                      >Please enter your message</span
+                    >
+                  </div>
+
+                  <button
+                    type="submit"
+                    class="btn btn-sunset btn-block magnetic-btn"
+                    id="p-submit-btn"
+                  >
+                    <span>Send Message</span>
+                    <svg
+                      class="btn-arrow"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                    >
+                      <line x1="22" y1="2" x2="11" y2="13"></line>
+                      <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                  </button>
+
+                  <div
+                    class="form-success-banner"
+                    id="p-success-banner"
+                    style="display: none"
+                  >
+                    <div class="success-icon">
+                      <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div>
+                      <strong>Message sent successfully!</strong>
+                      <p>
+                        Thank you for reaching out. I'll get back to you as soon
+                        as possible.
+                      </p>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- QUICK MODAL CONTACT DRAWER -->
+    <div
+      class="contact-modal-backdrop"
+      id="contact-modal"
+      aria-hidden="true"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title"
+    >
+      <div class="modal-card">
+        <button
+          class="modal-close-btn"
+          id="modal-close-btn"
+          aria-label="Close modal"
+        >
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+
+        <div class="modal-header">
+          <span class="section-tag-lime">✦ GET IN TOUCH</span>
+          <h2 class="modal-title" id="modal-title">
+            Let's build something great together.
+          </h2>
+          <p class="modal-description">
+            Feel free to reach out for collaboration or any opportunities.
+          </p>
+
+          <div class="quick-email-pill">
+            <span class="email-address" id="contact-email-text"
+              >malethashivam43@gmail.com</span
+            >
+            <button class="copy-email-btn" id="copy-email-btn">
+              <i class="fa-regular fa-copy"></i>
+              <span id="copy-status">Copy</span>
+            </button>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="form-name" class="form-label"
+                >Your Name <span class="required">*</span></label
+              >
+              <input
+                type="text"
+                id="form-name"
+                class="form-input"
+                placeholder="Your Name"
+                required
+              />
+              <span class="form-error-msg" id="name-error"
+                >Please enter your name</span
+              >
+            </div>
+            <div class="form-group">
+              <label for="form-email" class="form-label"
+                >Your Email <span class="required">*</span></label
+              >
+              <input
+                type="email"
+                id="form-email"
+                class="form-input"
+                placeholder="Your Email"
+                required
+              />
+              <span class="form-error-msg" id="email-error"
+                >Please enter a valid email</span
+              >
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="form-message" class="form-label"
+              >Your Message <span class="required">*</span></label
+            >
+            <textarea
+              id="form-message"
+              class="form-textarea"
+              rows="4"
+              placeholder="Your Message..."
+              required
+            ></textarea>
+            <span class="form-error-msg" id="message-error"
+              >Please enter your message</span
+            >
+          </div>
+
+          <div class="form-submit-row">
+            <button
+              type="submit"
+              class="btn btn-sunset btn-block"
+              id="form-submit-btn"
+            >
+              Send Message
+            </button>
+          </div>
+
+          <div
+            class="form-success-banner"
+            id="form-success"
+            style="display: none"
+          >
+            <div class="success-icon"><i class="fa-solid fa-check"></i></div>
+            <div>
+              <strong>Message received!</strong>
+              <p>
+                Thank you for reaching out, Shivam will get back to you shortly.
+              </p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- PROJECT DEEP DIVE MODAL -->
+    <div
+      class="project-modal-backdrop"
+      id="project-modal"
+      aria-hidden="true"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="project-modal-title"
+    >
+      <div class="project-modal-card">
+        <button
+          class="modal-close-btn"
+          id="project-modal-close-btn"
+          aria-label="Close project modal"
+        >
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+
+        <div class="project-modal-header">
+          <div class="project-modal-tag" id="project-modal-tag">
+            PROJECT CASE STUDY
+          </div>
+          <h2 class="project-modal-title" id="project-modal-title">
+            Project Title
+          </h2>
+        </div>
+
+        <div class="project-modal-media-frame">
+          <img
+            src=""
+            alt="Project Preview"
+            id="project-modal-img"
+            class="project-modal-img"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="project-modal-body">
+          <div class="modal-section-block">
+            <h4 class="modal-block-title">Overview &amp; Purpose</h4>
+            <p class="modal-block-text" id="project-modal-desc"></p>
+          </div>
+
+          <div class="modal-section-block">
+            <h4 class="modal-block-title">Key Features Built</h4>
+            <ul class="modal-feature-bullets" id="project-modal-features"></ul>
+          </div>
+
+          <div class="modal-section-block">
+            <h4 class="modal-block-title">What I Practiced</h4>
+            <div class="modal-tags-grid" id="project-modal-practiced"></div>
+          </div>
+
+          <div class="modal-section-block highlight-callout">
+            <h4 class="modal-block-title">
+              <i class="fa-solid fa-lightbulb text-accent"></i> Key Takeaway
+              &amp; Learning
+            </h4>
+            <p
+              class="modal-block-text highlight"
+              id="project-modal-learned"
+            ></p>
+          </div>
+
+          <div class="project-modal-actions">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-sunset magnetic-btn"
+              id="project-modal-demo-btn"
+            >
+              <span>Open Live Demo</span>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-outline magnetic-btn"
+              id="project-modal-github-btn"
+            >
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub Repository</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================
+       SITE FOOTER WITH GIANT GHOST WATERMARK
+       ============================================================ -->
+    <footer class="site-footer" id="footer1">
+      <div class="footer-container">
+        <!-- Sunset CTA Banner with 3D Tilt -->
+        <div class="footer-cta-banner tilt-card reveal-up" data-tilt>
+          <div class="cta-banner-content">
+            <span class="lime-badge-sm">✦ START A PROJECT</span>
+            <h2 class="cta-banner-title">
+              Have a project in mind? Let’s create something impactful.
+            </h2>
+          </div>
+          <button class="btn btn-sunset btn-lg open-contact-btn magnetic-btn">
+            <span>Get in Touch</span>
+            <svg
+              class="btn-arrow"
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Top Row -->
+        <div class="footer-top">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <span class="logo-name">SHIVAM</span>
+              <span class="logo-accent">MALETHA</span>
+            </div>
+            <p class="footer-tagline">
+              Frontend Developer building responsive and modern web experiences.
+            </p>
+            <div class="footer-status">
+              <span class="status-indicator"></span>
+              <span>Based in India • Open to Global Collaborations</span>
+            </div>
+          </div>
+
+          <!-- Footer Links -->
+          <div class="footer-nav-col">
+            <h4 class="footer-nav-title">Navigation</h4>
+            <ul class="footer-links">
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#about">About Me</a></li>
+              <li><a href="#skills-overview">Core Expertise</a></li>
+              <li><a href="#timeline">Academic Journey</a></li>
+              <li><a href="#projects">My Projects</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Footer Socials -->
+          <div class="footer-social-col">
+            <h4 class="footer-nav-title">Connect</h4>
+            <ul class="footer-social-list">
+              <li>
+                <a
+                  href="https://github.com/ShivamMaletha21"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-link"
+                  aria-label="GitHub"
+                >
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/shivam-maletha-46983b337/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-link"
+                  aria-label="LinkedIn"
+                >
+                  <i class="fa-brands fa-linkedin"></i>
+                  <span>LinkedIn</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/shiv_maletha/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-link"
+                  aria-label="Instagram"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                  <span>Instagram</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Ghost Watermark Typography -->
+        <div class="footer-watermark">SHIVAM MALETHA.</div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+          <div class="footer-copyright">
+            &copy; <span id="current-year">2026</span> Shivam Maletha. All
+            Rights Reserved.
+          </div>
+          <button
+            class="back-to-top-btn"
+            id="back-to-top"
+            aria-label="Back to top"
+          >
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+            <span>Top</span>
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

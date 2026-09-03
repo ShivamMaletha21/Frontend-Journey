@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p4-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141E28"/>
+      <stop offset="100%" stop-color="#0A1017"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#p4-grad)"/>
+  <rect x="30" y="30" width="740" height="440" rx="14" fill="#0F1722" stroke="rgba(255,255,255,0.06)" stroke-width="1.5"/>
+
+  <!-- Top bar -->
+  <rect x="30" y="30" width="740" height="50" rx="14" fill="#141E2C"/>
+  <circle cx="65" cy="55" r="7" fill="#FF5F56"/>
+  <circle cx="88" cy="55" r="7" fill="#FFBD2E"/>
+  <circle cx="111" cy="55" r="7" fill="#27C93F"/>
+  <text x="150" y="60" fill="#889CB5" font-family="monospace" font-size="13">pulse.telemetry.internal/clusters/eu-prod</text>
+
+  <!-- Metric dashboard -->
+  <g transform="translate(60, 105)">
+    <!-- Node grid -->
+    <rect width="320" height="335" rx="10" fill="#131C2A"/>
+    <text x="25" y="35" fill="#FFFFFF" font-family="system-ui" font-size="14" font-weight="700">Cluster Health &amp; Distributed Tracing</text>
+    
+    <!-- Microservice bars -->
+    <g transform="translate(25, 60)">
+      <text x="0" y="20" fill="#889CB5" font-family="monospace" font-size="11">gateway-edge</text>
+      <rect x="120" y="8" width="140" height="14" rx="4" fill="#00E676"/>
+      <text x="235" y="20" fill="#FFF" font-family="monospace" font-size="10">99.9%</text>
+
+      <text x="0" y="55" fill="#889CB5" font-family="monospace" font-size="11">auth-service</text>
+      <rect x="120" y="43" width="135" height="14" rx="4" fill="#00E676"/>
+      <text x="235" y="55" fill="#FFF" font-family="monospace" font-size="10">99.8%</text>
+
+      <text x="0" y="90" fill="#889CB5" font-family="monospace" font-size="11">payment-worker</text>
+      <rect x="120" y="78" width="140" height="14" rx="4" fill="#FF5722"/>
+      <text x="235" y="90" fill="#FFF" font-family="monospace" font-size="10">99.4%</text>
+
+      <text x="0" y="125" fill="#889CB5" font-family="monospace" font-size="11">cache-redis</text>
+      <rect x="120" y="113" width="140" height="14" rx="4" fill="#00E676"/>
+      <text x="235" y="125" fill="#FFF" font-family="monospace" font-size="10">100%</text>
+    </g>
+
+    <rect x="25" y="225" width="270" height="85" rx="8" fill="#1B2638"/>
+    <text x="40" y="255" fill="#889CB5" font-family="monospace" font-size="11">ANOMALY DETECTOR</text>
+    <text x="40" y="285" fill="#00E676" font-family="system-ui" font-size="18" font-weight="700">0 critical alerts in 72h</text>
+
+    <!-- Right Live Logs -->
+    <g transform="translate(340, 0)">
+      <rect width="340" height="335" rx="10" fill="#131C2A"/>
+      <text x="25" y="35" fill="#FFFFFF" font-family="system-ui" font-size="14" font-weight="700">Distributed Flame Graph</text>
+      
+      <rect x="25" y="60" width="290" height="40" rx="6" fill="#1E2B3E"/>
+      <rect x="25" y="60" width="180" height="40" rx="6" fill="#FF5722" opacity="0.6"/>
+      <text x="35" y="85" fill="#FFF" font-family="monospace" font-size="11">Root Request (58ms)</text>
+
+      <rect x="45" y="110" width="270" height="35" rx="6" fill="#1E2B3E"/>
+      <rect x="45" y="110" width="120" height="35" rx="6" fill="#0288D1" opacity="0.6"/>
+      <text x="55" y="132" fill="#FFF" font-family="monospace" font-size="11">DB Read pg_query (14ms)</text>
+
+      <rect x="65" y="155" width="250" height="35" rx="6" fill="#1E2B3E"/>
+      <rect x="65" y="155" width="90" height="35" rx="6" fill="#7B1FA2" opacity="0.6"/>
+      <text x="75" y="177" fill="#FFF" font-family="monospace" font-size="11">JSON Parse &amp; Return (4ms)</text>
+
+      <rect x="25" y="210" width="290" height="100" rx="8" fill="#182333"/>
+      <text x="40" y="240" fill="#FF5722" font-family="system-ui" font-size="28" font-weight="800">58ms</text>
+      <text x="40" y="265" fill="#889CB5" font-family="system-ui" font-size="12">End-to-End P99 Latency</text>
+      <text x="40" y="290" fill="#00E676" font-family="monospace" font-size="11">✓ Ranked Top 1% of SaaS benchmarks</text>
+    </g>
+  </g>
+</svg>

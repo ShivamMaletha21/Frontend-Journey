@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p3-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1F1D1A"/>
+      <stop offset="100%" stop-color="#100E0C"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#p3-grad)"/>
+  <rect x="30" y="30" width="740" height="440" rx="14" fill="#181513" stroke="rgba(255,255,255,0.06)" stroke-width="1.5"/>
+
+  <!-- Top Navigation -->
+  <rect x="30" y="30" width="740" height="50" rx="14" fill="#201C19"/>
+  <circle cx="65" cy="55" r="7" fill="#FF5F56"/>
+  <circle cx="88" cy="55" r="7" fill="#FFBD2E"/>
+  <circle cx="111" cy="55" r="7" fill="#27C93F"/>
+  <text x="150" y="60" fill="#B3ABA3" font-family="monospace" font-size="13">atelier-luxe.store/collections/autumn-26</text>
+
+  <!-- Editorial E-commerce Grid -->
+  <g transform="translate(55, 105)">
+    <!-- Product 1 Card -->
+    <rect width="215" height="335" rx="10" fill="#25211D"/>
+    <rect x="15" y="15" width="185" height="200" rx="8" fill="#322C26"/>
+    <!-- Graphic silhouette inside product frame -->
+    <circle cx="107" cy="115" r="45" fill="#FF5722" opacity="0.3"/>
+    <polygon points="107,70 145,145 70,145" fill="#FF5722"/>
+    <text x="15" y="245" fill="#FFFFFF" font-family="system-ui" font-size="14" font-weight="700">Chronograph Carbon</text>
+    <text x="15" y="270" fill="#A89F95" font-family="system-ui" font-size="12">Custom Titanium Edition</text>
+    <text x="15" y="310" fill="#FF7043" font-family="system-ui" font-size="16" font-weight="800">$1,450.00</text>
+
+    <!-- Product 2 Card -->
+    <g transform="translate(235, 0)">
+      <rect width="215" height="335" rx="10" fill="#25211D"/>
+      <rect x="15" y="15" width="185" height="200" rx="8" fill="#322C26"/>
+      <circle cx="107" cy="115" r="45" fill="#E65100" opacity="0.3"/>
+      <rect x="75" y="85" width="65" height="65" rx="12" fill="#E65100"/>
+      <text x="15" y="245" fill="#FFFFFF" font-family="system-ui" font-size="14" font-weight="700">Minimalist Audio Node</text>
+      <text x="15" y="270" fill="#A89F95" font-family="system-ui" font-size="12">Lossless Spatial Audio</text>
+      <text x="15" y="310" fill="#FF7043" font-family="system-ui" font-size="16" font-weight="800">$890.00</text>
+    </g>
+
+    <!-- Cart / Checkout Overlay Widget -->
+    <g transform="translate(470, 0)">
+      <rect width="215" height="335" rx="10" fill="#25211D"/>
+      <text x="20" y="35" fill="#FFFFFF" font-family="system-ui" font-size="14" font-weight="700">Headless Checkout</text>
+      <text x="20" y="55" fill="#A89F95" font-family="monospace" font-size="11">Shopify + Next.js 15</text>
+      
+      <rect x="20" y="80" width="175" height="60" rx="6" fill="#1C1815"/>
+      <text x="32" y="105" fill="#888" font-family="monospace" font-size="10">SUBTOTAL</text>
+      <text x="32" y="125" fill="#FFF" font-family="system-ui" font-size="15" font-weight="700">$2,340.00</text>
+
+      <rect x="20" y="160" width="175" height="40" rx="8" fill="#00E676" opacity="0.15"/>
+      <text x="32" y="185" fill="#00E676" font-family="monospace" font-size="11">✓ Instant Stripe Pay</text>
+
+      <rect x="20" y="220" width="175" height="90" rx="8" fill="#1C1815"/>
+      <text x="32" y="245" fill="#FF7043" font-family="system-ui" font-size="22" font-weight="800">420ms</text>
+      <text x="32" y="270" fill="#A89F95" font-family="system-ui" font-size="11">Page-to-checkout TTFB</text>
+      <text x="32" y="290" fill="#00E676" font-family="monospace" font-size="10">0.02s Cart Interaction</text>
+    </g>
+  </g>
+</svg>

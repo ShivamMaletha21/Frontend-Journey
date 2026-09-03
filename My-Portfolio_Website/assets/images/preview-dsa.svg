@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 440" width="100%" height="100%">
+  <defs>
+    <linearGradient id="dsa-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14121E"/>
+      <stop offset="100%" stop-color="#090710"/>
+    </linearGradient>
+    <linearGradient id="dsa-orange" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF2A5F"/>
+      <stop offset="50%" stop-color="#FF7A00"/>
+      <stop offset="100%" stop-color="#FFB800"/>
+    </linearGradient>
+    <linearGradient id="dsa-green" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#CCFF00"/>
+      <stop offset="100%" stop-color="#00E676"/>
+    </linearGradient>
+    <filter id="dsa-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#FF7A00" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="620" height="440" rx="16" fill="url(#dsa-bg)"/>
+  <rect x="15" y="15" width="590" height="410" rx="12" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+
+  <!-- Top Title Bar -->
+  <rect x="15" y="15" width="590" height="44" rx="12" fill="#1C182A"/>
+  <circle cx="42" cy="37" r="5.5" fill="#FF5F56"/>
+  <circle cx="60" cy="37" r="5.5" fill="#FFBD2E"/>
+  <circle cx="78" cy="37" r="5.5" fill="#27C93F"/>
+  <text x="110" y="41" fill="#FF8A00" font-family="'JetBrains Mono', monospace" font-size="11">shivam@dsa-lab: ~/algorithms/problem-solving (Arrays, Two-Pointers, Trees)</text>
+
+  <rect x="500" y="27" width="90" height="20" rx="10" fill="rgba(255,122,0,0.15)" stroke="rgba(255,122,0,0.4)" stroke-width="1"/>
+  <circle cx="512" cy="37" r="3.5" fill="#FF7A00"/>
+  <text x="522" y="41" fill="#FF7A00" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700">DSA ACTIVE</text>
+
+  <!-- Split View Top: Left Two-Pointers Array / Tree + Right Big-O Graph -->
+  <g transform="translate(35, 75)">
+    <!-- Array & Two-Pointer Visual Box -->
+    <rect width="320" height="190" rx="10" fill="#0F0D17" stroke="rgba(255,255,255,0.06)" stroke-width="1" filter="url(#dsa-glow)"/>
+    
+    <text x="18" y="26" fill="#FF7A00" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">TWO-POINTERS ARRAY TRAVERSAL</text>
+
+    <!-- Array Elements -->
+    <g transform="translate(18, 48)">
+      <!-- Index 0 -->
+      <rect x="0" y="0" width="40" height="40" rx="6" fill="#1E192B" stroke="#FF2A5F" stroke-width="1.5"/>
+      <text x="14" y="25" fill="#FFFFFF" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="700">2</text>
+      <text x="10" y="55" fill="#FF2A5F" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700">▲ Left</text>
+
+      <!-- Index 1 -->
+      <rect x="48" y="0" width="40" height="40" rx="6" fill="#181424" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+      <text x="62" y="25" fill="#8898AA" font-family="'JetBrains Mono', monospace" font-size="14">7</text>
+
+      <!-- Index 2 -->
+      <rect x="96" y="0" width="40" height="40" rx="6" fill="#181424" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+      <text x="106" y="25" fill="#8898AA" font-family="'JetBrains Mono', monospace" font-size="14">11</text>
+
+      <!-- Index 3 -->
+      <rect x="144" y="0" width="40" height="40" rx="6" fill="#181424" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+      <text x="154" y="25" fill="#8898AA" font-family="'JetBrains Mono', monospace" font-size="14">15</text>
+
+      <!-- Index 4 -->
+      <rect x="192" y="0" width="40" height="40" rx="6" fill="#181424" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+      <text x="202" y="25" fill="#8898AA" font-family="'JetBrains Mono', monospace" font-size="14">19</text>
+
+      <!-- Index 5 (Right pointer) -->
+      <rect x="240" y="0" width="40" height="40" rx="6" fill="#1E192B" stroke="#00E676" stroke-width="1.5"/>
+      <text x="250" y="25" fill="#FFFFFF" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="700">23</text>
+      <text x="238" y="55" fill="#00E676" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700">▲ Right</text>
+    </g>
+
+    <!-- Tree Sub-diagram -->
+    <g transform="translate(18, 120)">
+      <rect width="284" height="55" rx="6" fill="#161222"/>
+      <circle cx="40" cy="28" r="12" fill="#FF7A00"/>
+      <text x="36" y="32" fill="#FFF" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">8</text>
+      
+      <line x1="52" y1="28" x2="85" y2="18" stroke="#FF7A00" stroke-width="1.5"/>
+      <line x1="52" y1="28" x2="85" y2="38" stroke="#FF7A00" stroke-width="1.5"/>
+
+      <circle cx="95" cy="18" r="10" fill="#2979FF"/>
+      <text x="92" y="22" fill="#FFF" font-family="'JetBrains Mono', monospace" font-size="10">3</text>
+
+      <circle cx="95" cy="38" r="10" fill="#00E676"/>
+      <text x="89" y="42" fill="#FFF" font-family="'JetBrains Mono', monospace" font-size="10">10</text>
+
+      <text x="125" y="26" fill="#FFF" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">Binary Search Tree</text>
+      <text x="125" y="42" fill="#8898AA" font-family="'JetBrains Mono', monospace" font-size="10">Lookup: O(log N) Time</text>
+    </g>
+  </g>
+
+  <!-- Right Complexity Box -->
+  <g transform="translate(370, 75)">
+    <rect width="215" height="190" rx="10" fill="#14111E" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    
+    <text x="16" y="26" fill="#CCFF00" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">BIG-O COMPLEXITY</text>
+
+    <!-- Complexity Metrics -->
+    <rect x="16" y="42" width="183" height="34" rx="6" fill="#1D182B"/>
+    <text x="26" y="63" fill="#00E676" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">Time: O(N) Linear</text>
+
+    <rect x="16" y="84" width="183" height="34" rx="6" fill="#1D182B"/>
+    <text x="26" y="105" fill="#00E5FF" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">Space: O(1) Constant</text>
+
+    <!-- Problem Solving Pill -->
+    <g transform="translate(16, 128)">
+      <rect width="183" height="46" rx="8" fill="url(#dsa-orange)" opacity="0.15" stroke="rgba(255,107,0,0.4)" stroke-width="1"/>
+      <text x="20" y="20" fill="#FF8A00" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700">PROBLEM SOLVING</text>
+      <text x="20" y="36" fill="#FFFFFF" font-family="system-ui" font-size="11" font-weight="600">Daily LeetCode &amp; Logic</text>
+    </g>
+  </g>
+
+  <!-- Bottom Code & Logic Console -->
+  <g transform="translate(35, 280)">
+    <rect width="550" height="125" rx="10" fill="#0C0A12" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    
+    <text x="20" y="28" fill="#FF2A5F" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">function <tspan fill="#64B5F6">twoSumSorted</tspan>(nums, target) {</text>
+    <text x="40" y="52" fill="#8898AA" font-family="'JetBrains Mono', monospace" font-size="11">let left = 0, right = nums.length - 1;</text>
+    <text x="40" y="74" fill="#8898AA" font-family="'JetBrains Mono', monospace" font-size="11">while (left &lt; right) { const sum = nums[left] + nums[right]; if (sum === target) return [left, right]; ... }</text>
+    <text x="20" y="96" fill="#FF2A5F" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">}</text>
+    
+    <text x="20" y="114" fill="#00E676" font-family="'JetBrains Mono', monospace" font-size="10">✓ Optimized Algorithm Passed all Test Cases • Zero Overhead</text>
+  </g>
+</svg>

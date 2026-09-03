@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 440" width="100%" height="100%">
+  <defs>
+    <linearGradient id="ai-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14111E"/>
+      <stop offset="100%" stop-color="#090710"/>
+    </linearGradient>
+    <linearGradient id="purple-neon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D500F9"/>
+      <stop offset="100%" stop-color="#651FFF"/>
+    </linearGradient>
+    <linearGradient id="orange-ai" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF2A5F"/>
+      <stop offset="100%" stop-color="#FF7A00"/>
+    </linearGradient>
+    <filter id="ai-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#D500F9" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="620" height="440" rx="16" fill="url(#ai-bg)"/>
+  <rect x="15" y="15" width="590" height="410" rx="12" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+
+  <!-- Top Title Bar -->
+  <rect x="15" y="15" width="590" height="44" rx="12" fill="#1C182A"/>
+  <circle cx="42" cy="37" r="5.5" fill="#FF5F56"/>
+  <circle cx="60" cy="37" r="5.5" fill="#FFBD2E"/>
+  <circle cx="78" cy="37" r="5.5" fill="#27C93F"/>
+  <text x="110" y="41" fill="#BA68C8" font-family="'JetBrains Mono', monospace" font-size="11">Graphic Era University // BCA (Hons) AI &amp; Data Science Track</text>
+
+  <rect x="505" y="27" width="85" height="20" rx="10" fill="rgba(213,0,249,0.15)" stroke="rgba(213,0,249,0.4)" stroke-width="1"/>
+  <circle cx="517" cy="37" r="3.5" fill="#D500F9"/>
+  <text x="527" y="41" fill="#D500F9" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700">AI MODEL</text>
+
+  <!-- Neural Network Visual + Data Science Grid -->
+  <g transform="translate(35, 75)">
+    <!-- Neural Net Box -->
+    <rect width="320" height="205" rx="10" fill="#110E1A" stroke="rgba(255,255,255,0.06)" stroke-width="1" filter="url(#ai-glow)"/>
+    
+    <text x="20" y="28" fill="#FF7A00" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">NEURAL GRAPH TOPOLOGY</text>
+
+    <!-- Network Connections (Lines) -->
+    <!-- Layer 1 to Layer 2 -->
+    <line x1="55" y1="70" x2="160" y2="55" stroke="rgba(213,0,249,0.35)" stroke-width="1.5"/>
+    <line x1="55" y1="70" x2="160" y2="105" stroke="rgba(255,107,0,0.35)" stroke-width="1.5"/>
+    <line x1="55" y1="70" x2="160" y2="155" stroke="rgba(213,0,249,0.35)" stroke-width="1.5"/>
+
+    <line x1="55" y1="120" x2="160" y2="55" stroke="rgba(255,107,0,0.35)" stroke-width="1.5"/>
+    <line x1="55" y1="120" x2="160" y2="105" stroke="rgba(0,230,118,0.4)" stroke-width="2"/>
+    <line x1="55" y1="120" x2="160" y2="155" stroke="rgba(213,0,249,0.35)" stroke-width="1.5"/>
+
+    <line x1="55" y1="170" x2="160" y2="55" stroke="rgba(213,0,249,0.35)" stroke-width="1.5"/>
+    <line x1="55" y1="170" x2="160" y2="105" stroke="rgba(255,107,0,0.35)" stroke-width="1.5"/>
+    <line x1="55" y1="170" x2="160" y2="155" stroke="rgba(0,230,118,0.4)" stroke-width="2"/>
+
+    <!-- Layer 2 to Layer 3 (Output) -->
+    <line x1="160" y1="55" x2="265" y2="90" stroke="rgba(213,0,249,0.35)" stroke-width="1.5"/>
+    <line x1="160" y1="55" x2="265" y2="140" stroke="rgba(255,107,0,0.35)" stroke-width="1.5"/>
+    <line x1="160" y1="105" x2="265" y2="90" stroke="rgba(0,230,118,0.45)" stroke-width="2"/>
+    <line x1="160" y1="105" x2="265" y2="140" stroke="rgba(213,0,249,0.35)" stroke-width="1.5"/>
+    <line x1="160" y1="155" x2="265" y2="90" stroke="rgba(255,107,0,0.35)" stroke-width="1.5"/>
+    <line x1="160" y1="155" x2="265" y2="140" stroke="rgba(0,230,118,0.45)" stroke-width="2"/>
+
+    <!-- Layer 1 Nodes (Inputs) -->
+    <circle cx="55" cy="70" r="10" fill="#FF7A00"/>
+    <circle cx="55" cy="120" r="10" fill="#FF7A00"/>
+    <circle cx="55" cy="170" r="10" fill="#FF7A00"/>
+    <text x="50" y="195" fill="#8898AA" font-family="'JetBrains Mono', monospace" font-size="9">Input X</text>
+
+    <!-- Layer 2 Nodes (Hidden Weights) -->
+    <circle cx="160" cy="55" r="11" fill="url(#purple-neon)"/>
+    <circle cx="160" cy="105" r="11" fill="url(#purple-neon)"/>
+    <circle cx="160" cy="155" r="11" fill="url(#purple-neon)"/>
+    <text x="145" y="195" fill="#8898AA" font-family="'JetBrains Mono', monospace" font-size="9">Hidden Layer</text>
+
+    <!-- Layer 3 Nodes (Output Predictions) -->
+    <circle cx="265" cy="90" r="12" fill="#00E676"/>
+    <circle cx="265" cy="140" r="12" fill="#00E676"/>
+    <text x="250" y="195" fill="#8898AA" font-family="'JetBrains Mono', monospace" font-size="9">Output Ŷ</text>
+  </g>
+
+  <!-- Right Data Science Metrics Card -->
+  <g transform="translate(370, 75)">
+    <rect width="215" height="205" rx="10" fill="#151222" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    
+    <text x="18" y="28" fill="#D500F9" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">DATA SCIENCE METRICS</text>
+
+    <!-- Stat 1 -->
+    <text x="18" y="58" fill="#8898AA" font-family="system-ui" font-size="10">Model Accuracy</text>
+    <text x="18" y="85" fill="#00E676" font-family="system-ui" font-size="24" font-weight="800">98.4%</text>
+
+    <!-- Stat 2 -->
+    <text x="120" y="58" fill="#8898AA" font-family="system-ui" font-size="10">Loss Rate</text>
+    <text x="120" y="85" fill="#00E5FF" font-family="system-ui" font-size="24" font-weight="800">0.012</text>
+
+    <!-- Complexity Tag -->
+    <rect x="18" y="105" width="180" height="40" rx="6" fill="#1F1A30"/>
+    <text x="28" y="123" fill="#E1BEE7" font-family="'JetBrains Mono', monospace" font-size="10">Algorithm: O(N log N)</text>
+    <text x="28" y="137" fill="#80CBC4" font-family="'JetBrains Mono', monospace" font-size="9">Python • NumPy • Pandas</text>
+
+    <!-- Status pill -->
+    <rect x="18" y="158" width="180" height="30" rx="15" fill="rgba(204,255,0,0.12)" stroke="rgba(204,255,0,0.3)" stroke-width="1"/>
+    <text x="35" y="177" fill="#CCFF00" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700">✦ OPTIMIZED WEIGHTS</text>
+  </g>
+
+  <!-- Bottom Python Code & Vector Tensor Stream -->
+  <g transform="translate(35, 295)">
+    <rect width="550" height="110" rx="10" fill="#0C0A14" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    
+    <text x="20" y="28" fill="#FF7A00" font-family="'JetBrains Mono', monospace" font-size="11">import <tspan fill="#FFF">numpy</tspan> as <tspan fill="#FFF">np</tspan>, <tspan fill="#FFF">pandas</tspan> as <tspan fill="#FFF">pd</tspan></text>
+    <text x="20" y="52" fill="#D500F9" font-family="'JetBrains Mono', monospace" font-size="11">weights = np.array([0.94, 0.88, 0.99]) <tspan fill="#8898AA"># Feature Matrix Transformation</tspan></text>
+    <text x="20" y="76" fill="#00E676" font-family="'JetBrains Mono', monospace" font-size="11">prediction = model.predict(dataset) <tspan fill="#00E5FF"># Inference Latency: 12ms</tspan></text>
+    <text x="20" y="96" fill="#CCFF00" font-family="'JetBrains Mono', monospace" font-size="10">✓ Applied in real-time web algorithms &amp; data-driven frontend state</text>
+  </g>
+</svg>

@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 440" width="100%" height="100%">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#121218"/>
+      <stop offset="100%" stop-color="#09090C"/>
+    </linearGradient>
+    <linearGradient id="sunset-flow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF2A5F"/>
+      <stop offset="50%" stop-color="#FF6B00"/>
+      <stop offset="100%" stop-color="#FFB800"/>
+    </linearGradient>
+    <linearGradient id="lime-accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#CCFF00"/>
+      <stop offset="100%" stop-color="#00E676"/>
+    </linearGradient>
+    <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#FF6B00" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Canvas Backdrop -->
+  <rect width="620" height="440" rx="16" fill="url(#bg-grad)"/>
+  <rect x="15" y="15" width="590" height="410" rx="12" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+
+  <!-- Top IDE Title Bar -->
+  <rect x="15" y="15" width="590" height="44" rx="12" fill="#181822"/>
+  <circle cx="42" cy="37" r="5.5" fill="#FF5F56"/>
+  <circle cx="60" cy="37" r="5.5" fill="#FFBD2E"/>
+  <circle cx="78" cy="37" r="5.5" fill="#27C93F"/>
+
+  <!-- Editor Tabs -->
+  <g transform="translate(105, 23)">
+    <rect width="130" height="28" rx="6" fill="#101016" stroke="rgba(255,107,0,0.4)" stroke-width="1"/>
+    <text x="18" y="18" fill="#FF8A00" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600">⚡ app.js</text>
+    
+    <rect x="140" width="115" height="28" rx="6" fill="#14141E"/>
+    <text x="158" y="18" fill="#757585" font-family="'JetBrains Mono', monospace" font-size="11">style.css</text>
+    
+    <rect x="265" width="125" height="28" rx="6" fill="#14141E"/>
+    <text x="283" y="18" fill="#757585" font-family="'JetBrains Mono', monospace" font-size="11">index.html</text>
+  </g>
+
+  <!-- Live Status Badge -->
+  <rect x="500" y="27" width="90" height="20" rx="10" fill="rgba(204,255,0,0.12)" stroke="rgba(204,255,0,0.3)" stroke-width="1"/>
+  <circle cx="512" cy="37" r="3.5" fill="#CCFF00"/>
+  <text x="522" y="41" fill="#CCFF00" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700">DOM SYNC</text>
+
+  <!-- Split Workspace: Left Editor Pane -->
+  <g transform="translate(35, 75)">
+    <rect width="320" height="330" rx="10" fill="#0D0D12" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    
+    <!-- Code Lines -->
+    <!-- Line 1 -->
+    <text x="18" y="32" fill="#505060" font-family="'JetBrains Mono', monospace" font-size="11">01</text>
+    <text x="45" y="32" fill="#FF2A5F" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">class <tspan fill="#FFF">TripPlanner</tspan> {</text>
+    
+    <!-- Line 2 -->
+    <text x="18" y="55" fill="#505060" font-family="'JetBrains Mono', monospace" font-size="11">02</text>
+    <text x="60" y="55" fill="#8898AA" font-family="'JetBrains Mono', monospace" font-size="11">constructor(budget) {</text>
+    
+    <!-- Line 3 -->
+    <text x="18" y="78" fill="#505060" font-family="'JetBrains Mono', monospace" font-size="11">03</text>
+    <text x="75" y="78" fill="#64B5F6" font-family="'JetBrains Mono', monospace" font-size="11">this.<tspan fill="#FFF">state</tspan> = { activities: [], total: 0 };</text>
+    
+    <!-- Line 4 -->
+    <text x="18" y="101" fill="#505060" font-family="'JetBrains Mono', monospace" font-size="11">04</text>
+    <text x="60" y="101" fill="#8898AA" font-family="'JetBrains Mono', monospace" font-size="11">}</text>
+    
+    <!-- Line 5 -->
+    <text x="18" y="124" fill="#505060" font-family="'JetBrains Mono', monospace" font-size="11">05</text>
+    <text x="60" y="124" fill="#00E676" font-family="'JetBrains Mono', monospace" font-size="11">calculateTotal() {</text>
+    
+    <!-- Line 6 -->
+    <text x="18" y="147" fill="#505060" font-family="'JetBrains Mono', monospace" font-size="11">06</text>
+    <text x="75" y="147" fill="#FFB800" font-family="'JetBrains Mono', monospace" font-size="11">return <tspan fill="#FFF">this.state.activities</tspan></text>
+    
+    <!-- Line 7 -->
+    <text x="18" y="170" fill="#505060" font-family="'JetBrains Mono', monospace" font-size="11">07</text>
+    <text x="90" y="170" fill="#64B5F6" font-family="'JetBrains Mono', monospace" font-size="11">.reduce(<tspan fill="#FF8A65">(sum, act)</tspan> =&gt; sum + act.cost, 0);</text>
+
+    <!-- Line 8 -->
+    <text x="18" y="193" fill="#505060" font-family="'JetBrains Mono', monospace" font-size="11">08</text>
+    <text x="60" y="193" fill="#00E676" font-family="'JetBrains Mono', monospace" font-size="11">}</text>
+
+    <!-- Line 9 -->
+    <text x="18" y="216" fill="#505060" font-family="'JetBrains Mono', monospace" font-size="11">09</text>
+    <text x="60" y="216" fill="#FF2A5F" font-family="'JetBrains Mono', monospace" font-size="11">renderUI() {</text>
+
+    <!-- Line 10 -->
+    <text x="18" y="239" fill="#505060" font-family="'JetBrains Mono', monospace" font-size="11">10</text>
+    <text x="75" y="239" fill="#CCFF00" font-family="'JetBrains Mono', monospace" font-size="11">document.querySelector(<tspan fill="#FFF">'#cost'</tspan>).innerText = `$${this.total}`;</text>
+
+    <!-- Line 11 -->
+    <text x="18" y="262" fill="#505060" font-family="'JetBrains Mono', monospace" font-size="11">11</text>
+    <text x="60" y="262" fill="#FF2A5F" font-family="'JetBrains Mono', monospace" font-size="11">}</text>
+
+    <!-- Line 12 -->
+    <text x="18" y="285" fill="#505060" font-family="'JetBrains Mono', monospace" font-size="11">12</text>
+    <text x="45" y="285" fill="#FF2A5F" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">}</text>
+
+    <!-- Footer Terminal Pill -->
+    <rect x="18" y="298" width="284" height="20" rx="4" fill="#161622"/>
+    <text x="28" y="312" fill="#00E676" font-family="'JetBrains Mono', monospace" font-size="10">✓ Compiled Clean: 0 Errors • 60 FPS Render</text>
+  </g>
+
+  <!-- Split Workspace: Right Live Preview Component -->
+  <g transform="translate(370, 75)">
+    <!-- App Card Frame -->
+    <rect width="215" height="330" rx="10" fill="#14141C" stroke="rgba(255,107,0,0.25)" stroke-width="1.5" filter="url(#soft-glow)"/>
+    
+    <!-- Mini App Header -->
+    <rect x="15" y="15" width="185" height="42" rx="6" fill="#1C1C28"/>
+    <circle cx="35" cy="36" r="10" fill="url(#sunset-flow)"/>
+    <rect x="55" y="28" width="75" height="7" rx="3" fill="#FFFFFF"/>
+    <rect x="55" y="39" width="50" height="5" rx="2.5" fill="#757585"/>
+    <rect x="155" y="28" width="32" height="16" rx="8" fill="url(#lime-accent)"/>
+
+    <!-- Interactive Metrics Chart Widget -->
+    <rect x="15" y="68" width="185" height="110" rx="8" fill="#1A1A24"/>
+    <text x="28" y="90" fill="#8898AA" font-family="system-ui" font-size="10" font-weight="700" letter-spacing="1">PERFORMANCE</text>
+    <text x="28" y="125" fill="#00E676" font-family="system-ui" font-size="30" font-weight="800">100%</text>
+    
+    <!-- Mini Progress Bars -->
+    <rect x="28" y="140" width="155" height="5" rx="2.5" fill="#282836"/>
+    <rect x="28" y="140" width="155" height="5" rx="2.5" fill="#00E676"/>
+
+    <text x="28" y="162" fill="#CCFF00" font-family="'JetBrains Mono', monospace" font-size="9">⚡ Core Web Vitals: 99/100</text>
+
+    <!-- Component Buttons -->
+    <rect x="15" y="190" width="185" height="36" rx="18" fill="url(#sunset-flow)"/>
+    <text x="65" y="213" fill="#FFFFFF" font-family="system-ui" font-size="12" font-weight="700">Interactive UI</text>
+
+    <rect x="15" y="235" width="185" height="36" rx="18" fill="#222230" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="65" y="258" fill="#D6D6E0" font-family="system-ui" font-size="12" font-weight="600">Responsive Grid</text>
+
+    <!-- Badge Footnote -->
+    <g transform="translate(15, 282)">
+      <rect width="185" height="34" rx="6" fill="#121218" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+      <text x="20" y="22" fill="#9E9EA8" font-family="'JetBrains Mono', monospace" font-size="9">Flexbox + CSS Grid + ES6</text>
+    </g>
+  </g>
+</svg>

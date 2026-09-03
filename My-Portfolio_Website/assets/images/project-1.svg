@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p1-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E202B"/>
+      <stop offset="100%" stop-color="#0E1017"/>
+    </linearGradient>
+    <linearGradient id="chart-glow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF5722" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#FF5722" stop-opacity="0.0"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#p1-grad)"/>
+  <rect x="30" y="30" width="740" height="440" rx="14" fill="#141620" stroke="rgba(255,255,255,0.06)" stroke-width="1.5"/>
+
+  <!-- Top bar -->
+  <rect x="30" y="30" width="740" height="50" rx="14" fill="#181B26"/>
+  <circle cx="65" cy="55" r="7" fill="#FF5F56"/>
+  <circle cx="88" cy="55" r="7" fill="#FFBD2E"/>
+  <circle cx="111" cy="55" r="7" fill="#27C93F"/>
+  <text x="150" y="60" fill="#9096A8" font-family="monospace" font-size="13">dashboard.finflow.io/analytics</text>
+  <rect x="630" y="43" width="115" height="26" rx="13" fill="#FF5722"/>
+  <text x="655" y="60" fill="#FFFFFF" font-family="system-ui" font-size="12" font-weight="700">LIVE FEED</text>
+
+  <!-- Left Sidebar -->
+  <g transform="translate(55, 105)">
+    <rect width="160" height="340" rx="10" fill="#181B26"/>
+    <rect x="20" y="25" width="120" height="12" rx="4" fill="#FF5722"/>
+    <rect x="20" y="55" width="100" height="8" rx="4" fill="#6A728A"/>
+    <rect x="20" y="80" width="110" height="8" rx="4" fill="#6A728A"/>
+    <rect x="20" y="105" width="90" height="8" rx="4" fill="#6A728A"/>
+    <rect x="20" y="130" width="115" height="8" rx="4" fill="#6A728A"/>
+    
+    <rect x="20" y="240" width="120" height="70" rx="8" fill="#222634"/>
+    <text x="32" y="265" fill="#8E97B0" font-family="monospace" font-size="10">TPS METRIC</text>
+    <text x="32" y="295" fill="#00E676" font-family="system-ui" font-size="20" font-weight="800">4,820/s</text>
+  </g>
+
+  <!-- Main Chart Area -->
+  <g transform="translate(235, 105)">
+    <rect width="510" height="220" rx="10" fill="#181B26"/>
+    <text x="30" y="40" fill="#FFFFFF" font-family="system-ui" font-size="16" font-weight="700">Real-Time Liquidity &amp; Volume</text>
+    <text x="30" y="62" fill="#8E97B0" font-family="system-ui" font-size="12">Global multi-exchange aggregation</text>
+
+    <!-- Chart path -->
+    <path d="M 30 180 Q 90 120, 150 140 T 270 90 T 380 120 T 480 60 L 480 190 L 30 190 Z" fill="url(#chart-glow)"/>
+    <path d="M 30 180 Q 90 120, 150 140 T 270 90 T 380 120 T 480 60" fill="none" stroke="#FF5722" stroke-width="3.5"/>
+    <circle cx="480" cy="60" r="6" fill="#FFFFFF" stroke="#FF5722" stroke-width="3"/>
+  </g>
+
+  <!-- Bottom Stat Widgets -->
+  <g transform="translate(235, 345)">
+    <rect width="155" height="100" rx="8" fill="#181B26"/>
+    <text x="20" y="32" fill="#8E97B0" font-family="system-ui" font-size="12">Latency</text>
+    <text x="20" y="65" fill="#FFFFFF" font-family="system-ui" font-size="22" font-weight="800">1.2ms</text>
+    <text x="20" y="85" fill="#00E676" font-family="monospace" font-size="11">↓ 94% optimized</text>
+
+    <rect x="175" width="155" height="100" rx="8" fill="#181B26"/>
+    <text x="195" y="32" fill="#8E97B0" font-family="system-ui" font-size="12">Daily Volume</text>
+    <text x="195" y="65" fill="#FFFFFF" font-family="system-ui" font-size="22" font-weight="800">$42.8M</text>
+    <text x="195" y="85" fill="#00E676" font-family="monospace" font-size="11">↑ 34% WoW</text>
+
+    <rect x="350" width="160" height="100" rx="8" fill="#181B26"/>
+    <text x="370" y="32" fill="#8E97B0" font-family="system-ui" font-size="12">System Uptime</text>
+    <text x="370" y="65" fill="#FF5722" font-family="system-ui" font-size="22" font-weight="800">99.998%</text>
+    <text x="370" y="85" fill="#8E97B0" font-family="monospace" font-size="11">Zero incident</text>
+  </g>
+</svg>

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5722"/>
+      <stop offset="50%" stop-color="#FF3D00"/>
+      <stop offset="100%" stop-color="#DD2C00"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="rgba(255, 255, 255, 0.25)"/>
+      <stop offset="100%" stop-color="rgba(0, 0, 0, 0.2)"/>
+    </radialGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="25" stdDeviation="30" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="800" height="1000" fill="url(#bg-grad)"/>
+  <rect width="800" height="1000" fill="url(#glow)"/>
+
+  <!-- Subtle Geometric Architectural Lines -->
+  <g stroke="rgba(255,255,255,0.12)" stroke-width="1.5" fill="none">
+    <circle cx="400" cy="450" r="280"/>
+    <circle cx="400" cy="450" r="380" stroke-dasharray="8 8"/>
+    <line x1="80" y1="0" x2="80" y2="1000"/>
+    <line x1="720" y1="0" x2="720" y2="1000"/>
+    <line x1="0" y1="820" x2="800" y2="820"/>
+  </g>
+
+  <!-- Developer Silhouette / Stylized Portrait -->
+  <g filter="url(#shadow)">
+    <!-- Body / Shoulders -->
+    <path d="M180 980 C 180 750, 240 680, 400 680 C 560 680, 620 750, 620 980 Z" fill="#F4EDE4"/>
+    <!-- Collar Line -->
+    <path d="M340 680 C 370 725, 430 725, 460 680" fill="none" stroke="#D3C7BA" stroke-width="5" stroke-linecap="round"/>
+    
+    <!-- Neck -->
+    <path d="M345 520 L345 685 C 375 705, 425 705, 455 685 L455 520 Z" fill="#E8BC9B"/>
+    
+    <!-- Head Base -->
+    <ellipse cx="400" cy="420" rx="140" ry="170" fill="#F3CCA8"/>
+    
+    <!-- Hair Modern Cut -->
+    <path d="M260 380 C 255 260, 310 200, 400 195 C 490 200, 545 260, 540 380 C 510 320, 460 300, 400 300 C 340 300, 290 320, 260 380 Z" fill="#2C221E"/>
+    
+    <!-- Ears -->
+    <ellipse cx="260" cy="430" rx="18" ry="32" fill="#E8BC9B"/>
+    <ellipse cx="540" cy="430" rx="18" ry="32" fill="#E8BC9B"/>
+    
+    <!-- Eyebrows -->
+    <path d="M310 375 Q 345 365 375 378" stroke="#2C221E" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <path d="M425 378 Q 455 365 490 375" stroke="#2C221E" stroke-width="6" stroke-linecap="round" fill="none"/>
+
+    <!-- Eyes -->
+    <ellipse cx="345" cy="405" rx="12" ry="7" fill="#2C221E"/>
+    <ellipse cx="455" cy="405" rx="12" ry="7" fill="#2C221E"/>
+
+    <!-- Nose -->
+    <path d="M400 395 L395 450 Q 405 458 415 450" fill="none" stroke="#DCA27C" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Lips -->
+    <path d="M375 495 Q 400 505 425 495" fill="none" stroke="#C87E60" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Modern Accent Badge Overlay -->
+  <g transform="translate(480, 800)">
+    <rect width="260" height="90" rx="45" fill="#0D0D0E" opacity="0.95"/>
+    <circle cx="45" cy="45" r="16" fill="#10B981"/>
+    <circle cx="45" cy="45" r="24" fill="#10B981" opacity="0.25"/>
+    <text x="80" y="40" fill="#8E8E93" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" letter-spacing="1">STATUS</text>
+    <text x="80" y="62" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="700">Available for Hire</text>
+  </g>
+</svg>
